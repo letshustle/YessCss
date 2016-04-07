@@ -10,6 +10,15 @@ The feature sets comes from our own expereince of web development and we will tr
 We will try to keep the project as **generic** and **reusable** as possible so that you can easily use it make awesome apps
 
 
+##### Currently Targeted Feature Set
+- [ ] Box Shadow
+- [ ] Box Radius
+- [ ] Text Shadow
+- [ ] Color Picker
+- [ ] Color Pallete
+
+
+
 Contributing
 ------------
 
