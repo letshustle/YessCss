@@ -1,0 +1,98 @@
+<div class="container top-buffer">
+    <div class="row">
+        <div class="col-xs-12 ">
+            <h3 class="page-header">Border Radius</h3>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li class="list-inline">
+                    <label for="topLeft">Top Left</label>
+                    <input class="form-control" type="number" ng-model="topLeft" style="width:80px" id="topLeft"> px
+                </li>
+                <li class="list-inline">
+                    <label for="topRight">Top Right</label>
+                    <input class="form-control input-sm" type="number" ng-model="topRight" id="topRight" style="width:80px">px
+                </li>
+                <li class="list-inline">
+                    <label for="bottomRight">Bottom Right</label>
+                    <input class="form-control input-sm" type="number" ng-model="bottomRight" id="bottomRight" style="width:80px">px
+                </li>
+                <li class="list-inline">
+                    <label for="bottomLeft">Bottom Left</label>
+                    <input class="form-control input-sm" type="number" ng-model="bottomLeft" id="bottomLeft" style="width:80px">px
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div ng-style="{ 'border-radius': (topLeft + 'px') + ' ' +  (topRight+ 'px') + ' ' + (bottomRight + 'px') + ' ' +  (bottomLeft+ 'px') }" style="height:200px; width: 200px; border: 1px solid black">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p>Code</p>
+            border-radius:{{(topLeft + 'px') + ' ' + (topRight+ 'px') + ' ' + (bottomRight + 'px') + ' ' + (bottomLeft+ 'px') }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">
+            <h3>Box Shadow </h3>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li class="list-inline">
+                    <label for="hLength">Horizontal Length</label>
+                    <input class="form-control" type="number" ng-model="hLength" style="width:80px" id="hLength"> px
+                </li>
+                <li class="list-inline">
+                    <label for="vLength">Vertical Length</label>
+                    <input class="form-control input-sm" type="number" ng-model="vLength" id="vLength" style="width:80px">px
+                </li>
+                <li class="list-inline">
+                    <label for="bRadius">Blur Radius</label>
+                    <input class="form-control input-sm" type="number" ng-model="bRadius" id="bRadius" style="width:80px">px
+                </li>
+                <li class="list-inline">
+                    <label for="spread">Spread</label>
+                    <input class="form-control input-sm" type="number" ng-model="spread" id="spread" style="width:80px">px
+                </li>                
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div ng-style="{ 'box-shadow': (hLength + 'px') + ' ' +  (vLength+ 'px') + ' ' + (bRadius + 'px') + ' ' +  (spread + 'px') + ' ' +  ('#212121') }" style="height:200px; width: 200px; border: 1px solid black">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p>Code</p>
+            box-shadow:{{(hLength + 'px') + ' ' + (vLength+ 'px') + ' ' + (bRadius + 'px') + ' ' + (spread + 'px') + ' ' + ('#212121') }}
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-xs-12 ">
+            <h3>Text Shadow </h3>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li class="list-inline">
+                    <label for="thLength">Horizontal Length</label>
+                    <input class="form-control" type="number" ng-model="thLength" style="width:80px" id="thLength"> px
+                </li>
+                <li class="list-inline">
+                    <label for="tvLength">Vertical Length</label>
+                    <input class="form-control input-sm" type="number" ng-model="tvLength" id="tvLength" style="width:80px">px
+                </li>
+                <li class="list-inline">
+                    <label for="tbRadius">Blur Radius</label>
+                    <input class="form-control input-sm" type="number" ng-model="tbRadius" id="tbRadius" style="width:80px">px
+                </li>                
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <p ng-style="{ 'text-shadow': (thLength + 'px') + ' ' +  (tvLength+ 'px') + ' ' + (tbRadius + 'px') + ' ' +  ('#212121') }">Hello World
+            </p>
+        </div>
+        <div class="col-md-12">
+            <p>Code</p>
+            text-shadow:{{(thLength + 'px') + ' ' +  (tvLength+ 'px') + ' ' + (tbRadius + 'px') + ' ' +  ('#212121')}}
+        </div>
+    </div>
+</div>
+</div>

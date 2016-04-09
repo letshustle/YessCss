@@ -1,0 +1,18 @@
+h1 {
+    color: #000000;
+}
+
+p {
+    color: #000;
+}
+
+.top-buffer {
+    margin-top: 30px;
+}
+
+.navbar-default {
+    background-color: white !important;
+    border-color: #e4e4e4;
+}
+
+
