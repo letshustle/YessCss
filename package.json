@@ -1,31 +1,27 @@
 {
-  "name": "magikcss",
+  "name": "yesscss",
   "version": "1.0.0",
-  "description": "css helper",
-  "main": "gulpfile.js",
+  "description": "Interactive css code generator ",
+  "main": "server.js",
   "dependencies": {
-    "angular": "^1.5.3",
-    "bower": "^1.7.7",
-    "gulp": "^3.9.1",
-    "angular-route": "^1.5.3",
-    "angular-animate": "^1.5.3",
-    "browserify": "^5.13.1",
-    "gulp-browserify": "^0.5.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-clean": "^0.3.2",
-    "gulp-connect": "^2.3.1",
-    "gulp-jshint": "^1.12.0",
-    "gulp-uglify": "^0.3.2",
-    "run-sequence": "^1.1.5",
-    "gulp-minify-css": "^0.3.13"
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "node server.js"
   },
-  "author": [
-		"team magikcss",
-
-	],
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshanraj/magik-css.git"
+  },
+  "author": "team Letshustle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roshanraj/magik-css/issues"
+  },
+  "homepage": "https://github.com/roshanraj/magik-css#readme"
 }
