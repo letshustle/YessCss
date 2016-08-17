@@ -3,8 +3,10 @@
 ## Quick Start
 
 1. Clone the repo
-1. Install the global requirements: `npm install -g gulp bower browserify`
-1. Install the local requirements: `npm install`
-1. Install the Bower components: `bower install`
-1. Run locally: `gulp`
-1. Create a build: `gulp build`
+2. Install dependencies for server. `npm install`
+3. dir public holds app. 
+4. In public dir npm install
+5. build by 'npm run dev' for windows and 'npm run dev_unix' for linux or unix
+6. start server.
+
+*** In deployment we skip step 5
