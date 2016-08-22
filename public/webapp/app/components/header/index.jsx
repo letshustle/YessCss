@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router';
 import ClassNames from 'classnames';
-import ServerLink from '../serverLink'
+import ServerLink from '../serverLink';
 import Nav from './nav';
+
 
 const Header = React.createClass({
     mixins: [],
@@ -17,7 +18,7 @@ const Header = React.createClass({
     render() {
         return (
             <nav id="site-nav-wrap" className="navbar navbar-default navbar-static-top">
-                <div className="container">
+                <div className="col-lg-12">
                     <div className="navbar-header">
                         <button onClick={this.toggleMenu} type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav">
                             <span className="icon-bar"></span>
@@ -25,8 +26,7 @@ const Header = React.createClass({
                             <span className="icon-bar"></span>
                         </button>
                         <Link to="/" target="_self" className="navbar-brand" activeClassName=''>
-                            yesscssc
-                            {/*<img className="logo" src="./images/react-starter.png" />*/}
+                            <img className="logo" src="./images/Logo.png" />
                         </Link>
                     </div>
                     <div className="collapse navbar-collapse" id="site-nav">
