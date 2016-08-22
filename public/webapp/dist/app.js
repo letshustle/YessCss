@@ -54,26 +54,26 @@ webpackJsonpexports([0],{
 	// way we can call into scoped objects
 	exports['default'] = {
 	    jQuery: _jquery2['default'],
-	    moment: __webpack_require__(306),
+	    moment: __webpack_require__(307),
 	    React: __webpack_require__(91),
-	    ReactDOM: __webpack_require__(308),
+	    ReactDOM: __webpack_require__(309),
 	    Router: __webpack_require__(89),
 
 	    Registry: {
-	        api: __webpack_require__(309),
-	        routes: __webpack_require__(310),
+	        api: __webpack_require__(310),
+	        routes: __webpack_require__(311),
 	        history: _reactRouter.browserHistory,
 	        mixins: {
-	            ApiMixin: __webpack_require__(312)
+	            ApiMixin: __webpack_require__(313)
 	        },
-	        ConfigStore: __webpack_require__(317)
+	        ConfigStore: __webpack_require__(318)
 	    }
 	};
 	module.exports = exports['default'];
 
 /***/ },
 
-/***/ 308:
+/***/ 309:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -83,7 +83,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 309:
+/***/ 310:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -271,7 +271,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 310:
+/***/ 311:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -288,31 +288,31 @@ webpackJsonpexports([0],{
 
 	var _reactRouter = __webpack_require__(89);
 
-	var _viewsApp = __webpack_require__(311);
+	var _viewsApp = __webpack_require__(312);
 
 	var _viewsApp2 = _interopRequireDefault(_viewsApp);
 
-	var _viewsHome = __webpack_require__(340);
+	var _viewsHome = __webpack_require__(341);
 
 	var _viewsHome2 = _interopRequireDefault(_viewsHome);
 
-	var _viewsPeople = __webpack_require__(341);
+	var _viewsPeople = __webpack_require__(342);
 
 	var _viewsPeople2 = _interopRequireDefault(_viewsPeople);
 
-	var _viewsRegister = __webpack_require__(380);
+	var _viewsRegister = __webpack_require__(345);
 
 	var _viewsRegister2 = _interopRequireDefault(_viewsRegister);
 
-	var _viewsLogin = __webpack_require__(383);
+	var _viewsLogin = __webpack_require__(348);
 
 	var _viewsLogin2 = _interopRequireDefault(_viewsLogin);
 
-	var _viewsRouteNotFound = __webpack_require__(384);
+	var _viewsRouteNotFound = __webpack_require__(349);
 
 	var _viewsRouteNotFound2 = _interopRequireDefault(_viewsRouteNotFound);
 
-	var _utilsErrorHandler = __webpack_require__(389);
+	var _utilsErrorHandler = __webpack_require__(354);
 
 	var _utilsErrorHandler2 = _interopRequireDefault(_utilsErrorHandler);
 
@@ -342,7 +342,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 311:
+/***/ 312:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -357,11 +357,11 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinsApiMixin = __webpack_require__(312);
+	var _mixinsApiMixin = __webpack_require__(313);
 
 	var _mixinsApiMixin2 = _interopRequireDefault(_mixinsApiMixin);
 
-	var _componentsHeader = __webpack_require__(313);
+	var _componentsHeader = __webpack_require__(314);
 
 	var _componentsHeader2 = _interopRequireDefault(_componentsHeader);
 
@@ -422,7 +422,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 312:
+/***/ 313:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -431,7 +431,7 @@ webpackJsonpexports([0],{
 	  value: true
 	});
 
-	var _api = __webpack_require__(309);
+	var _api = __webpack_require__(310);
 
 	var ApiMixin = {
 	  componentWillMount: function componentWillMount() {
@@ -448,7 +448,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 313:
+/***/ 314:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -465,15 +465,15 @@ webpackJsonpexports([0],{
 
 	var _reactRouter = __webpack_require__(89);
 
-	var _classnames = __webpack_require__(314);
+	var _classnames = __webpack_require__(315);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _serverLink = __webpack_require__(315);
+	var _serverLink = __webpack_require__(316);
 
 	var _serverLink2 = _interopRequireDefault(_serverLink);
 
-	var _nav = __webpack_require__(316);
+	var _nav = __webpack_require__(317);
 
 	var _nav2 = _interopRequireDefault(_nav);
 
@@ -495,7 +495,7 @@ webpackJsonpexports([0],{
 	            { id: 'site-nav-wrap', className: 'navbar navbar-default navbar-static-top' },
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'container' },
+	                { className: 'col-lg-12' },
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'navbar-header' },
@@ -509,7 +509,7 @@ webpackJsonpexports([0],{
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
 	                        { to: '/', target: '_self', className: 'navbar-brand', activeClassName: '' },
-	                        'yesscssc'
+	                        _react2['default'].createElement('img', { className: 'logo', src: './images/Logo.png' })
 	                    )
 	                ),
 	                _react2['default'].createElement(
@@ -524,11 +524,10 @@ webpackJsonpexports([0],{
 
 	exports['default'] = Header;
 	module.exports = exports['default'];
-	/*<img className="logo" src="./images/react-starter.png" />*/
 
 /***/ },
 
-/***/ 315:
+/***/ 316:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -621,7 +620,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 316:
+/***/ 317:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -636,7 +635,7 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(308);
+	var _reactDom = __webpack_require__(309);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -646,17 +645,21 @@ webpackJsonpexports([0],{
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _classnames = __webpack_require__(314);
+	var _classnames = __webpack_require__(315);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _storesConfigStore = __webpack_require__(317);
+	var _storesConfigStore = __webpack_require__(318);
 
 	var _storesConfigStore2 = _interopRequireDefault(_storesConfigStore);
 
-	var _serverLink = __webpack_require__(315);
+	var _serverLink = __webpack_require__(316);
 
 	var _serverLink2 = _interopRequireDefault(_serverLink);
+
+	var _reactFontawesome = __webpack_require__(571);
+
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 
 	var Nav = _react2['default'].createClass({
 	    displayName: 'Nav',
@@ -687,29 +690,47 @@ webpackJsonpexports([0],{
 	            { className: 'nav navbar-nav navbar-right', ref: 'mainNav' },
 	            _react2['default'].createElement(
 	                'li',
-	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/home', true) }) },
+	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/boxgenerator', true) }) },
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
 	                    { onClick: this.toggleMenu, to: '/home' },
-	                    'Home'
+	                    'Box Generator'
 	                )
 	            ),
 	            _react2['default'].createElement(
 	                'li',
-	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/people', true) }) },
+	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/textgenerator', true) }) },
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
-	                    { onClick: this.toggleMenu, to: '/people' },
-	                    'People'
+	                    { onClick: this.toggleMenu, to: '/textgenerator' },
+	                    'Text Generator'
 	                )
 	            ),
 	            _react2['default'].createElement(
 	                'li',
-	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/unmapped-route', true) }) },
+	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/buttongenrator', true) }) },
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { onClick: this.toggleMenu, to: '/buttongenrator' },
+	                    'Button Generator'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'li',
+	                { className: (0, _classnames2['default'])({ "active": this.context.router.isActive('/anchortaggenerator', true) }) },
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { onClick: this.toggleMenu, to: '/anchortaggenerator' },
+	                    'Anchor Generator'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'li',
+	                { className: '' },
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
 	                    { onClick: this.toggleMenu, to: '/unmapped-route' },
-	                    '404'
+	                    _react2['default'].createElement(_reactFontawesome2['default'], { size: '2x', name: 'github' })
 	                )
 	            )
 	        );
@@ -721,7 +742,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 317:
+/***/ 318:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -732,11 +753,11 @@ webpackJsonpexports([0],{
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _momentTimezone = __webpack_require__(318);
+	var _momentTimezone = __webpack_require__(319);
 
 	var _momentTimezone2 = _interopRequireDefault(_momentTimezone);
 
-	var _reflux = __webpack_require__(321);
+	var _reflux = __webpack_require__(322);
 
 	var _reflux2 = _interopRequireDefault(_reflux);
 
@@ -777,7 +798,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 340:
+/***/ 341:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -840,7 +861,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 341:
+/***/ 342:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
@@ -855,11 +876,11 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsLoadingIndicator = __webpack_require__(342);
+	var _componentsLoadingIndicator = __webpack_require__(343);
 
 	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
 
-	var _componentsLoadingError = __webpack_require__(343);
+	var _componentsLoadingError = __webpack_require__(344);
 
 	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
 
@@ -1027,7 +1048,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 342:
+/***/ 343:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1042,7 +1063,7 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(314);
+	var _classnames = __webpack_require__(315);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1086,7 +1107,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 343:
+/***/ 344:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1143,7 +1164,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 380:
+/***/ 345:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1160,11 +1181,11 @@ webpackJsonpexports([0],{
 
 	var _reactRouter = __webpack_require__(89);
 
-	var _servicesAuth = __webpack_require__(381);
+	var _servicesAuth = __webpack_require__(346);
 
 	var _servicesAuth2 = _interopRequireDefault(_servicesAuth);
 
-	var _servicesApi = __webpack_require__(382);
+	var _servicesApi = __webpack_require__(347);
 
 	var _servicesApi2 = _interopRequireDefault(_servicesApi);
 
@@ -1384,34 +1405,34 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 381:
+/***/ 346:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	      value: true
 	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _servicesApi = __webpack_require__(382);
+	var _servicesApi = __webpack_require__(347);
 
 	var _servicesApi2 = _interopRequireDefault(_servicesApi);
 
 	var Auth = {
-	  getUser: function getUser(data) {
-	    _servicesApi2['default'].get('user');
-	  },
-	  register: function register(data) {
-	    _servicesApi2['default'].post('api/users', {
-	      data: data
-	    });
-	  },
-	  login: function login() {},
-	  logout: function logout() {},
-	  storeToken: function storeToken() {},
-	  postLoginOps: function postLoginOps() {}
+	      getUser: function getUser(data) {
+	            _servicesApi2['default'].get('user');
+	      },
+	      register: function register(data) {
+	            _servicesApi2['default'].post('api/users', {
+	                  data: data
+	            });
+	      },
+	      login: function login() {},
+	      logout: function logout() {},
+	      storeToken: function storeToken() {},
+	      postLoginOps: function postLoginOps() {}
 	};
 
 	exports['default'] = Auth;
@@ -1419,7 +1440,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 382:
+/***/ 347:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
@@ -1463,7 +1484,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 383:
+/***/ 348:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1565,7 +1586,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 384:
+/***/ 349:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1580,7 +1601,7 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDocumentTitle = __webpack_require__(385);
+	var _reactDocumentTitle = __webpack_require__(350);
 
 	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
 
@@ -1668,7 +1689,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 389:
+/***/ 354:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1684,7 +1705,7 @@ webpackJsonpexports([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _viewsRouteError = __webpack_require__(390);
+	var _viewsRouteError = __webpack_require__(355);
 
 	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
 
@@ -1707,7 +1728,7 @@ webpackJsonpexports([0],{
 
 /***/ },
 
-/***/ 390:
+/***/ 355:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
