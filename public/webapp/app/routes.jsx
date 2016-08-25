@@ -2,13 +2,10 @@ import React from 'react';
 import {Redirect, Route, IndexRoute, IndexRedirect} from 'react-router';
 
 import App from './views/app';
-import HomeView from './views/home';
+
+import BoxGeneratorView from './views/BoxGenerator';
 import PeopleView from './views/people';
 
-
-
-import RegisterView from './views/register';
-import LoginView from './views/login';
 
 
 
@@ -29,8 +26,8 @@ function appendTrailingSlash(nextState, replace) {
 
 let routes = (
     <Route path="/" component={errorHandler(App)}>
-        <IndexRoute component={errorHandler(RegisterView)}/>
-        <Route path="/home" component={errorHandler(HomeView)}/>
+        <IndexRoute component={errorHandler(BoxGeneratorView)}/>
+        <Route path="/boxgenerator" component={errorHandler(BoxGeneratorView)}/>
         <Route path="/people" component={errorHandler(PeopleView)}/>
         <Route path="*" component={errorHandler(RouteNotFound)} onEnter={appendTrailingSlash}/>
     </Route>

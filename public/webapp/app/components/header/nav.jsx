@@ -33,7 +33,7 @@ const Nav = React.createClass({
             <ul className="nav navbar-nav navbar-right" ref="mainNav">
 
                 <li className={Classnames({"active": this.context.router.isActive('/boxgenerator', true)})}>
-                    <Link onClick={this.toggleMenu} to="/home">Box Generator</Link>
+                    <Link onClick={this.toggleMenu} to="/boxgenerator">Box Generator</Link>
                 </li>
 
                 <li className={Classnames({"active": this.context.router.isActive('/textgenerator', true)})}>
