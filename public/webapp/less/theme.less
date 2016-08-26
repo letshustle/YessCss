@@ -111,10 +111,53 @@ body {
     position: relative;
 }
 
+.Grid {
+  display: flex;
+  align-items: center;
+  position:absolute;
+  flex-direction: column;
+  height: 100%;
+  &-item {
+      width: 100%;
+      padding:1em 0;
+      border-bottom:1px solid #cccccc;
+      font-size: 20px;
+      text-align: center;
+
+      &-light{
+          background: #FFF;
+      }
+      &-dark{
+          background: #f7f7f7;
+      }
+  }
+  &-item--top {
+    border-top:1px solid #cccccc;
+  }
+  &-item--bottom {
+    border-bottom:1px solid #cccccc;
+  }
+}
+.text-box{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #94a0b3;
+    border-radius: 7px;
+    padding: 8px;
+    box-shadow: 0 0px 2px #aaa;
+    margin-bottom: 10px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
 
 
 
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
 .placeholder {
   .vcenter;
