@@ -17,15 +17,9 @@ app.get('/', function (req, res) {
      res.sendfile('./webapp/index.html');
 });
 
-
-app.get('/service/get', function (req, res) {
-     res.send("get request");
+app.get('*', function(req, res) {
+     res.sendfile('./webapp/index.html');
 });
-
-app.post('/service/post', function (req, res) {
-     res.send("post request");
-});
-
 
 // error handling
 app.use(function(err, req, res, next){
