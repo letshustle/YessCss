@@ -4,9 +4,9 @@ import {Redirect, Route, IndexRoute, IndexRedirect} from 'react-router';
 import App from './views/app';
 
 import BoxGeneratorView from './views/BoxGenerator';
+import TextGeneratorView from './views/textGenerator';
+import AnchorGeneratorView from './views/anchorGenerator';
 import PeopleView from './views/people';
-
-
 
 
 import RouteNotFound from './views/routeNotFound';
@@ -28,6 +28,8 @@ let routes = (
     <Route path="/" component={errorHandler(App)}>
         <IndexRoute component={errorHandler(BoxGeneratorView)}/>
         <Route path="/boxgenerator" component={errorHandler(BoxGeneratorView)}/>
+        <Route path="/textgenerator" component={errorHandler(TextGeneratorView)}/>
+        <Route path="/anchortaggenerator" component={errorHandler(AnchorGeneratorView)}/>
         <Route path="/people" component={errorHandler(PeopleView)}/>
         <Route path="*" component={errorHandler(RouteNotFound)} onEnter={appendTrailingSlash}/>
     </Route>
