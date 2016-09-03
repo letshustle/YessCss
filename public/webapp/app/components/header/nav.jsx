@@ -49,7 +49,7 @@ const Nav = React.createClass({
                 </li>
 
                 <li className="">
-                    <Link onClick={this.toggleMenu} to="/unmapped-route"><FontAwesome size='2x' name='github' /></Link>
+                    <a target="_blank" href="https://github.com/letshustle/YessCss"><FontAwesome size='2x' name='github' /></a>                    
                 </li>
             </ul>
         );
