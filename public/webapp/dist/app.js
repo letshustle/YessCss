@@ -54,7 +54,7 @@ webpackJsonpexports([0],[
 	exports['default'] = {
 	    jQuery: _jquery2['default'],
 	    moment: __webpack_require__(307),
-	    React: __webpack_require__(1256),
+	    React: __webpack_require__(2292),
 	    ReactDOM: __webpack_require__(309),
 	    Router: __webpack_require__(89),
 
@@ -384,7 +384,7 @@ webpackJsonpexports([0],[
 
 	'use strict';
 
-	module.exports = __webpack_require__(1258);
+	module.exports = __webpack_require__(2294);
 
 
 /***/ },
@@ -586,7 +586,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -600,19 +600,23 @@ webpackJsonpexports([0],[
 
 	var _viewsBoxGenerator2 = _interopRequireDefault(_viewsBoxGenerator);
 
-	var _viewsTextGenerator = __webpack_require__(1140);
+	var _viewsTextGenerator = __webpack_require__(685);
 
 	var _viewsTextGenerator2 = _interopRequireDefault(_viewsTextGenerator);
 
-	var _viewsPeople = __webpack_require__(685);
+	var _viewsAnchorGenerator = __webpack_require__(686);
+
+	var _viewsAnchorGenerator2 = _interopRequireDefault(_viewsAnchorGenerator);
+
+	var _viewsPeople = __webpack_require__(687);
 
 	var _viewsPeople2 = _interopRequireDefault(_viewsPeople);
 
-	var _viewsRouteNotFound = __webpack_require__(688);
+	var _viewsRouteNotFound = __webpack_require__(690);
 
 	var _viewsRouteNotFound2 = _interopRequireDefault(_viewsRouteNotFound);
 
-	var _utilsErrorHandler = __webpack_require__(693);
+	var _utilsErrorHandler = __webpack_require__(695);
 
 	var _utilsErrorHandler2 = _interopRequireDefault(_utilsErrorHandler);
 
@@ -634,6 +638,7 @@ webpackJsonpexports([0],[
 	    _react2['default'].createElement(_reactRouter.IndexRoute, { component: (0, _utilsErrorHandler2['default'])(_viewsBoxGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/boxgenerator', component: (0, _utilsErrorHandler2['default'])(_viewsBoxGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/textgenerator', component: (0, _utilsErrorHandler2['default'])(_viewsTextGenerator2['default']) }),
+	    _react2['default'].createElement(_reactRouter.Route, { path: '/anchortaggenerator', component: (0, _utilsErrorHandler2['default'])(_viewsAnchorGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/people', component: (0, _utilsErrorHandler2['default'])(_viewsPeople2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '*', component: (0, _utilsErrorHandler2['default'])(_viewsRouteNotFound2['default']), onEnter: appendTrailingSlash })
 	);
@@ -653,7 +658,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -757,7 +762,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -838,7 +843,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -928,7 +933,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1127,7 +1132,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -2142,161 +2147,161 @@ webpackJsonpexports([0],[
 
 /***/ },
 /* 356 */
-[1371, 357],
+[2407, 357],
 /* 357 */
-[1372, 358, 501, 505, 393, 510],
+[2408, 358, 501, 505, 393, 510],
 /* 358 */
-[1373, 359, 360, 424, 398, 382, 372, 403, 407, 499, 444, 500, 379, 363],
+[2409, 359, 360, 424, 398, 382, 372, 403, 407, 499, 444, 500, 379, 363],
 /* 359 */
 94,
 /* 360 */
-[1374, 361, 376, 380, 382, 393, 375, 374, 423],
+[2410, 361, 376, 380, 382, 393, 375, 374, 423],
 /* 361 */
-[1375, 362, 370, 372, 373, 374, 367],
+[2411, 362, 370, 372, 373, 374, 367],
 /* 362 */
-[1376, 363, 364, 369, 368, 367],
+[2412, 363, 364, 369, 368, 367],
 /* 363 */
 98,
 /* 364 */
-[1377, 363, 365, 368, 367],
+[2413, 363, 365, 368, 367],
 /* 365 */
-[1378, 366],
+[2414, 366],
 /* 366 */
-[1379, 367],
+[2415, 367],
 /* 367 */
 102,
 /* 368 */
-[1380, 363, 367],
+[2416, 363, 367],
 /* 369 */
 104,
 /* 370 */
-[1381, 371],
+[2417, 371],
 /* 371 */
-[1382, 367],
+[2418, 367],
 /* 372 */
 107,
 /* 373 */
-[1383, 363],
+[2419, 363],
 /* 374 */
-[1384, 363, 375, 373],
+[2420, 363, 375, 373],
 /* 375 */
 110,
 /* 376 */
-[1385, 377, 372, 378, 379],
+[2421, 377, 372, 378, 379],
 /* 377 */
-[1386, 367],
+[2422, 367],
 /* 378 */
-[1387, 375],
+[2423, 375],
 /* 379 */
-[1388, 369],
+[2424, 369],
 /* 380 */
-[1389, 381, 382],
+[2425, 381, 382],
 /* 381 */
-[1390, 361, 376, 382, 372, 367],
+[2426, 361, 376, 382, 372, 367],
 /* 382 */
-[1391, 377, 383, 359, 395, 396, 397, 398, 400, 401, 372, 403, 406, 407, 393, 411, 412, 415, 367, 373, 420, 423, 379],
+[2427, 377, 383, 359, 395, 396, 397, 398, 400, 401, 372, 403, 406, 407, 393, 411, 412, 415, 367, 373, 420, 423, 379],
 /* 383 */
-[1392, 384, 385, 386, 391, 372, 392, 393, 394],
+[2428, 384, 385, 386, 391, 372, 392, 393, 394],
 /* 384 */
-[1393, 371],
+[2429, 371],
 /* 385 */
-[1394, 386, 387, 388, 389, 390, 367, 379],
+[2430, 386, 387, 388, 389, 390, 367, 379],
 /* 386 */
-[1395, 367],
+[2431, 367],
 /* 387 */
-[1396, 384, 388, 367, 379],
+[2432, 384, 388, 367, 379],
 /* 388 */
 123,
 /* 389 */
-[1397, 367],
+[2433, 367],
 /* 390 */
 125,
 /* 391 */
-[1398, 385],
+[2434, 385],
 /* 392 */
 127,
 /* 393 */
 128,
 /* 394 */
-[1399, 363],
+[2435, 363],
 /* 395 */
 130,
 /* 396 */
-[1400, 359, 393],
+[2436, 359, 393],
 /* 397 */
 132,
 /* 398 */
-[1401, 399, 367],
+[2437, 399, 367],
 /* 399 */
 134,
 /* 400 */
 135,
 /* 401 */
-[1402, 402],
+[2438, 402],
 /* 402 */
 137,
 /* 403 */
-[1403, 404],
+[2439, 404],
 /* 404 */
-[1404, 405],
+[2440, 405],
 /* 405 */
-[1405, 367],
+[2441, 367],
 /* 406 */
-[1406, 359, 396, 400, 407, 393, 367, 379],
+[2442, 359, 396, 400, 407, 393, 367, 379],
 /* 407 */
-[1407, 408, 409, 372, 403, 410, 393, 367],
+[2443, 408, 409, 372, 403, 410, 393, 367],
 /* 408 */
-[1408, 409, 393, 367],
+[2444, 409, 393, 367],
 /* 409 */
-[1409, 367],
+[2445, 367],
 /* 410 */
-[1410, 367],
+[2446, 367],
 /* 411 */
 146,
 /* 412 */
-[1411, 413],
+[2447, 413],
 /* 413 */
-[1412, 414],
+[2448, 414],
 /* 414 */
 149,
 /* 415 */
-[1413, 416, 421, 422, 393, 367, 379],
+[2449, 416, 421, 422, 393, 367, 379],
 /* 416 */
-[1414, 417, 359, 396, 400, 372, 418, 419, 403, 406, 393, 411, 367, 420, 379],
+[2450, 417, 359, 396, 400, 372, 418, 419, 403, 406, 393, 411, 367, 420, 379],
 /* 417 */
-[1415, 367],
+[2451, 367],
 /* 418 */
-[1416, 371],
+[2452, 371],
 /* 419 */
 154,
 /* 420 */
 155,
 /* 421 */
-[1417, 396, 397, 403, 393],
+[2453, 396, 397, 403, 393],
 /* 422 */
-[1418, 393, 367],
+[2454, 393, 367],
 /* 423 */
-[1419, 393, 369, 379],
+[2455, 393, 369, 379],
 /* 424 */
-[1420, 425, 433, 436, 437, 438, 363, 442, 443, 380, 445, 446, 360, 471, 474, 398, 382, 478, 483, 484, 485, 494, 495],
+[2456, 425, 433, 436, 437, 438, 363, 442, 443, 380, 445, 446, 360, 471, 474, 398, 382, 478, 483, 484, 485, 494, 495],
 /* 425 */
-[1421, 384, 426, 363, 427, 429, 431, 432],
+[2457, 384, 426, 363, 427, 429, 431, 432],
 /* 426 */
-[1422, 384, 385, 379, 389, 390],
+[2458, 384, 385, 379, 389, 390],
 /* 427 */
-[1423, 409, 393, 428],
+[2459, 409, 393, 428],
 /* 428 */
-[1424, 363],
+[2460, 363],
 /* 429 */
-[1425, 430],
+[2461, 430],
 /* 430 */
-[1426, 409, 393, 369, 379],
+[2462, 409, 393, 369, 379],
 /* 431 */
-[1427, 430],
+[2463, 430],
 /* 432 */
 167,
 /* 433 */
-[1428, 384, 385, 426, 363, 407, 430, 434, 394, 435, 432],
+[2464, 384, 385, 426, 363, 407, 430, 434, 394, 435, 432],
 /* 434 */
 169,
 /* 435 */
@@ -2304,41 +2309,41 @@ webpackJsonpexports([0],[
 /* 436 */
 171,
 /* 437 */
-[1429, 432],
+[2465, 432],
 /* 438 */
-[1430, 384, 426, 439, 382, 432],
+[2466, 384, 426, 439, 382, 432],
 /* 439 */
-[1431, 440, 392, 441],
+[2467, 440, 392, 441],
 /* 440 */
-[1432, 430, 434],
+[2468, 430, 434],
 /* 441 */
 176,
 /* 442 */
-[1433, 377, 363],
+[2469, 377, 363],
 /* 443 */
-[1434, 400, 444, 379],
+[2470, 400, 444, 379],
 /* 444 */
-[1435, 359, 400, 382, 367, 379],
+[2471, 359, 400, 382, 367, 379],
 /* 445 */
-[1436, 407, 410, 393, 369],
+[2472, 407, 410, 393, 369],
 /* 446 */
-[1437, 447, 449, 377, 376, 384, 383, 380, 457, 458, 462, 465, 466, 382, 467, 372, 406, 393, 375, 367, 394, 432, 373, 374, 470, 423, 379],
+[2473, 447, 449, 377, 376, 384, 383, 380, 457, 458, 462, 465, 466, 382, 467, 372, 406, 393, 375, 367, 394, 432, 373, 374, 470, 423, 379],
 /* 447 */
-[1438, 382, 444, 448],
+[2474, 382, 444, 448],
 /* 448 */
 183,
 /* 449 */
-[1439, 450, 363, 372, 451, 453, 454, 456, 379],
+[2475, 450, 363, 372, 451, 453, 454, 456, 379],
 /* 450 */
 185,
 /* 451 */
-[1440, 452],
+[2476, 452],
 /* 452 */
 187,
 /* 453 */
-[1441, 450],
+[2477, 450],
 /* 454 */
-[1442, 455],
+[2478, 455],
 /* 455 */
 190,
 /* 456 */
@@ -2346,111 +2351,111 @@ webpackJsonpexports([0],[
 /* 457 */
 192,
 /* 458 */
-[1443, 381, 459, 382, 407, 393, 367],
+[2479, 381, 459, 382, 407, 393, 367],
 /* 459 */
-[1444, 460, 418, 367, 379],
+[2480, 460, 418, 367, 379],
 /* 460 */
-[1445, 396, 419, 369, 461],
+[2481, 396, 419, 369, 461],
 /* 461 */
 196,
 /* 462 */
-[1446, 463, 465, 393, 379],
+[2482, 463, 465, 393, 379],
 /* 463 */
-[1447, 409, 396, 369, 464],
+[2483, 409, 396, 369, 464],
 /* 464 */
-[1448, 359, 396, 398, 461, 367, 379],
+[2484, 359, 396, 398, 461, 367, 379],
 /* 465 */
-[1449, 459, 382, 407, 393, 379],
+[2485, 459, 382, 407, 393, 379],
 /* 466 */
-[1450, 459, 381, 407, 393, 367, 379],
+[2486, 459, 381, 407, 393, 367, 379],
 /* 467 */
-[1451, 417, 370, 359, 403, 468, 469],
+[2487, 417, 370, 359, 403, 468, 469],
 /* 468 */
-[1452, 403, 415, 420, 464, 379],
+[2488, 403, 415, 420, 464, 379],
 /* 469 */
-[1453, 464, 379],
+[2489, 464, 379],
 /* 470 */
 205,
 /* 471 */
-[1454, 472, 363, 409, 398, 382, 407, 393, 434, 473],
+[2490, 472, 363, 409, 398, 382, 407, 393, 434, 473],
 /* 472 */
-[1455, 369],
+[2491, 369],
 /* 473 */
 208,
 /* 474 */
-[1456, 377, 385, 417, 475, 421, 383, 422, 372, 399, 407],
+[2492, 377, 385, 417, 475, 421, 383, 422, 372, 399, 407],
 /* 475 */
-[1457, 476, 396, 418, 419, 477, 393, 411, 367, 371, 432, 379],
+[2493, 476, 396, 418, 419, 477, 393, 411, 367, 371, 432, 379],
 /* 476 */
-[1458, 477, 411, 367, 379],
+[2494, 477, 411, 367, 379],
 /* 477 */
-[1459, 379],
+[2495, 379],
 /* 478 */
-[1460, 408, 409, 383, 395, 479, 410, 393],
+[2496, 408, 409, 383, 395, 479, 410, 393],
 /* 479 */
-[1461, 480, 412, 448, 482],
+[2497, 480, 412, 448, 482],
 /* 480 */
-[1462, 363, 481, 428],
+[2498, 363, 481, 428],
 /* 481 */
 216,
 /* 482 */
 217,
 /* 483 */
-[1463, 384, 426, 363, 479, 430, 482, 435, 432, 470],
+[2499, 384, 426, 363, 479, 430, 482, 435, 432, 470],
 /* 484 */
 219,
 /* 485 */
-[1464, 384, 472, 426, 382, 486, 430, 487, 488, 439, 491, 492, 440, 493, 369, 489, 367, 432],
+[2500, 384, 472, 426, 382, 486, 430, 487, 488, 439, 491, 492, 440, 493, 369, 489, 367, 432],
 /* 486 */
-[1465, 430],
+[2501, 430],
 /* 487 */
-[1466, 440],
+[2502, 440],
 /* 488 */
-[1467, 440, 489, 490, 441],
+[2503, 440, 489, 490, 441],
 /* 489 */
 224,
 /* 490 */
-[1468, 489],
+[2504, 489],
 /* 491 */
-[1469, 439],
+[2505, 439],
 /* 492 */
-[1470, 440, 441],
+[2506, 440, 441],
 /* 493 */
-[1471, 439],
+[2507, 439],
 /* 494 */
-[1472, 377],
+[2508, 377],
 /* 495 */
-[1473, 377, 496, 382, 372, 497],
+[2509, 377, 496, 382, 372, 497],
 /* 496 */
-[1474, 393],
+[2510, 393],
 /* 497 */
-[1475, 498],
+[2511, 498],
 /* 498 */
-[1476, 363],
+[2512, 363],
 /* 499 */
 234,
 /* 500 */
-[1477, 382],
+[2513, 382],
 /* 501 */
-[1478, 424, 502, 499],
+[2514, 424, 502, 499],
 /* 502 */
-[1479, 445, 396, 398, 401, 503, 504, 407, 411, 415, 367],
+[2515, 445, 396, 398, 401, 503, 504, 407, 411, 415, 367],
 /* 503 */
 238,
 /* 504 */
-[1480, 409, 408, 410, 393, 369],
+[2516, 409, 408, 410, 393, 369],
 /* 505 */
-[1481, 463, 476, 475, 506, 396, 507, 460, 499, 393, 509],
+[2517, 463, 476, 475, 506, 396, 507, 460, 499, 393, 509],
 /* 506 */
-[1482, 396, 507, 508],
+[2518, 396, 507, 508],
 /* 507 */
-[1483, 396, 418, 419, 359, 461, 367, 379],
+[2519, 396, 418, 419, 359, 461, 367, 379],
 /* 508 */
 243,
 /* 509 */
-[1484, 396, 367],
+[2520, 396, 367],
 /* 510 */
-[1485, 393, 379],
+[2521, 393, 379],
 /* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -12965,192 +12970,6 @@ webpackJsonpexports([0],[
 /* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _componentsLoadingIndicator = __webpack_require__(686);
-
-	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
-
-	var _componentsLoadingError = __webpack_require__(687);
-
-	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
-
-	var PeopleView = _react2['default'].createClass({
-	    displayName: 'PeopleView',
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            people: null,
-	            loading: false,
-	            error: false
-	        };
-	    },
-
-	    /**
-	     * When component is about to mount, call ajax for data
-	     */
-	    componentWillMount: function componentWillMount() {
-	        this.fetchData();
-	    },
-
-	    /**
-	     * Get list of persons from some api through ajax call
-	     */
-	    fetchData: function fetchData() {
-	        if (this.state.loading) {
-	            // this is already called and is-in-progress.
-	            return;
-	        }
-	        this.setState({
-	            loading: true
-	        });
-
-	        var _this = this;
-
-	        jQuery.ajax({
-	            type: 'GET',
-	            url: "https://randomuser.me/api/?results=50",
-	            dataType: "json",
-	            cache: false,
-	            success: function success(data) {
-	                // When we have data, just set in component's state, render will automatically triggered
-	                console.log(data);
-	                _this.setState({
-	                    people: data.results,
-	                    loading: false,
-	                    error: false
-	                });
-	            },
-	            error: function error(xhr, responseText, data) {
-	                console.log('Error' + responseText);
-	                _this.setState({
-	                    people: null,
-	                    loading: false,
-	                    error: true
-	                });
-	            }
-	        });
-	    },
-
-	    /**
-	     * Calling refresh will trigger ajax call to fetch data
-	     */
-	    refresh: function refresh() {
-	        this.fetchData();
-	    },
-
-	    getPeopleFragment: function getPeopleFragment() {
-	        var fragmentElem = null;
-	        var _this = this;
-
-	        function toTitleCase(str) {
-	            // Util function
-	            return str.replace(/\w\S*/g, function (txt) {
-	                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-	            });
-	        }
-
-	        if (this.state.people == null) {
-	            fragmentElem = _react2['default'].createElement(
-	                'div',
-	                { className: 'col-sm-12' },
-	                _react2['default'].createElement(
-	                    'h4',
-	                    null,
-	                    'Sorry, could not find any people. Why dont you try after sometime?'
-	                ),
-	                _react2['default'].createElement(
-	                    'a',
-	                    { href: '#', onClick: this.refresh },
-	                    'Try again'
-	                )
-	            );
-	        } else {
-	            fragmentElem = _react2['default'].createElement(
-	                'div',
-	                { className: 'col-sm-12' },
-	                this.state.people.map(function (person, i) {
-	                    return _react2['default'].createElement(
-	                        'div',
-	                        { className: 'col-md-3 col-sm-4', key: i },
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'thumbnail' },
-	                            _react2['default'].createElement('img', { src: person.picture.large, style: { minHeight: "200px", width: "100%", display: "block" } }),
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'caption' },
-	                                _react2['default'].createElement(
-	                                    'h4',
-	                                    null,
-	                                    toTitleCase(person.name.first),
-	                                    ' ',
-	                                    toTitleCase(person.name.last)
-	                                ),
-	                                _react2['default'].createElement(
-	                                    'p',
-	                                    null,
-	                                    _react2['default'].createElement(
-	                                        'a',
-	                                        { href: '#', 'class': 'btn btn-default', role: 'button' },
-	                                        'Follow'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    );
-	                })
-	            );
-	        }
-	        return fragmentElem;
-	    },
-
-	    render: function render() {
-	        var elem = "";
-	        if (this.state.loading) {
-	            elem = _react2['default'].createElement(_componentsLoadingIndicator2['default'], null);
-	        } else if (this.state.error) {
-	            elem = _react2['default'].createElement(_componentsLoadingError2['default'], { onRetry: this.fetchData });
-	        } else {
-	            elem = this.getPeopleFragment();
-	        }
-
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2['default'].createElement(
-	                    'h3',
-	                    null,
-	                    'People'
-	                ),
-	                _react2['default'].createElement('br', null),
-	                elem
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = PeopleView;
-	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88)))
-
-/***/ },
-/* 686 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
@@ -13159,763 +12978,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(315);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	var LoadingIndicator = _react2['default'].createClass({
-	    displayName: 'LoadingIndicator',
-
-	    propTypes: {
-	        mini: _react2['default'].PropTypes.bool
-	    },
-
-	    getDefaultProps: function getDefaultProps() {
-	        return {
-	            mini: false
-	        };
-	    },
-
-	    shouldComponentUpdate: function shouldComponentUpdate() {
-	        return false;
-	    },
-
-	    render: function render() {
-	        var classes = {
-	            loading: true,
-	            mini: this.props.mini
-	        };
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: (0, _classnames2['default'])(this.props.className, classes) },
-	            _react2['default'].createElement('div', { className: 'loading-indicator' }),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'loading-message' },
-	                this.props.children
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = LoadingIndicator;
-	module.exports = exports['default'];
-
-/***/ },
-/* 687 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var LoadingError = _react2['default'].createClass({
-	  displayName: 'LoadingError',
-
-	  propTypes: {
-	    onRetry: _react2['default'].PropTypes.func,
-	    message: _react2['default'].PropTypes.string
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      message: 'There was an error loading data.'
-	    };
-	  },
-
-	  shouldComponentUpdate: function shouldComponentUpdate() {
-	    return false;
-	  },
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { className: 'alert alert-error alert-block' },
-	      _react2['default'].createElement(
-	        'p',
-	        null,
-	        this.props.message,
-	        this.props.onRetry && _react2['default'].createElement(
-	          'a',
-	          { onClick: this.props.onRetry, className: 'btn btn-default btn-sm',
-	            style: { marginLeft: 5 } },
-	          'Retry'
-	        )
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = LoadingError;
-	module.exports = exports['default'];
-
-/***/ },
-/* 688 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDocumentTitle = __webpack_require__(689);
-
-	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
-
-	var RouteNotFound = _react2['default'].createClass({
-	  displayName: 'RouteNotFound',
-
-	  getTitle: function getTitle() {
-	    return 'Page Not Found';
-	  },
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      _reactDocumentTitle2['default'],
-	      { title: this.getTitle() },
-	      _react2['default'].createElement(
-	        'div',
-	        { className: 'app' },
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'container' },
-	          _react2['default'].createElement(
-	            'div',
-	            { className: 'content' },
-	            _react2['default'].createElement(
-	              'section',
-	              { className: 'body' },
-	              _react2['default'].createElement(
-	                'div',
-	                { className: 'alert alert-block alert-error' },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { style: { fontSize: 24, marginBottom: 10 } },
-	                  _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
-	                  _react2['default'].createElement(
-	                    'span',
-	                    null,
-	                    'Page Not Found'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'The page you are looking for was not found.'
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'You may wish to try the following:'
-	                ),
-	                _react2['default'].createElement(
-	                  'ul',
-	                  null,
-	                  _react2['default'].createElement(
-	                    'li',
-	                    null,
-	                    'If you entered the address manually, double check the path. Did you forget a trailing slash?'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'li',
-	                    null,
-	                    'If you followed a link here, try hitting back and reloading the page. It\'s possible the resource was moved out from under you.'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'Not sure what to do? ',
-	                  _react2['default'].createElement(
-	                    'a',
-	                    { href: '/' },
-	                    'Return to HOME'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = RouteNotFound;
-	module.exports = exports['default'];
-
-/***/ },
-/* 689 */,
-/* 690 */,
-/* 691 */,
-/* 692 */,
-/* 693 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = errorHandler;
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _viewsRouteError = __webpack_require__(694);
-
-	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
-
-	function errorHandler(Component) {
-	  var originalRender = Component.prototype.render;
-
-	  Component.prototype.render = function tryRender() {
-	    try {
-	      return originalRender.apply(this, arguments);
-	    } catch (err) {
-	      console.error(err);
-	      return _react2['default'].createElement(_viewsRouteError2['default'], { error: err, component: this });
-	    }
-	  };
-
-	  return Component;
-	}
-
-	module.exports = exports['default'];
-
-/***/ },
-/* 694 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _jquery = __webpack_require__(88);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	var _react = __webpack_require__(1256);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var RouteError = _react2['default'].createClass({
-	  displayName: 'RouteError',
-
-	  componentWillMount: function componentWillMount() {},
-
-	  componentWillUnmount: function componentWillUnmount() {},
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { className: 'alert alert-block alert-error' },
-	      _react2['default'].createElement(
-	        'div',
-	        { style: { fontSize: 24, marginBottom: 10 } },
-	        _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
-	        _react2['default'].createElement(
-	          'span',
-	          null,
-	          'Oops! Something went wrong'
-	        )
-	      ),
-	      _react2['default'].createElement(
-	        'p',
-	        null,
-	        'It looks like you\'ve hit an issue in application. Don\'t worry though! We monitor and it\'s likely we\'re already looking into this!'
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = RouteError;
-	module.exports = exports['default'];
-
-/***/ },
-/* 695 */,
-/* 696 */,
-/* 697 */,
-/* 698 */,
-/* 699 */,
-/* 700 */,
-/* 701 */,
-/* 702 */,
-/* 703 */,
-/* 704 */,
-/* 705 */,
-/* 706 */,
-/* 707 */,
-/* 708 */,
-/* 709 */,
-/* 710 */,
-/* 711 */,
-/* 712 */,
-/* 713 */,
-/* 714 */,
-/* 715 */,
-/* 716 */,
-/* 717 */,
-/* 718 */,
-/* 719 */,
-/* 720 */,
-/* 721 */,
-/* 722 */,
-/* 723 */,
-/* 724 */,
-/* 725 */,
-/* 726 */,
-/* 727 */,
-/* 728 */,
-/* 729 */,
-/* 730 */,
-/* 731 */,
-/* 732 */,
-/* 733 */,
-/* 734 */,
-/* 735 */,
-/* 736 */,
-/* 737 */,
-/* 738 */,
-/* 739 */,
-/* 740 */,
-/* 741 */,
-/* 742 */,
-/* 743 */,
-/* 744 */,
-/* 745 */,
-/* 746 */,
-/* 747 */,
-/* 748 */,
-/* 749 */,
-/* 750 */,
-/* 751 */,
-/* 752 */,
-/* 753 */,
-/* 754 */,
-/* 755 */,
-/* 756 */,
-/* 757 */,
-/* 758 */,
-/* 759 */,
-/* 760 */,
-/* 761 */,
-/* 762 */,
-/* 763 */,
-/* 764 */,
-/* 765 */,
-/* 766 */,
-/* 767 */,
-/* 768 */,
-/* 769 */,
-/* 770 */,
-/* 771 */,
-/* 772 */,
-/* 773 */,
-/* 774 */,
-/* 775 */,
-/* 776 */,
-/* 777 */,
-/* 778 */,
-/* 779 */,
-/* 780 */,
-/* 781 */,
-/* 782 */,
-/* 783 */,
-/* 784 */,
-/* 785 */,
-/* 786 */,
-/* 787 */,
-/* 788 */,
-/* 789 */,
-/* 790 */,
-/* 791 */,
-/* 792 */,
-/* 793 */,
-/* 794 */,
-/* 795 */,
-/* 796 */,
-/* 797 */,
-/* 798 */,
-/* 799 */,
-/* 800 */,
-/* 801 */,
-/* 802 */,
-/* 803 */,
-/* 804 */,
-/* 805 */,
-/* 806 */,
-/* 807 */,
-/* 808 */,
-/* 809 */,
-/* 810 */,
-/* 811 */,
-/* 812 */,
-/* 813 */,
-/* 814 */,
-/* 815 */,
-/* 816 */,
-/* 817 */,
-/* 818 */,
-/* 819 */,
-/* 820 */,
-/* 821 */,
-/* 822 */,
-/* 823 */,
-/* 824 */,
-/* 825 */,
-/* 826 */,
-/* 827 */,
-/* 828 */,
-/* 829 */,
-/* 830 */,
-/* 831 */,
-/* 832 */,
-/* 833 */,
-/* 834 */,
-/* 835 */,
-/* 836 */,
-/* 837 */,
-/* 838 */,
-/* 839 */,
-/* 840 */,
-/* 841 */,
-/* 842 */,
-/* 843 */,
-/* 844 */,
-/* 845 */,
-/* 846 */,
-/* 847 */,
-/* 848 */,
-/* 849 */,
-/* 850 */,
-/* 851 */,
-/* 852 */,
-/* 853 */,
-/* 854 */,
-/* 855 */,
-/* 856 */,
-/* 857 */,
-/* 858 */,
-/* 859 */,
-/* 860 */,
-/* 861 */,
-/* 862 */,
-/* 863 */,
-/* 864 */,
-/* 865 */,
-/* 866 */,
-/* 867 */,
-/* 868 */,
-/* 869 */,
-/* 870 */,
-/* 871 */,
-/* 872 */,
-/* 873 */,
-/* 874 */,
-/* 875 */,
-/* 876 */,
-/* 877 */,
-/* 878 */,
-/* 879 */,
-/* 880 */,
-/* 881 */,
-/* 882 */,
-/* 883 */,
-/* 884 */,
-/* 885 */,
-/* 886 */,
-/* 887 */,
-/* 888 */,
-/* 889 */,
-/* 890 */,
-/* 891 */,
-/* 892 */,
-/* 893 */,
-/* 894 */,
-/* 895 */,
-/* 896 */,
-/* 897 */,
-/* 898 */,
-/* 899 */,
-/* 900 */,
-/* 901 */,
-/* 902 */,
-/* 903 */,
-/* 904 */,
-/* 905 */,
-/* 906 */,
-/* 907 */,
-/* 908 */,
-/* 909 */,
-/* 910 */,
-/* 911 */,
-/* 912 */,
-/* 913 */,
-/* 914 */,
-/* 915 */,
-/* 916 */,
-/* 917 */,
-/* 918 */,
-/* 919 */,
-/* 920 */,
-/* 921 */,
-/* 922 */,
-/* 923 */,
-/* 924 */,
-/* 925 */,
-/* 926 */,
-/* 927 */,
-/* 928 */,
-/* 929 */,
-/* 930 */,
-/* 931 */,
-/* 932 */,
-/* 933 */,
-/* 934 */,
-/* 935 */,
-/* 936 */,
-/* 937 */,
-/* 938 */,
-/* 939 */,
-/* 940 */,
-/* 941 */,
-/* 942 */,
-/* 943 */,
-/* 944 */,
-/* 945 */,
-/* 946 */,
-/* 947 */,
-/* 948 */,
-/* 949 */,
-/* 950 */,
-/* 951 */,
-/* 952 */,
-/* 953 */,
-/* 954 */,
-/* 955 */,
-/* 956 */,
-/* 957 */,
-/* 958 */,
-/* 959 */,
-/* 960 */,
-/* 961 */,
-/* 962 */,
-/* 963 */,
-/* 964 */,
-/* 965 */,
-/* 966 */,
-/* 967 */,
-/* 968 */,
-/* 969 */,
-/* 970 */,
-/* 971 */,
-/* 972 */,
-/* 973 */,
-/* 974 */,
-/* 975 */,
-/* 976 */,
-/* 977 */,
-/* 978 */,
-/* 979 */,
-/* 980 */,
-/* 981 */,
-/* 982 */,
-/* 983 */,
-/* 984 */,
-/* 985 */,
-/* 986 */,
-/* 987 */,
-/* 988 */,
-/* 989 */,
-/* 990 */,
-/* 991 */,
-/* 992 */,
-/* 993 */,
-/* 994 */,
-/* 995 */,
-/* 996 */,
-/* 997 */,
-/* 998 */,
-/* 999 */,
-/* 1000 */,
-/* 1001 */,
-/* 1002 */,
-/* 1003 */,
-/* 1004 */,
-/* 1005 */,
-/* 1006 */,
-/* 1007 */,
-/* 1008 */,
-/* 1009 */,
-/* 1010 */,
-/* 1011 */,
-/* 1012 */,
-/* 1013 */,
-/* 1014 */,
-/* 1015 */,
-/* 1016 */,
-/* 1017 */,
-/* 1018 */,
-/* 1019 */,
-/* 1020 */,
-/* 1021 */,
-/* 1022 */,
-/* 1023 */,
-/* 1024 */,
-/* 1025 */,
-/* 1026 */,
-/* 1027 */,
-/* 1028 */,
-/* 1029 */,
-/* 1030 */,
-/* 1031 */,
-/* 1032 */,
-/* 1033 */,
-/* 1034 */,
-/* 1035 */,
-/* 1036 */,
-/* 1037 */,
-/* 1038 */,
-/* 1039 */,
-/* 1040 */,
-/* 1041 */,
-/* 1042 */,
-/* 1043 */,
-/* 1044 */,
-/* 1045 */,
-/* 1046 */,
-/* 1047 */,
-/* 1048 */,
-/* 1049 */,
-/* 1050 */,
-/* 1051 */,
-/* 1052 */,
-/* 1053 */,
-/* 1054 */,
-/* 1055 */,
-/* 1056 */,
-/* 1057 */,
-/* 1058 */,
-/* 1059 */,
-/* 1060 */,
-/* 1061 */,
-/* 1062 */,
-/* 1063 */,
-/* 1064 */,
-/* 1065 */,
-/* 1066 */,
-/* 1067 */,
-/* 1068 */,
-/* 1069 */,
-/* 1070 */,
-/* 1071 */,
-/* 1072 */,
-/* 1073 */,
-/* 1074 */,
-/* 1075 */,
-/* 1076 */,
-/* 1077 */,
-/* 1078 */,
-/* 1079 */,
-/* 1080 */,
-/* 1081 */,
-/* 1082 */,
-/* 1083 */,
-/* 1084 */,
-/* 1085 */,
-/* 1086 */,
-/* 1087 */,
-/* 1088 */,
-/* 1089 */,
-/* 1090 */,
-/* 1091 */,
-/* 1092 */,
-/* 1093 */,
-/* 1094 */,
-/* 1095 */,
-/* 1096 */,
-/* 1097 */,
-/* 1098 */,
-/* 1099 */,
-/* 1100 */,
-/* 1101 */,
-/* 1102 */,
-/* 1103 */,
-/* 1104 */,
-/* 1105 */,
-/* 1106 */,
-/* 1107 */,
-/* 1108 */,
-/* 1109 */,
-/* 1110 */,
-/* 1111 */,
-/* 1112 */,
-/* 1113 */,
-/* 1114 */,
-/* 1115 */,
-/* 1116 */,
-/* 1117 */,
-/* 1118 */,
-/* 1119 */,
-/* 1120 */,
-/* 1121 */,
-/* 1122 */,
-/* 1123 */,
-/* 1124 */,
-/* 1125 */,
-/* 1126 */,
-/* 1127 */,
-/* 1128 */,
-/* 1129 */,
-/* 1130 */,
-/* 1131 */,
-/* 1132 */,
-/* 1133 */,
-/* 1134 */,
-/* 1135 */,
-/* 1136 */,
-/* 1137 */,
-/* 1138 */,
-/* 1139 */,
-/* 1140 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1256);
+	var _react = __webpack_require__(2292);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -14095,6 +13158,768 @@ webpackJsonpexports([0],[
 	});
 
 	exports['default'] = TextGenerator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 686 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactWindowMixins = __webpack_require__(343);
+
+	var _reactColor = __webpack_require__(354);
+
+	var _reactFontawesome = __webpack_require__(341);
+
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+	var AnchorGenerator = _react2['default'].createClass({
+	    displayName: 'AnchorGenerator',
+
+	    mixins: [_reactWindowMixins.OnResize],
+
+	    //     shadow
+	    // border radius
+	    // background
+	    // foreground
+	    // border
+	    // pseudo (hover, focus and active) styling
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            loading: false,
+	            error: false,
+	            text: "Text",
+	            href: "https://google.com/",
+	            background: '#000',
+	            color: "#200",
+	            border: "1px solid #333",
+	            borderRadius: "0px 0px 0px 0px",
+	            fontSize: "20px"
+	        };
+	    },
+	    handleChangeComplete: function handleChangeComplete(color) {
+
+	        console.log(color);
+	        this.setState({ background: color.hex });
+	    },
+	    handleChange: function handleChange(type, event) {
+	        console.log(type);
+	        switch (type) {
+	            case "text":
+	                this.setState({ text: event.target.value });
+	                break;
+	            case "href":
+	                this.setState({ href: event.target.value });
+	                break;
+	            case "background":
+	                this.setState({ background: event.target.value });
+	                break;
+	            case "color":
+	                this.setState({ color: event.target.value });
+	                break;
+	            case "border":
+	                this.setState({ border: event.target.value });
+	                break;
+	            case "borderRadius":
+	                this.setState({ borderRadius: event.target.value });
+	                break;
+	            case "fontSize":
+	                this.setState({ fontSize: event.target.value });
+	                break;
+	            // default:
+	        }
+	    },
+	    getSidePanel: function getSidePanel() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'Grid col-lg-12 nopadding' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Text'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.text,
+	                        onChange: this.handleChange.bind(this, "text")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'href'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.href,
+	                        onChange: this.handleChange.bind(this, "href")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Font Size'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.fontSize,
+	                        onChange: this.handleChange.bind(this, "fontSize")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Color'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.color,
+	                        onChange: this.handleChange.bind(this, "color")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Background Color'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.background,
+	                        onChange: this.handleChange.bind(this, "background")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Border'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        style: { width: "200" },
+	                        type: 'text',
+	                        value: this.state.border,
+	                        onChange: this.handleChange.bind(this, "border")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Border Radius'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        style: { width: "200" },
+	                        type: 'text',
+	                        value: this.state.borderRadius,
+	                        onChange: this.handleChange.bind(this, "borderRadius")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item Grid-item-bottom' },
+	                '…'
+	            )
+	        );
+	    },
+	    render: function render() {
+	        var box_style = {
+
+	            "borderRadius": this.state.borderRadius,
+	            "color": this.state.color,
+	            "background": this.state.background,
+	            "border": this.state.border,
+	            "fontSize": this.state.fontSize
+	        };
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'container col-lg-12', style: { "height": this.state.window.height - 60 } },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'row', style: { "height": this.state.window.height - 60 } },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-8', style: { "border": "1px solid #cccccc", "height": "100%" } },
+	                    _react2['default'].createElement(
+	                        'a',
+	                        { target: '_blank', href: this.state.href, className: 'element', style: box_style },
+	                        this.state.text
+	                    ),
+	                    this.state.error
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-4 nopadding', style: { "border": "1px solid #cccccc", "height": "100%" } },
+	                    this.getSidePanel()
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = AnchorGenerator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 687 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _componentsLoadingIndicator = __webpack_require__(688);
+
+	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
+
+	var _componentsLoadingError = __webpack_require__(689);
+
+	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
+
+	var PeopleView = _react2['default'].createClass({
+	    displayName: 'PeopleView',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            people: null,
+	            loading: false,
+	            error: false
+	        };
+	    },
+
+	    /**
+	     * When component is about to mount, call ajax for data
+	     */
+	    componentWillMount: function componentWillMount() {
+	        this.fetchData();
+	    },
+
+	    /**
+	     * Get list of persons from some api through ajax call
+	     */
+	    fetchData: function fetchData() {
+	        if (this.state.loading) {
+	            // this is already called and is-in-progress.
+	            return;
+	        }
+	        this.setState({
+	            loading: true
+	        });
+
+	        var _this = this;
+
+	        jQuery.ajax({
+	            type: 'GET',
+	            url: "https://randomuser.me/api/?results=50",
+	            dataType: "json",
+	            cache: false,
+	            success: function success(data) {
+	                // When we have data, just set in component's state, render will automatically triggered
+	                console.log(data);
+	                _this.setState({
+	                    people: data.results,
+	                    loading: false,
+	                    error: false
+	                });
+	            },
+	            error: function error(xhr, responseText, data) {
+	                console.log('Error' + responseText);
+	                _this.setState({
+	                    people: null,
+	                    loading: false,
+	                    error: true
+	                });
+	            }
+	        });
+	    },
+
+	    /**
+	     * Calling refresh will trigger ajax call to fetch data
+	     */
+	    refresh: function refresh() {
+	        this.fetchData();
+	    },
+
+	    getPeopleFragment: function getPeopleFragment() {
+	        var fragmentElem = null;
+	        var _this = this;
+
+	        function toTitleCase(str) {
+	            // Util function
+	            return str.replace(/\w\S*/g, function (txt) {
+	                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	            });
+	        }
+
+	        if (this.state.people == null) {
+	            fragmentElem = _react2['default'].createElement(
+	                'div',
+	                { className: 'col-sm-12' },
+	                _react2['default'].createElement(
+	                    'h4',
+	                    null,
+	                    'Sorry, could not find any people. Why dont you try after sometime?'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '#', onClick: this.refresh },
+	                    'Try again'
+	                )
+	            );
+	        } else {
+	            fragmentElem = _react2['default'].createElement(
+	                'div',
+	                { className: 'col-sm-12' },
+	                this.state.people.map(function (person, i) {
+	                    return _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-md-3 col-sm-4', key: i },
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'thumbnail' },
+	                            _react2['default'].createElement('img', { src: person.picture.large, style: { minHeight: "200px", width: "100%", display: "block" } }),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'caption' },
+	                                _react2['default'].createElement(
+	                                    'h4',
+	                                    null,
+	                                    toTitleCase(person.name.first),
+	                                    ' ',
+	                                    toTitleCase(person.name.last)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'p',
+	                                    null,
+	                                    _react2['default'].createElement(
+	                                        'a',
+	                                        { href: '#', 'class': 'btn btn-default', role: 'button' },
+	                                        'Follow'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    );
+	                })
+	            );
+	        }
+	        return fragmentElem;
+	    },
+
+	    render: function render() {
+	        var elem = "";
+	        if (this.state.loading) {
+	            elem = _react2['default'].createElement(_componentsLoadingIndicator2['default'], null);
+	        } else if (this.state.error) {
+	            elem = _react2['default'].createElement(_componentsLoadingError2['default'], { onRetry: this.fetchData });
+	        } else {
+	            elem = this.getPeopleFragment();
+	        }
+
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2['default'].createElement(
+	                    'h3',
+	                    null,
+	                    'People'
+	                ),
+	                _react2['default'].createElement('br', null),
+	                elem
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = PeopleView;
+	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88)))
+
+/***/ },
+/* 688 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(315);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var LoadingIndicator = _react2['default'].createClass({
+	    displayName: 'LoadingIndicator',
+
+	    propTypes: {
+	        mini: _react2['default'].PropTypes.bool
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            mini: false
+	        };
+	    },
+
+	    shouldComponentUpdate: function shouldComponentUpdate() {
+	        return false;
+	    },
+
+	    render: function render() {
+	        var classes = {
+	            loading: true,
+	            mini: this.props.mini
+	        };
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: (0, _classnames2['default'])(this.props.className, classes) },
+	            _react2['default'].createElement('div', { className: 'loading-indicator' }),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'loading-message' },
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = LoadingIndicator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 689 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var LoadingError = _react2['default'].createClass({
+	  displayName: 'LoadingError',
+
+	  propTypes: {
+	    onRetry: _react2['default'].PropTypes.func,
+	    message: _react2['default'].PropTypes.string
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      message: 'There was an error loading data.'
+	    };
+	  },
+
+	  shouldComponentUpdate: function shouldComponentUpdate() {
+	    return false;
+	  },
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'alert alert-error alert-block' },
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        this.props.message,
+	        this.props.onRetry && _react2['default'].createElement(
+	          'a',
+	          { onClick: this.props.onRetry, className: 'btn btn-default btn-sm',
+	            style: { marginLeft: 5 } },
+	          'Retry'
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = LoadingError;
+	module.exports = exports['default'];
+
+/***/ },
+/* 690 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(691);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	var RouteNotFound = _react2['default'].createClass({
+	  displayName: 'RouteNotFound',
+
+	  getTitle: function getTitle() {
+	    return 'Page Not Found';
+	  },
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      _reactDocumentTitle2['default'],
+	      { title: this.getTitle() },
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'app' },
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'content' },
+	            _react2['default'].createElement(
+	              'section',
+	              { className: 'body' },
+	              _react2['default'].createElement(
+	                'div',
+	                { className: 'alert alert-block alert-error' },
+	                _react2['default'].createElement(
+	                  'div',
+	                  { style: { fontSize: 24, marginBottom: 10 } },
+	                  _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
+	                  _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    'Page Not Found'
+	                  )
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'The page you are looking for was not found.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'You may wish to try the following:'
+	                ),
+	                _react2['default'].createElement(
+	                  'ul',
+	                  null,
+	                  _react2['default'].createElement(
+	                    'li',
+	                    null,
+	                    'If you entered the address manually, double check the path. Did you forget a trailing slash?'
+	                  ),
+	                  _react2['default'].createElement(
+	                    'li',
+	                    null,
+	                    'If you followed a link here, try hitting back and reloading the page. It\'s possible the resource was moved out from under you.'
+	                  )
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Not sure what to do? ',
+	                  _react2['default'].createElement(
+	                    'a',
+	                    { href: '/' },
+	                    'Return to HOME'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = RouteNotFound;
+	module.exports = exports['default'];
+
+/***/ },
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = errorHandler;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _viewsRouteError = __webpack_require__(696);
+
+	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
+
+	function errorHandler(Component) {
+	  var originalRender = Component.prototype.render;
+
+	  Component.prototype.render = function tryRender() {
+	    try {
+	      return originalRender.apply(this, arguments);
+	    } catch (err) {
+	      console.error(err);
+	      return _react2['default'].createElement(_viewsRouteError2['default'], { error: err, component: this });
+	    }
+	  };
+
+	  return Component;
+	}
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 696 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _jquery = __webpack_require__(88);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _react = __webpack_require__(2292);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var RouteError = _react2['default'].createClass({
+	  displayName: 'RouteError',
+
+	  componentWillMount: function componentWillMount() {},
+
+	  componentWillUnmount: function componentWillUnmount() {},
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'alert alert-block alert-error' },
+	      _react2['default'].createElement(
+	        'div',
+	        { style: { fontSize: 24, marginBottom: 10 } },
+	        _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
+	        _react2['default'].createElement(
+	          'span',
+	          null,
+	          'Oops! Something went wrong'
+	        )
+	      ),
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        'It looks like you\'ve hit an issue in application. Don\'t worry though! We monitor and it\'s likely we\'re already looking into this!'
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = RouteError;
 	module.exports = exports['default'];
 
 /***/ }
