@@ -4,14 +4,14 @@ import {OnResize} from 'react-window-mixins';
 import {Material} from 'react-color';
 import FontAwesome from 'react-fontawesome';
 
-const TextGenerator = React.createClass({
+const ButtonGenerator = React.createClass({
     mixins: [OnResize],
 
     getInitialState() {
         return {
             loading: false,
             error: false,
-            text: "YessCSS",
+            text: "Click Me",
             color: "#1FB6FF",
             fontWeight: "400",
             fontSize: "32",
@@ -53,7 +53,7 @@ const TextGenerator = React.createClass({
             <div className="Grid col-lg-12 nopadding">
                 <div className="Grid-item  Grid-item-top Grid-item-dark">
                     <div className="col-lg-3">
-                        Text
+                      Button Text
                     </div>
                     <div className="col-lg-7 center">
                         <input className="text-box" type="text" value={this.state.text} onChange={this.handleChange.bind(this, "text")}/>
@@ -63,7 +63,7 @@ const TextGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        Color
+                      Text  Color
                     </div>
                     <div className="col-lg-7 center">
                         <input className="text-box" type="text" value={this.state.color} onChange={this.handleChange.bind(this, "color")}/>
@@ -108,6 +108,14 @@ const TextGenerator = React.createClass({
                         </select>
                     </div>
                 </div>
+                <div className="Grid-item">
+                    <div className="col-lg-3">
+                        Box Background
+                    </div>
+                    <div className="col-lg-7 center">
+                        <input className="text-box" type="text" value={this.state.color} onChange={this.handleChange.bind(this, "color")}/>
+                    </div>
+                </div>
                 <div className="Grid-item Grid-item-bottom">…</div>
             </div>
         )
@@ -117,8 +125,13 @@ const TextGenerator = React.createClass({
             "color": this.state.color,
             "fontSize": this.state.fontSize,
             "fontWeight": this.state.fontWeight,
-            "fontStyle": this.state.fontStyle,
-            "border": "none"
+            "fontStyle": this.state.fontStyle
+        };
+        let box_style = {
+            "color": this.state.color,
+            "fontSize": this.state.fontSize,
+            "fontWeight": this.state.fontWeight,
+            "fontStyle": this.state.fontStyle
         };
         return (
             <div className="container col-lg-12" style={{
@@ -146,4 +159,4 @@ const TextGenerator = React.createClass({
     }
 });
 
-export default TextGenerator;
+export default ButtonGenerator;

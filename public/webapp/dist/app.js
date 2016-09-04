@@ -604,6 +604,10 @@ webpackJsonpexports([0],[
 
 	var _viewsTextGenerator2 = _interopRequireDefault(_viewsTextGenerator);
 
+	var _viewsButtonGenerator = __webpack_require__(760);
+
+	var _viewsButtonGenerator2 = _interopRequireDefault(_viewsButtonGenerator);
+
 	var _viewsAnchorGenerator = __webpack_require__(534);
 
 	var _viewsAnchorGenerator2 = _interopRequireDefault(_viewsAnchorGenerator);
@@ -638,6 +642,7 @@ webpackJsonpexports([0],[
 	    _react2['default'].createElement(_reactRouter.IndexRoute, { component: (0, _utilsErrorHandler2['default'])(_viewsBoxGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/boxgenerator', component: (0, _utilsErrorHandler2['default'])(_viewsBoxGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/textgenerator', component: (0, _utilsErrorHandler2['default'])(_viewsTextGenerator2['default']) }),
+	    _react2['default'].createElement(_reactRouter.Route, { path: '/buttongenrator', component: (0, _utilsErrorHandler2['default'])(_viewsButtonGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/anchortaggenerator', component: (0, _utilsErrorHandler2['default'])(_viewsAnchorGenerator2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/people', component: (0, _utilsErrorHandler2['default'])(_viewsPeople2['default']) }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '*', component: (0, _utilsErrorHandler2['default'])(_viewsRouteNotFound2['default']), onEnter: appendTrailingSlash })
@@ -1153,9 +1158,9 @@ webpackJsonpexports([0],[
 	        return {
 	            loading: false,
 	            error: false,
-	            background: '#000',
+	            background: '#1FB6FF',
 	            value: 0,
-	            width: "100",
+	            width: "200",
 	            height: "200",
 	            border: "1px solid #333",
 	            borderRadius: "0px 0px 0px 0px"
@@ -13123,17 +13128,17 @@ webpackJsonpexports([0],[
 	                        _react2['default'].createElement(
 	                            'option',
 	                            { value: 'normal' },
-	                            'normal'
+	                            'Normal'
 	                        ),
 	                        _react2['default'].createElement(
 	                            'option',
 	                            { value: 'italic' },
-	                            'italic'
+	                            'Italic'
 	                        ),
 	                        _react2['default'].createElement(
 	                            'option',
 	                            { value: 'oblique' },
-	                            'oblique'
+	                            'Oblique'
 	                        )
 	                    )
 	                )
@@ -13146,7 +13151,7 @@ webpackJsonpexports([0],[
 	        );
 	    },
 	    render: function render() {
-	        var box_style = {
+	        var text_style = {
 	            "color": this.state.color,
 	            "fontSize": this.state.fontSize,
 	            "fontWeight": this.state.fontWeight,
@@ -13171,7 +13176,7 @@ webpackJsonpexports([0],[
 	                        } },
 	                    _react2['default'].createElement(
 	                        'div',
-	                        { className: 'element', style: box_style },
+	                        { className: 'element', style: text_style },
 	                        this.state.text
 	                    ),
 	                    this.state.error
@@ -13952,6 +13957,493 @@ webpackJsonpexports([0],[
 	});
 
 	exports['default'] = RouteError;
+	module.exports = exports['default'];
+
+/***/ },
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */,
+/* 658 */,
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */,
+/* 665 */,
+/* 666 */,
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */,
+/* 676 */,
+/* 677 */,
+/* 678 */,
+/* 679 */,
+/* 680 */,
+/* 681 */,
+/* 682 */,
+/* 683 */,
+/* 684 */,
+/* 685 */,
+/* 686 */,
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */,
+/* 711 */,
+/* 712 */,
+/* 713 */,
+/* 714 */,
+/* 715 */,
+/* 716 */,
+/* 717 */,
+/* 718 */,
+/* 719 */,
+/* 720 */,
+/* 721 */,
+/* 722 */,
+/* 723 */,
+/* 724 */,
+/* 725 */,
+/* 726 */,
+/* 727 */,
+/* 728 */,
+/* 729 */,
+/* 730 */,
+/* 731 */,
+/* 732 */,
+/* 733 */,
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */,
+/* 743 */,
+/* 744 */,
+/* 745 */,
+/* 746 */,
+/* 747 */,
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactWindowMixins = __webpack_require__(343);
+
+	var _reactColor = __webpack_require__(354);
+
+	var _reactFontawesome = __webpack_require__(341);
+
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+	var ButtonGenerator = _react2['default'].createClass({
+	    displayName: 'ButtonGenerator',
+
+	    mixins: [_reactWindowMixins.OnResize],
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            loading: false,
+	            error: false,
+	            text: "Click Me",
+	            color: "#1FB6FF",
+	            fontWeight: "400",
+	            fontSize: "32",
+	            fontStyle: "normal",
+	            value: 0
+	        };
+	    },
+	    handleChangeComplete: function handleChangeComplete(color) {
+
+	        console.log(color);
+	        this.setState({ background: color.hex });
+	    },
+	    handleChange: function handleChange(type, event) {
+	        console.log(type);
+	        switch (type) {
+	            case "text":
+	                this.setState({ text: event.target.value });
+	                break;
+	            case "color":
+	                this.setState({ color: event.target.value });
+	                break;
+	            case "fontStyle":
+	                this.setState({ fontStyle: event.target.value });
+	                break;
+	            case "fontWeight":
+	                this.setState({ fontWeight: event.target.value });
+	                break;
+	            case "fontSize":
+	                this.setState({ fontSize: event.target.value });
+	                break;
+
+	            default:
+	                break;
+	        }
+	    },
+	    getSidePanel: function getSidePanel() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'Grid col-lg-12 nopadding' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Button Text'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.text, onChange: this.handleChange.bind(this, "text") })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Text  Color'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Font Size'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', { className: 'text-box', type: 'number', value: this.state.fontSize, onChange: this.handleChange.bind(this, "fontSize"), name: 'size', min: '1' })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Font Weight'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement(
+	                        'select',
+	                        { className: 'text-box', value: this.state.fontWeight, name: 'fontStyle', onChange: this.handleChange.bind(this, "fontWeight") },
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '100' },
+	                            '100'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '200' },
+	                            '200'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '300' },
+	                            '300'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '400' },
+	                            '400'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '500' },
+	                            '500'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '600' },
+	                            '600'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: '700' },
+	                            '700'
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Font Style'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement(
+	                        'select',
+	                        { className: 'text-box', value: this.state.fontStyle, name: 'fontStyle', onChange: this.handleChange.bind(this, "fontStyle") },
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: 'normal' },
+	                            'Normal'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: 'italic' },
+	                            'Italic'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'option',
+	                            { value: 'oblique' },
+	                            'Oblique'
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Box Background'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item Grid-item-bottom' },
+	                '…'
+	            )
+	        );
+	    },
+	    render: function render() {
+	        var text_style = {
+	            "color": this.state.color,
+	            "fontSize": this.state.fontSize,
+	            "fontWeight": this.state.fontWeight,
+	            "fontStyle": this.state.fontStyle
+	        };
+	        var box_style = {
+	            "color": this.state.color,
+	            "fontSize": this.state.fontSize,
+	            "fontWeight": this.state.fontWeight,
+	            "fontStyle": this.state.fontStyle
+	        };
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'container col-lg-12', style: {
+	                    "height": this.state.window.height - 60
+	                } },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'row', style: {
+	                        "height": this.state.window.height - 60
+	                    } },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-8', style: {
+	                            "border": "1px solid #cccccc",
+	                            "height": "100%"
+	                        } },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'element', style: text_style },
+	                        this.state.text
+	                    ),
+	                    this.state.error
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-4 nopadding', style: {
+	                            "border": "1px solid #cccccc",
+	                            "height": "100%"
+	                        } },
+	                    this.getSidePanel()
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = ButtonGenerator;
 	module.exports = exports['default'];
 
 /***/ }

@@ -11,9 +11,9 @@ const BoxGenerator = React.createClass({
         return {
             loading: false,
             error: false,
-            background: '#000',
+            background: '#1FB6FF',
             value:0,
-            width:"100",
+            width:"200",
             height:"200",
             border:"1px solid #333",
             borderRadius:"0px 0px 0px 0px"
