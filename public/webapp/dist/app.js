@@ -604,23 +604,23 @@ webpackJsonpexports([0],[
 
 	var _viewsTextGenerator2 = _interopRequireDefault(_viewsTextGenerator);
 
-	var _viewsButtonGenerator = __webpack_require__(760);
+	var _viewsButtonGenerator = __webpack_require__(534);
 
 	var _viewsButtonGenerator2 = _interopRequireDefault(_viewsButtonGenerator);
 
-	var _viewsAnchorGenerator = __webpack_require__(534);
+	var _viewsAnchorGenerator = __webpack_require__(535);
 
 	var _viewsAnchorGenerator2 = _interopRequireDefault(_viewsAnchorGenerator);
 
-	var _viewsPeople = __webpack_require__(535);
+	var _viewsPeople = __webpack_require__(536);
 
 	var _viewsPeople2 = _interopRequireDefault(_viewsPeople);
 
-	var _viewsRouteNotFound = __webpack_require__(538);
+	var _viewsRouteNotFound = __webpack_require__(539);
 
 	var _viewsRouteNotFound2 = _interopRequireDefault(_viewsRouteNotFound);
 
-	var _utilsErrorHandler = __webpack_require__(543);
+	var _utilsErrorHandler = __webpack_require__(544);
 
 	var _utilsErrorHandler2 = _interopRequireDefault(_utilsErrorHandler);
 
@@ -1046,6 +1046,9 @@ webpackJsonpexports([0],[
 
 	exports['default'] = Nav;
 	module.exports = exports['default'];
+	/*<li className="">
+	   <a class="github-button" href="https://github.com/letshustle/YessCss" data-icon="octicon-star" data-style="mega" data-count-href="/letshustle/YessCss/stargazers" data-count-api="/repos/letshustle/YessCss#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star letshustle/YessCss on GitHub">Star</a>
+	</li>*/
 
 /***/ },
 /* 318 */
@@ -1202,7 +1205,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Size'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Size'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -1214,12 +1221,16 @@ webpackJsonpexports([0],[
 	                        onChange: this.handleChange.bind(this, "width")
 	                    }),
 	                    _react2['default'].createElement('br', null),
-	                    'Width'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Width'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-1' },
-	                    _react2['default'].createElement(_reactFontawesome2['default'], { size: '2x', name: 'unlock-alt' })
+	                    _react2['default'].createElement(_reactFontawesome2['default'], { size: '1.5x', name: 'unlock-alt' })
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -1231,7 +1242,11 @@ webpackJsonpexports([0],[
 	                        onChange: this.handleChange.bind(this, "height")
 	                    }),
 	                    _react2['default'].createElement('br', null),
-	                    'Height'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Height'
+	                    )
 	                )
 	            ),
 	            _react2['default'].createElement(
@@ -1240,7 +1255,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Color'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Color'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -1259,7 +1278,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Border'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Border'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -1279,7 +1302,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Border Radius'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Border Radius'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -1322,7 +1349,7 @@ webpackJsonpexports([0],[
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
-	                    { className: 'col-lg-4 nopadding', style: { "border": "1px solid #cccccc", "height": "100%" } },
+	                    { className: 'col-lg-4 nopadding', style: { "border": "1px solid #cccccc", "height": "100%", "background": "#F7F7F7" } },
 	                    this.getSidePanel()
 	                )
 	            )
@@ -13221,983 +13248,6 @@ webpackJsonpexports([0],[
 
 	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 
-	var AnchorGenerator = _react2['default'].createClass({
-	    displayName: 'AnchorGenerator',
-
-	    mixins: [_reactWindowMixins.OnResize],
-
-	    //     shadow
-	    // border radius
-	    // background
-	    // foreground
-	    // border
-	    // pseudo (hover, focus and active) styling
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            loading: false,
-	            error: false,
-	            text: "Text",
-	            href: "https://google.com/",
-	            background: '#000',
-	            color: "#200",
-	            border: "1px solid #333",
-	            borderRadius: "0px 0px 0px 0px",
-	            fontSize: "20px"
-	        };
-	    },
-	    handleChangeComplete: function handleChangeComplete(color) {
-
-	        console.log(color);
-	        this.setState({ background: color.hex });
-	    },
-	    handleChange: function handleChange(type, event) {
-	        console.log(type);
-	        switch (type) {
-	            case "text":
-	                this.setState({ text: event.target.value });
-	                break;
-	            case "href":
-	                this.setState({ href: event.target.value });
-	                break;
-	            case "background":
-	                this.setState({ background: event.target.value });
-	                break;
-	            case "color":
-	                this.setState({ color: event.target.value });
-	                break;
-	            case "border":
-	                this.setState({ border: event.target.value });
-	                break;
-	            case "borderRadius":
-	                this.setState({ borderRadius: event.target.value });
-	                break;
-	            case "fontSize":
-	                this.setState({ fontSize: event.target.value });
-	                break;
-	            // default:
-	        }
-	    },
-	    getSidePanel: function getSidePanel() {
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'Grid col-lg-12 nopadding' },
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Text'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        type: 'text',
-	                        value: this.state.text,
-	                        onChange: this.handleChange.bind(this, "text")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'href'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        type: 'text',
-	                        value: this.state.href,
-	                        onChange: this.handleChange.bind(this, "href")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Font Size'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        type: 'text',
-	                        value: this.state.fontSize,
-	                        onChange: this.handleChange.bind(this, "fontSize")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Color'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        type: 'text',
-	                        value: this.state.color,
-	                        onChange: this.handleChange.bind(this, "color")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Background Color'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        type: 'text',
-	                        value: this.state.background,
-	                        onChange: this.handleChange.bind(this, "background")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Border'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        style: { width: "200" },
-	                        type: 'text',
-	                        value: this.state.border,
-	                        onChange: this.handleChange.bind(this, "border")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-3' },
-	                    'Border Radius'
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', {
-	                        className: 'text-box',
-	                        style: { width: "200" },
-	                        type: 'text',
-	                        value: this.state.borderRadius,
-	                        onChange: this.handleChange.bind(this, "borderRadius")
-	                    })
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'Grid-item Grid-item-bottom' },
-	                '…'
-	            )
-	        );
-	    },
-	    render: function render() {
-	        var box_style = {
-
-	            "borderRadius": this.state.borderRadius,
-	            "color": this.state.color,
-	            "background": this.state.background,
-	            "border": this.state.border,
-	            "fontSize": this.state.fontSize
-	        };
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'container col-lg-12', style: { "height": this.state.window.height - 60 } },
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'row', style: { "height": this.state.window.height - 60 } },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-8', style: { "border": "1px solid #cccccc", "height": "100%" } },
-	                    _react2['default'].createElement(
-	                        'a',
-	                        { target: '_blank', href: this.state.href, className: 'element', style: box_style },
-	                        this.state.text
-	                    ),
-	                    this.state.error
-	                ),
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-lg-4 nopadding', style: { "border": "1px solid #cccccc", "height": "100%" } },
-	                    this.getSidePanel()
-	                )
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = AnchorGenerator;
-	module.exports = exports['default'];
-
-/***/ },
-/* 535 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _componentsLoadingIndicator = __webpack_require__(536);
-
-	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
-
-	var _componentsLoadingError = __webpack_require__(537);
-
-	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
-
-	var PeopleView = _react2['default'].createClass({
-	    displayName: 'PeopleView',
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            people: null,
-	            loading: false,
-	            error: false
-	        };
-	    },
-
-	    /**
-	     * When component is about to mount, call ajax for data
-	     */
-	    componentWillMount: function componentWillMount() {
-	        this.fetchData();
-	    },
-
-	    /**
-	     * Get list of persons from some api through ajax call
-	     */
-	    fetchData: function fetchData() {
-	        if (this.state.loading) {
-	            // this is already called and is-in-progress.
-	            return;
-	        }
-	        this.setState({
-	            loading: true
-	        });
-
-	        var _this = this;
-
-	        jQuery.ajax({
-	            type: 'GET',
-	            url: "https://randomuser.me/api/?results=50",
-	            dataType: "json",
-	            cache: false,
-	            success: function success(data) {
-	                // When we have data, just set in component's state, render will automatically triggered
-	                console.log(data);
-	                _this.setState({
-	                    people: data.results,
-	                    loading: false,
-	                    error: false
-	                });
-	            },
-	            error: function error(xhr, responseText, data) {
-	                console.log('Error' + responseText);
-	                _this.setState({
-	                    people: null,
-	                    loading: false,
-	                    error: true
-	                });
-	            }
-	        });
-	    },
-
-	    /**
-	     * Calling refresh will trigger ajax call to fetch data
-	     */
-	    refresh: function refresh() {
-	        this.fetchData();
-	    },
-
-	    getPeopleFragment: function getPeopleFragment() {
-	        var fragmentElem = null;
-	        var _this = this;
-
-	        function toTitleCase(str) {
-	            // Util function
-	            return str.replace(/\w\S*/g, function (txt) {
-	                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-	            });
-	        }
-
-	        if (this.state.people == null) {
-	            fragmentElem = _react2['default'].createElement(
-	                'div',
-	                { className: 'col-sm-12' },
-	                _react2['default'].createElement(
-	                    'h4',
-	                    null,
-	                    'Sorry, could not find any people. Why dont you try after sometime?'
-	                ),
-	                _react2['default'].createElement(
-	                    'a',
-	                    { href: '#', onClick: this.refresh },
-	                    'Try again'
-	                )
-	            );
-	        } else {
-	            fragmentElem = _react2['default'].createElement(
-	                'div',
-	                { className: 'col-sm-12' },
-	                this.state.people.map(function (person, i) {
-	                    return _react2['default'].createElement(
-	                        'div',
-	                        { className: 'col-md-3 col-sm-4', key: i },
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'thumbnail' },
-	                            _react2['default'].createElement('img', { src: person.picture.large, style: { minHeight: "200px", width: "100%", display: "block" } }),
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'caption' },
-	                                _react2['default'].createElement(
-	                                    'h4',
-	                                    null,
-	                                    toTitleCase(person.name.first),
-	                                    ' ',
-	                                    toTitleCase(person.name.last)
-	                                ),
-	                                _react2['default'].createElement(
-	                                    'p',
-	                                    null,
-	                                    _react2['default'].createElement(
-	                                        'a',
-	                                        { href: '#', 'class': 'btn btn-default', role: 'button' },
-	                                        'Follow'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    );
-	                })
-	            );
-	        }
-	        return fragmentElem;
-	    },
-
-	    render: function render() {
-	        var elem = "";
-	        if (this.state.loading) {
-	            elem = _react2['default'].createElement(_componentsLoadingIndicator2['default'], null);
-	        } else if (this.state.error) {
-	            elem = _react2['default'].createElement(_componentsLoadingError2['default'], { onRetry: this.fetchData });
-	        } else {
-	            elem = this.getPeopleFragment();
-	        }
-
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2['default'].createElement(
-	                    'h3',
-	                    null,
-	                    'People'
-	                ),
-	                _react2['default'].createElement('br', null),
-	                elem
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = PeopleView;
-	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88)))
-
-/***/ },
-/* 536 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(315);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	var LoadingIndicator = _react2['default'].createClass({
-	    displayName: 'LoadingIndicator',
-
-	    propTypes: {
-	        mini: _react2['default'].PropTypes.bool
-	    },
-
-	    getDefaultProps: function getDefaultProps() {
-	        return {
-	            mini: false
-	        };
-	    },
-
-	    shouldComponentUpdate: function shouldComponentUpdate() {
-	        return false;
-	    },
-
-	    render: function render() {
-	        var classes = {
-	            loading: true,
-	            mini: this.props.mini
-	        };
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: (0, _classnames2['default'])(this.props.className, classes) },
-	            _react2['default'].createElement('div', { className: 'loading-indicator' }),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'loading-message' },
-	                this.props.children
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = LoadingIndicator;
-	module.exports = exports['default'];
-
-/***/ },
-/* 537 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var LoadingError = _react2['default'].createClass({
-	  displayName: 'LoadingError',
-
-	  propTypes: {
-	    onRetry: _react2['default'].PropTypes.func,
-	    message: _react2['default'].PropTypes.string
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      message: 'There was an error loading data.'
-	    };
-	  },
-
-	  shouldComponentUpdate: function shouldComponentUpdate() {
-	    return false;
-	  },
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { className: 'alert alert-error alert-block' },
-	      _react2['default'].createElement(
-	        'p',
-	        null,
-	        this.props.message,
-	        this.props.onRetry && _react2['default'].createElement(
-	          'a',
-	          { onClick: this.props.onRetry, className: 'btn btn-default btn-sm',
-	            style: { marginLeft: 5 } },
-	          'Retry'
-	        )
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = LoadingError;
-	module.exports = exports['default'];
-
-/***/ },
-/* 538 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDocumentTitle = __webpack_require__(539);
-
-	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
-
-	var RouteNotFound = _react2['default'].createClass({
-	  displayName: 'RouteNotFound',
-
-	  getTitle: function getTitle() {
-	    return 'Page Not Found';
-	  },
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      _reactDocumentTitle2['default'],
-	      { title: this.getTitle() },
-	      _react2['default'].createElement(
-	        'div',
-	        { className: 'app' },
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'container' },
-	          _react2['default'].createElement(
-	            'div',
-	            { className: 'content' },
-	            _react2['default'].createElement(
-	              'section',
-	              { className: 'body' },
-	              _react2['default'].createElement(
-	                'div',
-	                { className: 'alert alert-block alert-error' },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { style: { fontSize: 24, marginBottom: 10 } },
-	                  _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
-	                  _react2['default'].createElement(
-	                    'span',
-	                    null,
-	                    'Page Not Found'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'The page you are looking for was not found.'
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'You may wish to try the following:'
-	                ),
-	                _react2['default'].createElement(
-	                  'ul',
-	                  null,
-	                  _react2['default'].createElement(
-	                    'li',
-	                    null,
-	                    'If you entered the address manually, double check the path. Did you forget a trailing slash?'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'li',
-	                    null,
-	                    'If you followed a link here, try hitting back and reloading the page. It\'s possible the resource was moved out from under you.'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'Not sure what to do? ',
-	                  _react2['default'].createElement(
-	                    'a',
-	                    { href: '/' },
-	                    'Return to HOME'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = RouteNotFound;
-	module.exports = exports['default'];
-
-/***/ },
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = errorHandler;
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _viewsRouteError = __webpack_require__(544);
-
-	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
-
-	function errorHandler(Component) {
-	  var originalRender = Component.prototype.render;
-
-	  Component.prototype.render = function tryRender() {
-	    try {
-	      return originalRender.apply(this, arguments);
-	    } catch (err) {
-	      console.error(err);
-	      return _react2['default'].createElement(_viewsRouteError2['default'], { error: err, component: this });
-	    }
-	  };
-
-	  return Component;
-	}
-
-	module.exports = exports['default'];
-
-/***/ },
-/* 544 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _jquery = __webpack_require__(88);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var RouteError = _react2['default'].createClass({
-	  displayName: 'RouteError',
-
-	  componentWillMount: function componentWillMount() {},
-
-	  componentWillUnmount: function componentWillUnmount() {},
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { className: 'alert alert-block alert-error' },
-	      _react2['default'].createElement(
-	        'div',
-	        { style: { fontSize: 24, marginBottom: 10 } },
-	        _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
-	        _react2['default'].createElement(
-	          'span',
-	          null,
-	          'Oops! Something went wrong'
-	        )
-	      ),
-	      _react2['default'].createElement(
-	        'p',
-	        null,
-	        'It looks like you\'ve hit an issue in application. Don\'t worry though! We monitor and it\'s likely we\'re already looking into this!'
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = RouteError;
-	module.exports = exports['default'];
-
-/***/ },
-/* 545 */,
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */,
-/* 550 */,
-/* 551 */,
-/* 552 */,
-/* 553 */,
-/* 554 */,
-/* 555 */,
-/* 556 */,
-/* 557 */,
-/* 558 */,
-/* 559 */,
-/* 560 */,
-/* 561 */,
-/* 562 */,
-/* 563 */,
-/* 564 */,
-/* 565 */,
-/* 566 */,
-/* 567 */,
-/* 568 */,
-/* 569 */,
-/* 570 */,
-/* 571 */,
-/* 572 */,
-/* 573 */,
-/* 574 */,
-/* 575 */,
-/* 576 */,
-/* 577 */,
-/* 578 */,
-/* 579 */,
-/* 580 */,
-/* 581 */,
-/* 582 */,
-/* 583 */,
-/* 584 */,
-/* 585 */,
-/* 586 */,
-/* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */,
-/* 603 */,
-/* 604 */,
-/* 605 */,
-/* 606 */,
-/* 607 */,
-/* 608 */,
-/* 609 */,
-/* 610 */,
-/* 611 */,
-/* 612 */,
-/* 613 */,
-/* 614 */,
-/* 615 */,
-/* 616 */,
-/* 617 */,
-/* 618 */,
-/* 619 */,
-/* 620 */,
-/* 621 */,
-/* 622 */,
-/* 623 */,
-/* 624 */,
-/* 625 */,
-/* 626 */,
-/* 627 */,
-/* 628 */,
-/* 629 */,
-/* 630 */,
-/* 631 */,
-/* 632 */,
-/* 633 */,
-/* 634 */,
-/* 635 */,
-/* 636 */,
-/* 637 */,
-/* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */,
-/* 654 */,
-/* 655 */,
-/* 656 */,
-/* 657 */,
-/* 658 */,
-/* 659 */,
-/* 660 */,
-/* 661 */,
-/* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */,
-/* 671 */,
-/* 672 */,
-/* 673 */,
-/* 674 */,
-/* 675 */,
-/* 676 */,
-/* 677 */,
-/* 678 */,
-/* 679 */,
-/* 680 */,
-/* 681 */,
-/* 682 */,
-/* 683 */,
-/* 684 */,
-/* 685 */,
-/* 686 */,
-/* 687 */,
-/* 688 */,
-/* 689 */,
-/* 690 */,
-/* 691 */,
-/* 692 */,
-/* 693 */,
-/* 694 */,
-/* 695 */,
-/* 696 */,
-/* 697 */,
-/* 698 */,
-/* 699 */,
-/* 700 */,
-/* 701 */,
-/* 702 */,
-/* 703 */,
-/* 704 */,
-/* 705 */,
-/* 706 */,
-/* 707 */,
-/* 708 */,
-/* 709 */,
-/* 710 */,
-/* 711 */,
-/* 712 */,
-/* 713 */,
-/* 714 */,
-/* 715 */,
-/* 716 */,
-/* 717 */,
-/* 718 */,
-/* 719 */,
-/* 720 */,
-/* 721 */,
-/* 722 */,
-/* 723 */,
-/* 724 */,
-/* 725 */,
-/* 726 */,
-/* 727 */,
-/* 728 */,
-/* 729 */,
-/* 730 */,
-/* 731 */,
-/* 732 */,
-/* 733 */,
-/* 734 */,
-/* 735 */,
-/* 736 */,
-/* 737 */,
-/* 738 */,
-/* 739 */,
-/* 740 */,
-/* 741 */,
-/* 742 */,
-/* 743 */,
-/* 744 */,
-/* 745 */,
-/* 746 */,
-/* 747 */,
-/* 748 */,
-/* 749 */,
-/* 750 */,
-/* 751 */,
-/* 752 */,
-/* 753 */,
-/* 754 */,
-/* 755 */,
-/* 756 */,
-/* 757 */,
-/* 758 */,
-/* 759 */,
-/* 760 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(91);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactWindowMixins = __webpack_require__(343);
-
-	var _reactColor = __webpack_require__(354);
-
-	var _reactFontawesome = __webpack_require__(341);
-
-	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
-
 	var ButtonGenerator = _react2['default'].createClass({
 	    displayName: 'ButtonGenerator',
 
@@ -14444,6 +13494,768 @@ webpackJsonpexports([0],[
 	});
 
 	exports['default'] = ButtonGenerator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 535 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactWindowMixins = __webpack_require__(343);
+
+	var _reactColor = __webpack_require__(354);
+
+	var _reactFontawesome = __webpack_require__(341);
+
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+	var AnchorGenerator = _react2['default'].createClass({
+	    displayName: 'AnchorGenerator',
+
+	    mixins: [_reactWindowMixins.OnResize],
+
+	    //     shadow
+	    // border radius
+	    // background
+	    // foreground
+	    // border
+	    // pseudo (hover, focus and active) styling
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            loading: false,
+	            error: false,
+	            text: "Text",
+	            href: "https://google.com/",
+	            background: '#000',
+	            color: "#200",
+	            border: "1px solid #333",
+	            borderRadius: "0px 0px 0px 0px",
+	            fontSize: "20px"
+	        };
+	    },
+	    handleChangeComplete: function handleChangeComplete(color) {
+
+	        console.log(color);
+	        this.setState({ background: color.hex });
+	    },
+	    handleChange: function handleChange(type, event) {
+	        console.log(type);
+	        switch (type) {
+	            case "text":
+	                this.setState({ text: event.target.value });
+	                break;
+	            case "href":
+	                this.setState({ href: event.target.value });
+	                break;
+	            case "background":
+	                this.setState({ background: event.target.value });
+	                break;
+	            case "color":
+	                this.setState({ color: event.target.value });
+	                break;
+	            case "border":
+	                this.setState({ border: event.target.value });
+	                break;
+	            case "borderRadius":
+	                this.setState({ borderRadius: event.target.value });
+	                break;
+	            case "fontSize":
+	                this.setState({ fontSize: event.target.value });
+	                break;
+	            // default:
+	        }
+	    },
+	    getSidePanel: function getSidePanel() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'Grid col-lg-12 nopadding' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Text'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.text,
+	                        onChange: this.handleChange.bind(this, "text")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'href'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.href,
+	                        onChange: this.handleChange.bind(this, "href")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item  Grid-item-top Grid-item-dark' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Font Size'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.fontSize,
+	                        onChange: this.handleChange.bind(this, "fontSize")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Color'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.color,
+	                        onChange: this.handleChange.bind(this, "color")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Background Color'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        type: 'text',
+	                        value: this.state.background,
+	                        onChange: this.handleChange.bind(this, "background")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Border'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        style: { width: "200" },
+	                        type: 'text',
+	                        value: this.state.border,
+	                        onChange: this.handleChange.bind(this, "border")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-3' },
+	                    'Border Radius'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-7 center' },
+	                    _react2['default'].createElement('input', {
+	                        className: 'text-box',
+	                        style: { width: "200" },
+	                        type: 'text',
+	                        value: this.state.borderRadius,
+	                        onChange: this.handleChange.bind(this, "borderRadius")
+	                    })
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'Grid-item Grid-item-bottom' },
+	                '…'
+	            )
+	        );
+	    },
+	    render: function render() {
+	        var box_style = {
+
+	            "borderRadius": this.state.borderRadius,
+	            "color": this.state.color,
+	            "background": this.state.background,
+	            "border": this.state.border,
+	            "fontSize": this.state.fontSize
+	        };
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'container col-lg-12', style: { "height": this.state.window.height - 60 } },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'row', style: { "height": this.state.window.height - 60 } },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-8', style: { "border": "1px solid #cccccc", "height": "100%" } },
+	                    _react2['default'].createElement(
+	                        'a',
+	                        { target: '_blank', href: this.state.href, className: 'element', style: box_style },
+	                        this.state.text
+	                    ),
+	                    this.state.error
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'col-lg-4 nopadding', style: { "border": "1px solid #cccccc", "height": "100%" } },
+	                    this.getSidePanel()
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = AnchorGenerator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 536 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _componentsLoadingIndicator = __webpack_require__(537);
+
+	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
+
+	var _componentsLoadingError = __webpack_require__(538);
+
+	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
+
+	var PeopleView = _react2['default'].createClass({
+	    displayName: 'PeopleView',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            people: null,
+	            loading: false,
+	            error: false
+	        };
+	    },
+
+	    /**
+	     * When component is about to mount, call ajax for data
+	     */
+	    componentWillMount: function componentWillMount() {
+	        this.fetchData();
+	    },
+
+	    /**
+	     * Get list of persons from some api through ajax call
+	     */
+	    fetchData: function fetchData() {
+	        if (this.state.loading) {
+	            // this is already called and is-in-progress.
+	            return;
+	        }
+	        this.setState({
+	            loading: true
+	        });
+
+	        var _this = this;
+
+	        jQuery.ajax({
+	            type: 'GET',
+	            url: "https://randomuser.me/api/?results=50",
+	            dataType: "json",
+	            cache: false,
+	            success: function success(data) {
+	                // When we have data, just set in component's state, render will automatically triggered
+	                console.log(data);
+	                _this.setState({
+	                    people: data.results,
+	                    loading: false,
+	                    error: false
+	                });
+	            },
+	            error: function error(xhr, responseText, data) {
+	                console.log('Error' + responseText);
+	                _this.setState({
+	                    people: null,
+	                    loading: false,
+	                    error: true
+	                });
+	            }
+	        });
+	    },
+
+	    /**
+	     * Calling refresh will trigger ajax call to fetch data
+	     */
+	    refresh: function refresh() {
+	        this.fetchData();
+	    },
+
+	    getPeopleFragment: function getPeopleFragment() {
+	        var fragmentElem = null;
+	        var _this = this;
+
+	        function toTitleCase(str) {
+	            // Util function
+	            return str.replace(/\w\S*/g, function (txt) {
+	                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	            });
+	        }
+
+	        if (this.state.people == null) {
+	            fragmentElem = _react2['default'].createElement(
+	                'div',
+	                { className: 'col-sm-12' },
+	                _react2['default'].createElement(
+	                    'h4',
+	                    null,
+	                    'Sorry, could not find any people. Why dont you try after sometime?'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '#', onClick: this.refresh },
+	                    'Try again'
+	                )
+	            );
+	        } else {
+	            fragmentElem = _react2['default'].createElement(
+	                'div',
+	                { className: 'col-sm-12' },
+	                this.state.people.map(function (person, i) {
+	                    return _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-md-3 col-sm-4', key: i },
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'thumbnail' },
+	                            _react2['default'].createElement('img', { src: person.picture.large, style: { minHeight: "200px", width: "100%", display: "block" } }),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'caption' },
+	                                _react2['default'].createElement(
+	                                    'h4',
+	                                    null,
+	                                    toTitleCase(person.name.first),
+	                                    ' ',
+	                                    toTitleCase(person.name.last)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'p',
+	                                    null,
+	                                    _react2['default'].createElement(
+	                                        'a',
+	                                        { href: '#', 'class': 'btn btn-default', role: 'button' },
+	                                        'Follow'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    );
+	                })
+	            );
+	        }
+	        return fragmentElem;
+	    },
+
+	    render: function render() {
+	        var elem = "";
+	        if (this.state.loading) {
+	            elem = _react2['default'].createElement(_componentsLoadingIndicator2['default'], null);
+	        } else if (this.state.error) {
+	            elem = _react2['default'].createElement(_componentsLoadingError2['default'], { onRetry: this.fetchData });
+	        } else {
+	            elem = this.getPeopleFragment();
+	        }
+
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2['default'].createElement(
+	                    'h3',
+	                    null,
+	                    'People'
+	                ),
+	                _react2['default'].createElement('br', null),
+	                elem
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = PeopleView;
+	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88)))
+
+/***/ },
+/* 537 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(315);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var LoadingIndicator = _react2['default'].createClass({
+	    displayName: 'LoadingIndicator',
+
+	    propTypes: {
+	        mini: _react2['default'].PropTypes.bool
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            mini: false
+	        };
+	    },
+
+	    shouldComponentUpdate: function shouldComponentUpdate() {
+	        return false;
+	    },
+
+	    render: function render() {
+	        var classes = {
+	            loading: true,
+	            mini: this.props.mini
+	        };
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: (0, _classnames2['default'])(this.props.className, classes) },
+	            _react2['default'].createElement('div', { className: 'loading-indicator' }),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'loading-message' },
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = LoadingIndicator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 538 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var LoadingError = _react2['default'].createClass({
+	  displayName: 'LoadingError',
+
+	  propTypes: {
+	    onRetry: _react2['default'].PropTypes.func,
+	    message: _react2['default'].PropTypes.string
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      message: 'There was an error loading data.'
+	    };
+	  },
+
+	  shouldComponentUpdate: function shouldComponentUpdate() {
+	    return false;
+	  },
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'alert alert-error alert-block' },
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        this.props.message,
+	        this.props.onRetry && _react2['default'].createElement(
+	          'a',
+	          { onClick: this.props.onRetry, className: 'btn btn-default btn-sm',
+	            style: { marginLeft: 5 } },
+	          'Retry'
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = LoadingError;
+	module.exports = exports['default'];
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(540);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	var RouteNotFound = _react2['default'].createClass({
+	  displayName: 'RouteNotFound',
+
+	  getTitle: function getTitle() {
+	    return 'Page Not Found';
+	  },
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      _reactDocumentTitle2['default'],
+	      { title: this.getTitle() },
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'app' },
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'content' },
+	            _react2['default'].createElement(
+	              'section',
+	              { className: 'body' },
+	              _react2['default'].createElement(
+	                'div',
+	                { className: 'alert alert-block alert-error' },
+	                _react2['default'].createElement(
+	                  'div',
+	                  { style: { fontSize: 24, marginBottom: 10 } },
+	                  _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
+	                  _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    'Page Not Found'
+	                  )
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'The page you are looking for was not found.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'You may wish to try the following:'
+	                ),
+	                _react2['default'].createElement(
+	                  'ul',
+	                  null,
+	                  _react2['default'].createElement(
+	                    'li',
+	                    null,
+	                    'If you entered the address manually, double check the path. Did you forget a trailing slash?'
+	                  ),
+	                  _react2['default'].createElement(
+	                    'li',
+	                    null,
+	                    'If you followed a link here, try hitting back and reloading the page. It\'s possible the resource was moved out from under you.'
+	                  )
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Not sure what to do? ',
+	                  _react2['default'].createElement(
+	                    'a',
+	                    { href: '/' },
+	                    'Return to HOME'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = RouteNotFound;
+	module.exports = exports['default'];
+
+/***/ },
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = errorHandler;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _viewsRouteError = __webpack_require__(545);
+
+	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
+
+	function errorHandler(Component) {
+	  var originalRender = Component.prototype.render;
+
+	  Component.prototype.render = function tryRender() {
+	    try {
+	      return originalRender.apply(this, arguments);
+	    } catch (err) {
+	      console.error(err);
+	      return _react2['default'].createElement(_viewsRouteError2['default'], { error: err, component: this });
+	    }
+	  };
+
+	  return Component;
+	}
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _jquery = __webpack_require__(88);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _react = __webpack_require__(91);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var RouteError = _react2['default'].createClass({
+	  displayName: 'RouteError',
+
+	  componentWillMount: function componentWillMount() {},
+
+	  componentWillUnmount: function componentWillUnmount() {},
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'alert alert-block alert-error' },
+	      _react2['default'].createElement(
+	        'div',
+	        { style: { fontSize: 24, marginBottom: 10 } },
+	        _react2['default'].createElement('span', { className: 'icon-exclamation', style: { fontSize: 20, marginRight: 10 } }),
+	        _react2['default'].createElement(
+	          'span',
+	          null,
+	          'Oops! Something went wrong'
+	        )
+	      ),
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        'It looks like you\'ve hit an issue in application. Don\'t worry though! We monitor and it\'s likely we\'re already looking into this!'
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = RouteError;
 	module.exports = exports['default'];
 
 /***/ }

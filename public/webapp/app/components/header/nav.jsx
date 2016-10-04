@@ -49,8 +49,11 @@ const Nav = React.createClass({
                 </li>
 
                 <li className="">
-                    <a target="_blank" href="https://github.com/letshustle/YessCss"><FontAwesome size='2x' name='github' /></a>                    
+                    <a target="_blank" href="https://github.com/letshustle/YessCss"><FontAwesome size='2x' name='github' /></a>
                 </li>
+                {/*<li className="">
+                    <a class="github-button" href="https://github.com/letshustle/YessCss" data-icon="octicon-star" data-style="mega" data-count-href="/letshustle/YessCss/stargazers" data-count-api="/repos/letshustle/YessCss#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star letshustle/YessCss on GitHub">Star</a>
+                </li>*/}
             </ul>
         );
     }

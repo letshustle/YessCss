@@ -51,7 +51,7 @@ const BoxGenerator = React.createClass({
             <div className="Grid col-lg-12 nopadding">
                 <div className="Grid-item  Grid-item-top Grid-item-dark">
                     <div className="col-lg-3">
-                        Size
+                        <p className="action-label">Size</p>
                     </div>
                     <div className="col-lg-4 center">
                         <input
@@ -61,10 +61,10 @@ const BoxGenerator = React.createClass({
                             onChange={this.handleChange.bind(this,"width")}
                           />
 
-                          <br/>Width
+                          <br/><p className="action-label">Width</p>
                     </div>
                     <div className="col-lg-1">
-                        <FontAwesome size='2x' name='unlock-alt' />
+                        <FontAwesome size='1.5x' name='unlock-alt' />
                     </div>
                     <div className="col-lg-4">
                         <input
@@ -74,7 +74,7 @@ const BoxGenerator = React.createClass({
                             onChange={this.handleChange.bind(this,"height")}
                           />
 
-                          <br/>Height
+                          <br/><p className="action-label">Height</p>
                     </div>
 
                 </div>
@@ -82,7 +82,7 @@ const BoxGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        Color
+                        <p className="action-label">Color</p>
                     </div>
                     <div className="col-lg-7 center">
                         <input
@@ -97,7 +97,7 @@ const BoxGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        Border
+                        <p className="action-label">Border</p>
                     </div>
                     <div className="col-lg-7 center">
                         <input
@@ -111,7 +111,7 @@ const BoxGenerator = React.createClass({
                 </div>
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        Border Radius
+                        <p className="action-label">Border Radius</p>
                     </div>
                     <div className="col-lg-7 center">
                         <input
@@ -142,7 +142,7 @@ const BoxGenerator = React.createClass({
                         <div className="element" style={box_style}></div>
                         {this.state.error}
                     </div>
-                    <div className="col-lg-4 nopadding" style={{"border":"1px solid #cccccc", "height":"100%"}}>
+                    <div className="col-lg-4 nopadding" style={{"border":"1px solid #cccccc", "height":"100%", "background":"#F7F7F7"}}>
                         {this.getSidePanel()}
                     </div>
                 </div>
