@@ -1222,8 +1222,8 @@ webpackJsonpexports([0],[
 	                    }),
 	                    _react2['default'].createElement('br', null),
 	                    _react2['default'].createElement(
-	                        'p',
-	                        { className: 'action-label' },
+	                        'span',
+	                        { className: 'action-label', style: { "text-align": "center" } },
 	                        'Width'
 	                    )
 	                ),
@@ -1243,8 +1243,8 @@ webpackJsonpexports([0],[
 	                    }),
 	                    _react2['default'].createElement('br', null),
 	                    _react2['default'].createElement(
-	                        'p',
-	                        { className: 'action-label' },
+	                        'span',
+	                        { className: 'action-label', style: { "text-align": "center" } },
 	                        'Height'
 	                    )
 	                )
@@ -13050,7 +13050,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Text'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Text'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -13064,12 +13068,29 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Color'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Color'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
-	                    { className: 'col-lg-7 center' },
-	                    _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
+	                    { className: 'entry form-group col-sm-7' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'input-group' },
+	                        _react2['default'].createElement(
+	                            'span',
+	                            { className: 'input-group-btn' },
+	                            _react2['default'].createElement(
+	                                'button',
+	                                { style: { "background-color": this.state.color }, className: 'btn', type: 'button' },
+	                                _react2['default'].createElement('span', { className: 'glyphicon glyphicon-no' })
+	                            )
+	                        ),
+	                        _react2['default'].createElement('input', { className: 'form-control', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
+	                    )
 	                )
 	            ),
 	            _react2['default'].createElement(
@@ -13078,7 +13099,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Font Size'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Font Size'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -13092,7 +13117,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Font Weight'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Font Weight'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -13144,7 +13173,11 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'col-lg-3' },
-	                    'Font Style'
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'action-label' },
+	                        'Font Style'
+	                    )
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
@@ -13212,7 +13245,8 @@ webpackJsonpexports([0],[
 	                    'div',
 	                    { className: 'col-lg-4 nopadding', style: {
 	                            "border": "1px solid #cccccc",
-	                            "height": "100%"
+	                            "height": "100%",
+	                            "background": "#F7F7F7"
 	                        } },
 	                    this.getSidePanel()
 	                )
