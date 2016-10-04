@@ -61,7 +61,7 @@ const BoxGenerator = React.createClass({
                             onChange={this.handleChange.bind(this,"width")}
                           />
 
-                          <br/><p className="action-label">Width</p>
+                          <br/><span className="action-label" style={{"text-align":"center"}}>Width</span>
                     </div>
                     <div className="col-lg-1">
                         <FontAwesome size='1.5x' name='unlock-alt' />
@@ -74,7 +74,7 @@ const BoxGenerator = React.createClass({
                             onChange={this.handleChange.bind(this,"height")}
                           />
 
-                          <br/><p className="action-label">Height</p>
+                          <br/><span className="action-label" style={{"text-align":"center"}}>Height</span>
                     </div>
 
                 </div>
