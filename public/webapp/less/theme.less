@@ -1,11 +1,16 @@
 @import url('./includes/fa.less');
 @import url("./includes/bootstrap.less");
 @import url("./includes/fonts.less");
+
+@import url("./includes/grid.less");
+@import url("./includes/subject.less");
+@import url("./includes/sidepanel.less");
+
 @import url("./palette.less");
 @import url("./components.less");
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -49,8 +54,8 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid #1FB6FF;
-  background-color: transparent !important;
+  // border-bottom: 2px solid #1FB6FF;
+  background-color: rgba(0,0,0,0.03) !important;
 }
 
 #site-nav-wrap {
@@ -133,41 +138,8 @@ body {
   }
 }
 
-.element{
-    border: 1px solid #333;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-}
 
-.Grid {
-  display: flex;
-  align-items: center;
-  position:absolute;
-  flex-direction: column;
-  height: 100%;
-  &-item {
-      width: 100%;
-      padding:0.5em 0;
-      border-bottom:1px solid #cccccc;
-      font-size: 20px;
-      text-align: center;
 
-      &-light{
-          background: #FFF;
-      }
-      &-dark{
-          background: #f7f7f7;
-      }
-  }
-  &-item--top {
-    border-top:1px solid #cccccc;
-  }
-  &-item--bottom {
-    border-bottom:1px solid #cccccc;
-  }
-}
 .text-box{
     width: 100px;
     height: 40px;
@@ -181,13 +153,6 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-
-
-
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
 
 .placeholder {
   .vcenter;

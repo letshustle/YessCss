@@ -138,7 +138,7 @@ const BoxGenerator = React.createClass({
         return (
             <div className="container col-lg-12" style={{"height":this.state.window.height-60}}>
                 <div className="row" style={{ "height":this.state.window.height-60}}>
-                    <div className="col-lg-8" style={{"border":"1px solid #cccccc", "height":"100%"}}>
+                    <div className="col-lg-8 subject">
                         <div className="element" style={box_style}></div>
                         {this.state.error}
                     </div>
