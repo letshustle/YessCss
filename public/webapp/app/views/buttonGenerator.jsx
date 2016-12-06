@@ -5,6 +5,8 @@ import {Material} from 'react-color';
 import FontAwesome from 'react-fontawesome';
 import Switch from 'react-toggle-switch'
 
+import BoxShadow from '../components/boxShadow';
+
 const ButtonGenerator = React.createClass({
     mixins: [OnResize],
 
@@ -51,32 +53,7 @@ const ButtonGenerator = React.createClass({
         }
 
     },
-    getBoxShadow(){
-        return (
-                <div className="panel panel-default">
-                    <div className="panel-heading">
-                        <div className="panel-title block">
-                            <div className = "big">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Box shadow</a>
-                            </div>
-                            <div className = "small" >
-                                <Switch onClick={() => { this.setState({isBoxShadow: !this.state.isBoxShadow});   } } on={this.state.isBoxShadow}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="collapse1" className="panel-collapse collapse in">
-                        <div className="panel-body">
-                            <div className="col-sm-3">
-                                box-shadow
-                            </div>
-                            <div className="col-sm-7 center">
-                                <input className="text-box" type="text" value={this.state.color} onChange={this.handleChange.bind(this, "color")}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )
-    },
+
     getBorder(){
         return (
                 <div className="panel panel-default">
@@ -104,6 +81,7 @@ const ButtonGenerator = React.createClass({
             )
     },
     getSidePanel() {
+
         return (
             <div className="Grid col-sm-12 nopadding">
                 <div className="Grid-item  Grid-item-top Grid-item-dark">
@@ -175,7 +153,7 @@ const ButtonGenerator = React.createClass({
                 <div className="Grid-item">
 
                     <div className="panel-group" id="accordion">
-                        {this.getBoxShadow()}
+                        <BoxShadow ref="boxshadow"></BoxShadow>
                         {this.getBorder()}
 
 
@@ -192,6 +170,8 @@ const ButtonGenerator = React.createClass({
         )
     },
     render() {
+        debugger;
+        let shadow_style = (typeof this.refs.boxshadow == "undefined")?"0 0 0 #888": (this.refs.boxshadow.vlength+"  "+this.refs.boxshadow.hlength+"  "+this.refs.boxshadow.vlength+"  "+this.refs.boxshadow.vlength+"  "+this.refs.boxshadow.color);
         let text_style = {
             "color": this.state.color,
             "fontSize": this.state.fontSize,
@@ -202,7 +182,8 @@ const ButtonGenerator = React.createClass({
             "color": this.state.color,
             "fontSize": this.state.fontSize,
             "fontWeight": this.state.fontWeight,
-            "fontStyle": this.state.fontStyle
+            "fontStyle": this.state.fontStyle,
+            "boxshadow": shadow_style,
         };
         return (
             <div className="container col-sm-12" style={{

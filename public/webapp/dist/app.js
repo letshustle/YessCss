@@ -54,7 +54,7 @@ webpackJsonpexports([0],[
 	exports['default'] = {
 	    jQuery: _jquery2['default'],
 	    moment: __webpack_require__(311),
-	    React: __webpack_require__(871),
+	    React: __webpack_require__(866),
 	    ReactDOM: __webpack_require__(313),
 	    Router: __webpack_require__(93),
 
@@ -590,7 +590,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -612,19 +612,19 @@ webpackJsonpexports([0],[
 
 	var _viewsButtonGenerator2 = _interopRequireDefault(_viewsButtonGenerator);
 
-	var _viewsAnchorGenerator = __webpack_require__(620);
+	var _viewsAnchorGenerator = __webpack_require__(621);
 
 	var _viewsAnchorGenerator2 = _interopRequireDefault(_viewsAnchorGenerator);
 
-	var _viewsPeople = __webpack_require__(621);
+	var _viewsPeople = __webpack_require__(622);
 
 	var _viewsPeople2 = _interopRequireDefault(_viewsPeople);
 
-	var _viewsRouteNotFound = __webpack_require__(624);
+	var _viewsRouteNotFound = __webpack_require__(625);
 
 	var _viewsRouteNotFound2 = _interopRequireDefault(_viewsRouteNotFound);
 
-	var _utilsErrorHandler = __webpack_require__(629);
+	var _utilsErrorHandler = __webpack_require__(630);
 
 	var _utilsErrorHandler2 = _interopRequireDefault(_utilsErrorHandler);
 
@@ -667,7 +667,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -771,7 +771,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -852,7 +852,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -942,7 +942,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1144,7 +1144,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -2100,7 +2100,7 @@ webpackJsonpexports([0],[
 
 /***/ },
 /* 360 */
-[872, 361],
+[867, 361],
 /* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19220,7 +19220,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -19504,7 +19504,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -19519,6 +19519,10 @@ webpackJsonpexports([0],[
 	var _reactToggleSwitch = __webpack_require__(619);
 
 	var _reactToggleSwitch2 = _interopRequireDefault(_reactToggleSwitch);
+
+	var _componentsBoxShadow = __webpack_require__(620);
+
+	var _componentsBoxShadow2 = _interopRequireDefault(_componentsBoxShadow);
 
 	var ButtonGenerator = _react2['default'].createClass({
 	    displayName: 'ButtonGenerator',
@@ -19567,58 +19571,9 @@ webpackJsonpexports([0],[
 	                break;
 	        }
 	    },
-	    getBoxShadow: function getBoxShadow() {
-	        var _this = this;
 
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'panel panel-default' },
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'panel-heading' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'panel-title block' },
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'big' },
-	                        _react2['default'].createElement(
-	                            'a',
-	                            { 'data-toggle': 'collapse', 'data-parent': '#accordion', href: '#collapse1' },
-	                            'Box shadow'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'small' },
-	                        _react2['default'].createElement(_reactToggleSwitch2['default'], { onClick: function () {
-	                                _this.setState({ isBoxShadow: !_this.state.isBoxShadow });
-	                            }, on: this.state.isBoxShadow })
-	                    )
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { id: 'collapse1', className: 'panel-collapse collapse in' },
-	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'panel-body' },
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'col-sm-3' },
-	                        'box-shadow'
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'col-sm-7 center' },
-	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
-	                    )
-	                )
-	            )
-	        );
-	    },
 	    getBorder: function getBorder() {
-	        var _this2 = this;
+	        var _this = this;
 
 	        return _react2['default'].createElement(
 	            'div',
@@ -19642,7 +19597,7 @@ webpackJsonpexports([0],[
 	                        'div',
 	                        { className: 'small' },
 	                        _react2['default'].createElement(_reactToggleSwitch2['default'], { onClick: function () {
-	                                _this2.setState({ isBorder: !_this2.state.isBorder });
+	                                _this.setState({ isBorder: !_this.state.isBorder });
 	                            }, on: this.state.isBorder })
 	                    )
 	                )
@@ -19668,6 +19623,7 @@ webpackJsonpexports([0],[
 	        );
 	    },
 	    getSidePanel: function getSidePanel() {
+
 	        return _react2['default'].createElement(
 	            'div',
 	            { className: 'Grid col-sm-12 nopadding' },
@@ -19817,7 +19773,7 @@ webpackJsonpexports([0],[
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'panel-group', id: 'accordion' },
-	                    this.getBoxShadow(),
+	                    _react2['default'].createElement(_componentsBoxShadow2['default'], { ref: 'boxshadow' }),
 	                    this.getBorder()
 	                )
 	            ),
@@ -19829,6 +19785,8 @@ webpackJsonpexports([0],[
 	        );
 	    },
 	    render: function render() {
+	        debugger;
+	        var shadow_style = typeof this.refs.boxshadow == "undefined" ? "0 0 0 #888" : this.refs.boxshadow.vlength + "  " + this.refs.boxshadow.hlength + "  " + this.refs.boxshadow.vlength + "  " + this.refs.boxshadow.vlength + "  " + this.refs.boxshadow.color;
 	        var text_style = {
 	            "color": this.state.color,
 	            "fontSize": this.state.fontSize,
@@ -19839,7 +19797,8 @@ webpackJsonpexports([0],[
 	            "color": this.state.color,
 	            "fontSize": this.state.fontSize,
 	            "fontWeight": this.state.fontWeight,
-	            "fontStyle": this.state.fontStyle
+	            "fontStyle": this.state.fontStyle,
+	            "boxshadow": shadow_style
 	        };
 	        return _react2['default'].createElement(
 	            'div',
@@ -19897,7 +19856,7 @@ webpackJsonpexports([0],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -19977,7 +19936,204 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(93);
+
+	var _classnames = __webpack_require__(319);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _serverLink = __webpack_require__(320);
+
+	var _serverLink2 = _interopRequireDefault(_serverLink);
+
+	var _reactFontawesome = __webpack_require__(345);
+
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+	var _reactToggleSwitch = __webpack_require__(619);
+
+	var _reactToggleSwitch2 = _interopRequireDefault(_reactToggleSwitch);
+
+	var BoxShadow = _react2['default'].createClass({
+	    displayName: 'BoxShadow',
+
+	    mixins: [],
+	    contextTypes: {
+	        router: _react2['default'].PropTypes.object
+	    },
+
+	    propTypes: {
+	        handleChange: _react2['default'].PropTypes.func
+	    },
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            isBoxShadow: false,
+	            vlength: 0,
+	            hlength: 0,
+	            blurRadius: 5,
+	            spreadRadius: 5,
+	            color: "#888"
+	        };
+	    },
+
+	    shouldComponentUpdate: function shouldComponentUpdate(nextProps, nextState) {
+	        return true;
+	    },
+
+	    componentDidMount: function componentDidMount() {},
+
+	    handleChange: function handleChange(type, event) {
+	        console.log(type);
+	        switch (type) {
+	            case "vlength":
+	                this.setState({ vlength: event.target.value });
+	                break;
+	            case "hlength":
+	                this.setState({ hlength: event.target.value });
+	                break;
+	            case "blurRadius":
+	                this.setState({ blurRadius: event.target.value });
+	                break;
+	            case "spreadRadius":
+	                this.setState({ spreadRadius: event.target.value });
+	                break;
+	            case "color":
+	                this.setState({ color: event.target.value });
+	                break;
+	            default:
+	                break;
+	        }
+	    },
+
+	    render: function render() {
+	        var _this = this;
+
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'panel panel-default' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'panel-heading' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-title block' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'big' },
+	                        _react2['default'].createElement(
+	                            'a',
+	                            { 'data-toggle': 'collapse', 'data-parent': '#accordion', href: '#collapse1' },
+	                            'Box shadow'
+	                        )
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'small' },
+	                        _react2['default'].createElement(_reactToggleSwitch2['default'], { onClick: function () {
+	                                _this.setState({ isBoxShadow: !_this.state.isBoxShadow });
+	                            }, on: this.state.isBoxShadow })
+	                    )
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { id: 'collapse1', className: 'panel-collapse collapse in' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-5' },
+	                        'Horizontal length'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-7 center' },
+	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.hlength, onChange: this.handleChange.bind(this, "hlength") })
+	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-5' },
+	                        'Verticle Length'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-7 center' },
+	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.vlength, onChange: this.handleChange.bind(this, "vlength") })
+	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-5' },
+	                        'Blur Radius'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-7 center' },
+	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.blurRadius, onChange: this.handleChange.bind(this, "blurRadius") })
+	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-5' },
+	                        'Spread Radius'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-7 center' },
+	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.spreadRadius, onChange: this.handleChange.bind(this, "spreadRadius") })
+	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-5' },
+	                        'Color'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-sm-7 center' },
+	                        _react2['default'].createElement('input', { className: 'text-box', type: 'text', value: this.state.color, onChange: this.handleChange.bind(this, "color") })
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = BoxShadow;
+	module.exports = exports['default'];
+
+/***/ },
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -20231,7 +20387,7 @@ webpackJsonpexports([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 621 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
@@ -20242,15 +20398,15 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsLoadingIndicator = __webpack_require__(622);
+	var _componentsLoadingIndicator = __webpack_require__(623);
 
 	var _componentsLoadingIndicator2 = _interopRequireDefault(_componentsLoadingIndicator);
 
-	var _componentsLoadingError = __webpack_require__(623);
+	var _componentsLoadingError = __webpack_require__(624);
 
 	var _componentsLoadingError2 = _interopRequireDefault(_componentsLoadingError);
 
@@ -20417,7 +20573,7 @@ webpackJsonpexports([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(92)))
 
 /***/ },
-/* 622 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20428,7 +20584,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -20475,7 +20631,7 @@ webpackJsonpexports([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 623 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20486,7 +20642,7 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -20531,7 +20687,7 @@ webpackJsonpexports([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 624 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20542,11 +20698,11 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDocumentTitle = __webpack_require__(625);
+	var _reactDocumentTitle = __webpack_require__(626);
 
 	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
 
@@ -20633,11 +20789,11 @@ webpackJsonpexports([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 625 */,
 /* 626 */,
 /* 627 */,
 /* 628 */,
-/* 629 */
+/* 629 */,
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20649,11 +20805,11 @@ webpackJsonpexports([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _viewsRouteError = __webpack_require__(630);
+	var _viewsRouteError = __webpack_require__(631);
 
 	var _viewsRouteError2 = _interopRequireDefault(_viewsRouteError);
 
@@ -20675,7 +20831,7 @@ webpackJsonpexports([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 630 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20690,7 +20846,7 @@ webpackJsonpexports([0],[
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _react = __webpack_require__(871);
+	var _react = __webpack_require__(866);
 
 	var _react2 = _interopRequireDefault(_react);
 
