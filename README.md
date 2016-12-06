@@ -12,3 +12,4 @@
 6. start server.
 
 *** In deployment we skip step 5
+test
