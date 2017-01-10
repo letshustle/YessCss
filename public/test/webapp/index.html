@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="description" content="">
+    <meta name="hostname" content="localhost">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/react-starter-favicon.png">
+    <link rel="shortcut icon" href="/images/react-starter-favicon.png">
+
+    <link rel="stylesheet" href="/dist/theme.css">
+
+    <title>YessCss - Box Generator, Text Generator, Button Generator</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- load font. -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body class="bg-shade">
+<div id="app"></div>
+<script src="/dist/vendor.js"></script>
+<script src="/dist/app.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45VmwegEBr81Wy0ksqO_xxTPLeTBse_k&callback=initMap" async defer></script> -->
+<script>
+    for (var n in window.exports) {
+        window[n] = window.exports[n];
+    }
+    window.$ = window.jQuery;
+    window.moment.locale("en");
+    Registry.ConfigStore.loadInitialData({
+        'data': 'data'
+    });
+    $(function () {
+        ReactDOM.render(
+                React.createElement(Router.Router, {history: Registry.history}, Registry.routes),
+                document.getElementById('app')
+        );
+    });
+</script>
+</body>
+</html>
