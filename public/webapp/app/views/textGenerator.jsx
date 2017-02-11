@@ -68,7 +68,7 @@ const TextGenerator = React.createClass({
                     <div className="entry form-group col-sm-7">
                       <div className="input-group">
                         <span className="input-group-btn">
-                        	<button style={{"background-color":this.state.color}} className="btn" type="button"><span className="glyphicon glyphicon-no"></span></button>
+                        	<button style={{"backgroundColor":this.state.color, "width":40}} className="btn" type="button"><span className="glyphicon glyphicon-no"></span></button>
                         </span>
                         <input className="form-control" type="text" value={this.state.color} onChange={this.handleChange.bind(this, "color")}/>
                       </div>
@@ -77,7 +77,7 @@ const TextGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        <p className="action-label">Font Size</p>
+                        <p className="action-label">Size</p>
                     </div>
                     <div className="col-lg-7 center">
                         <input className="text-box" type="number" value={this.state.fontSize} onChange={this.handleChange.bind(this, "fontSize")} name="size" min="1"/>
@@ -86,7 +86,7 @@ const TextGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        <p className="action-label">Font Weight</p>
+                        <p className="action-label">Weight</p>
                     </div>
                     <div className="col-lg-7 center">
                         <select className="text-box" value={this.state.fontWeight} name="fontStyle" onChange={this.handleChange.bind(this, "fontWeight")}>
@@ -103,7 +103,7 @@ const TextGenerator = React.createClass({
 
                 <div className="Grid-item">
                     <div className="col-lg-3">
-                        <p className="action-label">Font Style</p>
+                        <p className="action-label">Style</p>
                     </div>
                     <div className="col-lg-7 center">
                         <select className="text-box" value={this.state.fontStyle} name="fontStyle" onChange={this.handleChange.bind(this, "fontStyle")}>
