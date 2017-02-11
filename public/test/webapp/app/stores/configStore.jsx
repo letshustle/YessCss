@@ -1,0 +1,36 @@
+import moment from 'moment-timezone';
+import Reflux from 'reflux';
+
+const ConfigStore = Reflux.createStore({
+    init() {
+        this.config = {};
+    },
+
+    get(key) {
+        return this.config[key];
+    },
+
+    set(key, value) {
+        this.config[key] = value;
+        let out = {};
+        out[key] = value;
+        this.trigger(out);
+    },
+
+    getConfig() {
+        return this.config;
+    },
+
+    loadInitialData(config) {
+        config.features = new Set(config.features || []);
+        this.config = config;
+
+        if (config.user) {
+            moment.tz.setDefault(config.user.options.timezone);
+        }
+
+        this.trigger(config);
+    }
+});
+
+export default ConfigStore;

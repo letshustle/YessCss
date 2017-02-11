@@ -1,0 +1,46 @@
+.Grid {
+  display: flex;
+  align-items: center;
+  position:absolute;
+  flex-direction: column;
+  height: 100%;
+  &-item {
+      width: 100%;
+      padding:0.5em 0;
+      border-bottom:1px solid #cccccc;
+      font-size: 20px;
+      text-align: center;
+
+      &-light{
+          background: #FFF;
+      }
+      &-dark{
+          background: #f7f7f7;
+      }
+  }
+  &-item--top {
+    border-top:1px solid #cccccc;
+  }
+  &-item--bottom {
+    border-bottom:1px solid #cccccc;
+  }
+}
+
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.block{
+    display:flex;
+    flex-flow: row;
+    .big{
+        flex-grow: 4;
+        text-align: start;
+    }
+    .small{
+        flex-grow: 1;
+    }
+}

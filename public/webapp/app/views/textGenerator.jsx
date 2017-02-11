@@ -132,11 +132,8 @@ const TextGenerator = React.createClass({
                 <div className="row" style={{
                     "height": this.state.window.height - 60
                 }}>
-                    <div className="col-lg-8" style={{
-                        "border": "1px solid #cccccc",
-                        "height": "100%"
-                    }}>
-                        <div className="element" style={text_style}>{this.state.text}</div>
+                    <div className="col-lg-8" >
+                        <div className="element subject" style={text_style}>{this.state.text}</div>
                         {this.state.error}
                     </div>
                     <div className="col-lg-4 nopadding" style={{
