@@ -13085,7 +13085,7 @@ webpackJsonpexports([0],[
 	                            { className: 'input-group-btn' },
 	                            _react2['default'].createElement(
 	                                'button',
-	                                { style: { "background-color": this.state.color }, className: 'btn', type: 'button' },
+	                                { style: { "backgroundColor": this.state.color, "width": 40 }, className: 'btn', type: 'button' },
 	                                _react2['default'].createElement('span', { className: 'glyphicon glyphicon-no' })
 	                            )
 	                        ),
@@ -13102,7 +13102,7 @@ webpackJsonpexports([0],[
 	                    _react2['default'].createElement(
 	                        'p',
 	                        { className: 'action-label' },
-	                        'Font Size'
+	                        'Size'
 	                    )
 	                ),
 	                _react2['default'].createElement(
@@ -13120,7 +13120,7 @@ webpackJsonpexports([0],[
 	                    _react2['default'].createElement(
 	                        'p',
 	                        { className: 'action-label' },
-	                        'Font Weight'
+	                        'Weight'
 	                    )
 	                ),
 	                _react2['default'].createElement(
@@ -13176,7 +13176,7 @@ webpackJsonpexports([0],[
 	                    _react2['default'].createElement(
 	                        'p',
 	                        { className: 'action-label' },
-	                        'Font Style'
+	                        'Style'
 	                    )
 	                ),
 	                _react2['default'].createElement(

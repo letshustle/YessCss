@@ -1,3 +1,6 @@
 # Dependency directories
 node_modules
 public/node_modules
+
+#build directory
+public/webapp/dist
