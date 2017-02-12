@@ -140,7 +140,7 @@ if (isProd) {
 }
 
 config.devServer = {
-    contentBase:'./webapp/dist',
+    contentBase:'./webapp/',
     stats: 'minimal'
   };
 
