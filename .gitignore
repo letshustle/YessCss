@@ -3,4 +3,4 @@ node_modules
 public/node_modules
 
 # Build directory
-public/webapp/dist
+
