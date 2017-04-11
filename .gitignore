@@ -1,6 +1,9 @@
-# Dependency directories
+.DS_STORE
+*.log
+
 node_modules
-public/node_modules
 
-# Build directory
+dist
+coverage
 
+.idea/
