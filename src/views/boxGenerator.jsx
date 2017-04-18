@@ -76,7 +76,7 @@ class BoxGenerator extends React.Component {
         return (
             <div className="Grid  nopadding">
                 
-                <Dimension name="Dimension" propname={["height","width"]} ivalue={[this.state.height,this.state.width]} func={this.handleChange}></Dimension>
+                <Dimension name="Size" propname={["height","width"]} ivalue={[this.state.height,this.state.width]} func={this.handleChange}></Dimension>
                 <Color name="Color" propname="background" ivalue={this.state.background} func={this.handleChange} color={this.state.background}></Color>
                 <Three name="Opacity"    
                         propname="opacity" 
@@ -127,7 +127,7 @@ class BoxGenerator extends React.Component {
                     {this.state.error}
                 </div>
                          
-                <div className="sidebar" style={{ "border": "1px solid #cccccc", "height": "100%", "background": "#F7F7F7" }}>
+                <div className="sidebar" >
                     {this.getSidePanel()}
                 </div>
 

@@ -256,7 +256,7 @@
 
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -283,7 +283,7 @@ body {
   .logo{
     min-width: 6em;
     height: auto;
-    padding: 6px 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -492,8 +492,12 @@ textarea:focus, input:focus{
 // override bootstrap components
 .navbar-nav{
   flex-direction: row;
+  margin: 5px 0px;
 }
-
+.navbar-default {
+background-color: #fff;
+border-color: #ccc;
+}
 // New sass
 #app{
     display:flex;
@@ -525,11 +529,15 @@ textarea:focus, input:focus{
           transform: translate(-50%,-50%);
           position: absolute;
         }
-      }
+      }      
       .sidebar{
         display:flex;
         width:450px;
         overflow:auto;
+        border: 1px solid #ccc;
+        height: 100%;
+        background: #F7F7F7;
+        border-top: none;
       }
     }
 }
