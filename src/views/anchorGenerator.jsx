@@ -121,7 +121,7 @@ class AnchorGenerator extends React.Component {
                         <a target="_blank" href={this.state.href} className="element" style={box_style}>{this.state.text}</a>
                         {this.state.error}
                     </div>
-                    <div className="sidebar" style={{"border":"1px solid #cccccc", "height":"100%"}}>
+                    <div className="sidebar">
                         {this.getSidePanel()}
                     </div>
                 

@@ -95,7 +95,7 @@ class TextGenerator extends React.Component {
                         <div className="element subject" style={text_style}>{this.state.text}</div>
                         {this.state.error}
                     </div>
-                    <div className="sidebar" style={{ "border": "1px solid #cccccc", "height": "100%", "background": "#F7F7F7" }}>
+                    <div className="sidebar">
                         {this.getSidePanel()}
                     </div>
                 </div>
