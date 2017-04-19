@@ -369,9 +369,8 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  &-item {
-          width: 100%;
-          padding: 1em 0;
+  &-item {          
+          padding: 15px 0;
           border-bottom: 1px solid #ccc;
           font-size: 20px;
           text-align: center;
@@ -379,6 +378,8 @@ body {
           flex-direction: row;
           flex: 0 0 auto;
           align-content: center;
+          height: 60px;
+          width: 100%;
 
       &-light{
           background: #FFF;
@@ -392,7 +393,7 @@ body {
     .text{
       display: flex;
       align-items: center;
-      font-size: 17px;
+      font-size: 14px;
       flex: 1 0 33px;
       margin-left: 20px;
       p{
@@ -405,11 +406,12 @@ body {
               display: flex;
               align-items: flex-end;
               flex-direction: row;
-              flex: 2 0 250px;
-              padding: 0px 35px;
+              flex: 2 0 210px;
+              padding: 0 35px;
+              padding-right: 20px;
               span{
                 margin:0px 25px;
-                padding-bottom: 2px;
+                padding-bottom: 4px;
               }
               .color{
     
@@ -439,7 +441,7 @@ body {
         padding-left: 55px;
     }
     .input{
-        flex: 1 0 150px;
+        flex: 1 0 110px;
     }
   }
 
@@ -493,6 +495,11 @@ textarea:focus, input:focus{
 .navbar-nav{
   flex-direction: row;
   margin: 5px 0px;
+  li{
+    a{
+      font-weight: 400
+    }
+  }
 }
 .navbar-default {
 background-color: #fff;
@@ -532,7 +539,7 @@ border-color: #ccc;
       }      
       .sidebar{
         display:flex;
-        width:450px;
+        width:360px;
         overflow:auto;
         border: 1px solid #ccc;
         height: 100%;
