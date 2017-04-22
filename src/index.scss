@@ -584,6 +584,7 @@ border-color: #ccc;
     cursor: pointer;
     display: inline-block;
     float: right;
+    background: #dadada;
 }
 
 .switch-toggle {
@@ -599,11 +600,14 @@ border-color: #ccc;
 }
 
 .switch.on {
-    background: green;
+    background: #94DE45;
+    border: none;
 }
 
 .switch.on .switch-toggle {
-    left: 23px;
+    left: 26px;
+    top: 3px;
+    border: 1px solid #72BD22;
 }
 
 .switch.disabled {
@@ -658,7 +662,7 @@ border-color: #ccc;
               display: flex;
               flex: 1 1 auto;
               justify-content: flex-end;
-              margin-right:35px;
+              margin-right:22px;
         }
 
       }
