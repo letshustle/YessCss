@@ -529,10 +529,8 @@ background-color: #fff;
 border-color: #ccc;
 }
 
-.collapse {
-  .in{
-    background-color: #F7F7F7;
-  }
+.collapse.in {
+  background: #f7f7f7 !important;
 }
 // New sass
 #app{
@@ -589,13 +587,13 @@ border-color: #ccc;
 }
 
 .switch-toggle {
-    border: 1px solid #999;
-    box-shadow: 1px 1px 1px #ccc;
-    width: 25px;
-    height: 24px;
-    left: 0;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 2px;
     border-radius: 12px;
-    background: white;
+    background: #fff;
     position: relative;
     transition: left .2s ease-in-out;
 }
@@ -618,7 +616,6 @@ border-color: #ccc;
 
     padding-top: 15px;
     display: flex;
-    border-bottom: 1px solid #ccc;
     font-size: 20px;
     flex-direction: column;
     flex: 0 0 auto;
@@ -642,7 +639,7 @@ border-color: #ccc;
 
               display: flex;
               flex: 1 0 auto;
-              font-size: 17px;
+              font-size: 14px;
               margin-left: 20px;
               align-items: center;
               a{
