@@ -299,7 +299,7 @@ body {
       }
       &:last-child{
         a{
-              padding: 10px;
+            padding: 11px;
         }
       }
   }
@@ -455,8 +455,8 @@ body {
 }
 .text-box{
     width: 100%;
-    height: 27px;
-    font-size: 17px;
+    height: 30px;
+    font-size: 14px;
     border: 1px solid #CCCCCC;
     border-radius: 5px 5px 5px 5px;
     padding: 8px;
@@ -500,7 +500,7 @@ textarea:focus, input:focus{
       a{
         position: relative;
         display: block;
-        padding: 10px 20px;
+        padding: 14px 20px;
     }
   }
 }
