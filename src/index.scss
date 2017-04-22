@@ -416,7 +416,7 @@ body {
               }
               .color{
     
-                height: 27px;
+                height: 30px;
                 width: 42px;
                 border-radius:  5px 0 0 5px ;
                 border: 1px solid #CCCCCC;
@@ -440,6 +440,7 @@ body {
         flex: 1 0 150px;
         align-items: center;
         padding-left: 55px;
+        margin-left: -5px;
     }
     .input{
         flex: 1 0 110px;
@@ -527,6 +528,12 @@ textarea:focus, input:focus{
 background-color: #fff;
 border-color: #ccc;
 }
+
+.collapse {
+  .in{
+    background-color: #F7F7F7;
+  }
+}
 // New sass
 #app{
     display:flex;
@@ -609,7 +616,7 @@ border-color: #ccc;
 /// colapse
 .ccollapse{
 
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
     border-bottom: 1px solid #ccc;
     font-size: 20px;
@@ -618,17 +625,18 @@ border-color: #ccc;
     width: 100%;
     background: #FFF;
     .text{
-      font-size: 12px !important;
+      font-size: 14px !important;
     }
     .heading{
       display: flex;
       flex: 1 0 auto;
-      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
       .title{
 
         display: flex;
         flex: 1 0 auto; 
-        font-size: 17px;
+        font-size: 14px;
         color:#000;
         .big{
 
@@ -695,11 +703,10 @@ border-color: #ccc;
     display:flex;
     flex-direction: row;
     flex:1;
-    font-size: 17px;
-    height: 27px;
+    font-size: 14px;
+    height: 30px;
     align-items: center;
     padding:0px 10px;
-
     color: #000;
     background-color: #ffffff;
     border: 1px solid #CCCCCC;
