@@ -394,6 +394,7 @@ body {
       display: flex;
       align-items: center;
       font-size: 14px;
+      font-weight: 100;
       flex: 1 0 33px;
       margin-left: 20px;
       p{
@@ -459,6 +460,7 @@ body {
     border: 1px solid #CCCCCC;
     border-radius: 5px 5px 5px 5px;
     padding: 8px;
+    font-weight: 100;
     
     
 }
@@ -491,7 +493,27 @@ textarea:focus, input:focus{
 
 
 
+
 // override bootstrap components
+.nav{
+  li{
+      a{
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+    }
+  }
+}
+.navbar-default .navbar-nav>li>a {
+    color: #aaa;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #333;
+    background: none !important
+}
+
+
 .navbar-nav{
   flex-direction: row;
   margin: 5px 0px;
