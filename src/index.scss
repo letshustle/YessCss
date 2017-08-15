@@ -256,7 +256,7 @@
 
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -283,7 +283,7 @@ body {
   .logo{
     min-width: 6em;
     height: auto;
-    padding: 6px 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -299,7 +299,7 @@ body {
       }
       &:last-child{
         a{
-              padding: 10px;
+            padding: 11px;
         }
       }
   }
@@ -369,9 +369,8 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  &-item {
-          width: 100%;
-          padding: 1em 0;
+  &-item {          
+          padding: 15px 0;
           border-bottom: 1px solid #ccc;
           font-size: 20px;
           text-align: center;
@@ -379,6 +378,8 @@ body {
           flex-direction: row;
           flex: 0 0 auto;
           align-content: center;
+          height: 60px;
+          width: 100%;
 
       &-light{
           background: #FFF;
@@ -392,7 +393,8 @@ body {
     .text{
       display: flex;
       align-items: center;
-      font-size: 17px;
+      font-size: 14px;
+      font-weight: 100;
       flex: 1 0 33px;
       margin-left: 20px;
       p{
@@ -405,15 +407,16 @@ body {
               display: flex;
               align-items: flex-end;
               flex-direction: row;
-              flex: 2 0 250px;
-              padding: 0px 35px;
+              flex: 2 0 210px;
+              padding: 0 35px;
+              padding-right: 20px;
               span{
                 margin:0px 25px;
-                padding-bottom: 2px;
+                padding-bottom: 4px;
               }
               .color{
     
-                height: 27px;
+                height: 30px;
                 width: 42px;
                 border-radius:  5px 0 0 5px ;
                 border: 1px solid #CCCCCC;
@@ -437,9 +440,10 @@ body {
         flex: 1 0 150px;
         align-items: center;
         padding-left: 55px;
+        margin-left: -5px;
     }
     .input{
-        flex: 1 0 150px;
+        flex: 1 0 110px;
     }
   }
 
@@ -452,11 +456,12 @@ body {
 }
 .text-box{
     width: 100%;
-    height: 27px;
-    font-size: 17px;
+    height: 30px;
+    font-size: 14px;
     border: 1px solid #CCCCCC;
     border-radius: 5px 5px 5px 5px;
     padding: 8px;
+    font-weight: 100;
     
     
 }
@@ -489,11 +494,44 @@ textarea:focus, input:focus{
 
 
 
+
 // override bootstrap components
-.navbar-nav{
-  flex-direction: row;
+.nav{
+  li{
+      a{
+        position: relative;
+        display: block;
+        padding: 14px 20px;
+    }
+  }
+}
+.navbar-default .navbar-nav>li>a {
+    color: #aaa;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #333;
+    background: none !important
+}
+
+
+.navbar-nav{
+  flex-direction: row;
+  margin: 5px 0px;
+  li{
+    a{
+      font-weight: 400
+    }
+  }
+}
+.navbar-default {
+background-color: #fff;
+border-color: #ccc;
+}
+
+.collapse.in {
+  background: #f7f7f7 !important;
+}
 // New sass
 #app{
     display:flex;
@@ -525,43 +563,51 @@ textarea:focus, input:focus{
           transform: translate(-50%,-50%);
           position: absolute;
         }
-      }
+      }      
       .sidebar{
         display:flex;
-        width:450px;
+        width:360px;
         overflow:auto;
+        border: 1px solid #ccc;
+        height: 100%;
+        background: #F7F7F7;
+        border-top: none;
       }
     }
 }
 
 .switch {
     border: 1px solid #ccc;
-    width: 50px;
+    width: 45px;
     height: 26px;
     border-radius: 13px;
     cursor: pointer;
     display: inline-block;
     float: right;
+    background: #dadada;
 }
 
 .switch-toggle {
-    border: 1px solid #999;
-    box-shadow: 1px 1px 1px #ccc;
-    width: 25px;
-    height: 24px;
-    left: 0;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 2px;
     border-radius: 12px;
-    background: white;
+    background: #fff;
     position: relative;
     transition: left .2s ease-in-out;
 }
 
 .switch.on {
-    background: green;
+    background: #94DE45;
+    border: none;
 }
 
 .switch.on .switch-toggle {
-    left: 23px;
+    left: 21px;
+    top: 3px;
+    border: 1px solid #72BD22;
 }
 
 .switch.disabled {
@@ -572,32 +618,32 @@ textarea:focus, input:focus{
 /// colapse
 .ccollapse{
 
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
-    border-bottom: 1px solid #ccc;
     font-size: 20px;
     flex-direction: column;
     flex: 0 0 auto;
     width: 100%;
     background: #FFF;
     .text{
-      font-size: 12px !important;
+      font-size: 14px !important;
     }
     .heading{
       display: flex;
       flex: 1 0 auto;
-      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
       .title{
 
         display: flex;
         flex: 1 0 auto; 
-        font-size: 17px;
+        font-size: 14px;
         color:#000;
         .big{
 
               display: flex;
               flex: 1 0 auto;
-              font-size: 17px;
+              font-size: 14px;
               margin-left: 20px;
               align-items: center;
               a{
@@ -616,7 +662,7 @@ textarea:focus, input:focus{
               display: flex;
               flex: 1 1 auto;
               justify-content: flex-end;
-              margin-right:35px;
+              margin-right:22px;
         }
 
       }
@@ -658,11 +704,10 @@ textarea:focus, input:focus{
     display:flex;
     flex-direction: row;
     flex:1;
-    font-size: 17px;
-    height: 27px;
+    font-size: 14px;
+    height: 30px;
     align-items: center;
     padding:0px 10px;
-
     color: #000;
     background-color: #ffffff;
     border: 1px solid #CCCCCC;
