@@ -36,16 +36,16 @@ class BoxGenerator extends React.Component {
         console.log("clicked")
         console.log( ReactDOM.findDOMNode(this.refs.container).style);
     }
-    
+
     handleChangeComplete = (color) => {
 
         console.log(color)
         this.setState({ background: color.hex });
-    }    
+    }
     shouldComponentUpdate(nextProps, nextState){
         return true;
     }
-    handleChange = (type, event) => {     
+    handleChange = (type, event) => {
         console.log(type, event.target.value);
         switch (type) {
             case "width":
@@ -58,7 +58,6 @@ class BoxGenerator extends React.Component {
                 this.setState({ background: event.target.value });
                 break;
             case "border":
-
                 this.setState({ border: event.target.value });
                 break;
             case "borderRadius":
@@ -86,19 +85,18 @@ class BoxGenerator extends React.Component {
             "border": this.state.border,
             "opacity": this.state.opacity,
             "boxShadow":this.state.boxShadow,
-        };        
+        };
         return (
             <div className="Grid  nopadding">
-                
                 <Dimension name="Size" propname={["height","width"]} ivalue={[this.state.height,this.state.width]} func={this.handleChange}></Dimension>
                 <Color name="Color" propname="background" ivalue={this.state.background} func={this.handleChange} color={this.state.background}></Color>
-                <Three name="Opacity"    
-                        propname="opacity" 
-                        func={this.handleChange} 
+                <Three name="Opacity"
+                        propname="opacity"
+                        func={this.handleChange}
                         currentValue={this.state.opacity}
                         min={0}
-                        max={1}></Three>
-              
+                        max={1}>
+                </Three>
                 <Border ref="border"
                            name="Border"
                            propname="border"
@@ -115,15 +113,13 @@ class BoxGenerator extends React.Component {
                            name="Box Shadow"
                            propname="boxShadow"
                            ivalue={this.state.boxShadow}
-                           func={this.handleChange}
-                           ></BoxShadow>
-                           <ActionButton boxStyle={box_style} func={this.getStyleProps}></ActionButton>
-
-                
+                           func={this.handleChange}>
+                </BoxShadow>
+                <ActionButton name={"boxGenerator"} cssStyle={box_style} ></ActionButton>
             </div>
         )
     }
-    
+
     render() {
         let box_style = {
             "width": this.state.width,
@@ -133,15 +129,13 @@ class BoxGenerator extends React.Component {
             "border": this.state.border,
             "opacity": this.state.opacity,
             "boxShadow":this.state.boxShadow,
-        };        
+        };
         return (
-            <div className="holder" >
-
+            <div className="holder">
                 <div className="subject">
                     <div ref={"container"} className="element" style={box_style}></div>
                     {this.state.error}
                 </div>
-                         
                 <div className="sidebar" >
                     {this.getSidePanel()}
                 </div>
