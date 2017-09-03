@@ -109,6 +109,7 @@ class BoxGenerator extends React.Component {
                            propname="borderRadius"
                            ivalue={this.state.borderRadius}
                            func={this.handleChange}
+                           //type="number"
                            ></BorderRadius>
                 <BoxShadow ref="boxShadow"
                            name="Box Shadow"

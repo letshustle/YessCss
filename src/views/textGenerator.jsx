@@ -71,9 +71,9 @@ class TextGenerator extends React.Component {
       };
         return (
             <div className="Grid  nopadding">
-                <Single name="Text" propname="text" ivalue={this.state.text} func={this.handleChange}></Single>
+                <Single type="text" name="Text" propname="text" ivalue={this.state.text} func={this.handleChange}></Single>
                 <Color name="Color" propname="color" ivalue={this.state.color} func={this.handleChange} color={this.state.color}></Color>
-                <Single name="Font Size" propname="fontSize" ivalue={this.state.fontSize} func={this.handleChange}></Single>
+                <Single type="number" name="Font Size" propname="fontSize" ivalue={this.state.fontSize} func={this.handleChange}></Single>
                 <SimpleDropDown name="Font Weight"
                                 propname="fontWeight"
                                 ivalue={this.state.fontWeight}

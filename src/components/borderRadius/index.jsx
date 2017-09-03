@@ -13,7 +13,7 @@ import SingleDropDown from '../singleDropDown';
 class BorderRadius extends React.Component {
     constructor(props) {
         super(props);
-        var diffParam = props.ivalue.split(" ");    
+        var diffParam = props.ivalue.split(" ");
         this.state = {
                 borderTopLeftRadius: diffParam[0],
                 borderTopRightRadius: diffParam[1],
@@ -27,7 +27,7 @@ class BorderRadius extends React.Component {
     }
 
     handleChange = (type, event) => {
-       
+
         console.log("box-change-handler",type);
         var valueBox = "";
         switch (type) {
@@ -50,13 +50,13 @@ class BorderRadius extends React.Component {
             default:
                 break;
         }
-        
+
         this.props.func(this.props.propname, {target:{value:valueBox}});
         console.log("component value ",event.target.value);
-        
+
     }
     _handleCollapse(){
-        this.setState({isBoxShadow: (!this.state.isBoxShadow)}); 
+        this.setState({isBoxShadow: (!this.state.isBoxShadow)});
         this.refs.collapseButton.click();
         if (this.state.isBoxShadow){
             event.target.value = "";
@@ -65,7 +65,7 @@ class BorderRadius extends React.Component {
             event.target.value = this.state.borderTopLeftRadius+" "+this.state.borderTopRightRadius+" "+this.state.borderBottomLeftRadius+" "+this.state.borderBottomRightRadius;
             this.props.func(this.props.propname, event);
         }
-        
+
     }
 
     render() {
@@ -82,11 +82,11 @@ class BorderRadius extends React.Component {
                     </div>
                 </div>
                 <div id={this.props.propname} className="panel-collapse collapse">
-                   
-                <Single  name="Top-Left"      propname="borderTopLeftRadius" ivalue={this.state.borderTopLeftRadius} func={this.handleChange}></Single>
-                <Single  name="Top-Right"     propname="borderTopRightRadius" ivalue={this.state.borderTopRightRadius} func={this.handleChange}></Single>
-                <Single name="Bottom-Right" propname="borderBottomRightRadius" ivalue={this.state.borderBottomRightRadius} func={this.handleChange}></Single>
-                <Single name="Bottom-Left"  propname="borderBottomLeftRadius" ivalue={this.state.borderBottomLeftRadius} func={this.handleChange}></Single>  
+
+                <Single type={this.props.type}  name="Top-Left"    propname="borderTopLeftRadius" ivalue={this.state.borderTopLeftRadius} func={this.handleChange}></Single>
+                <Single type={this.props.type}  name="Top-Right"   propname="borderTopRightRadius" ivalue={this.state.borderTopRightRadius} func={this.handleChange}></Single>
+                <Single type={this.props.type} name="Bottom-Right" propname="borderBottomRightRadius" ivalue={this.state.borderBottomRightRadius} func={this.handleChange}></Single>
+                <Single type={this.props.type} name="Bottom-Left"  propname="borderBottomLeftRadius" ivalue={this.state.borderBottomLeftRadius} func={this.handleChange}></Single>
 
                 </div>
             </div>
@@ -95,11 +95,12 @@ class BorderRadius extends React.Component {
 };
 
 BorderRadius.propTypes = {
-    
+
     name: React.PropTypes.string,
     ivalue: React.PropTypes.string,
     func: React.PropTypes.func,
     propname:  React.PropTypes.string,
+    type:  React.PropTypes.string
 }
 
 

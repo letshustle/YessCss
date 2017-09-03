@@ -55,7 +55,6 @@ class Three extends React.Component {
 
                 <div className="input">
                     <input
-
                         className="text-box"
                         type="text"
                         value={this.props.currentValue}

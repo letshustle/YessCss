@@ -36,7 +36,7 @@ class Single extends React.Component {
                         <input
                             ref = "abc"
                             className="text-box"
-                            type="text"
+                            type={this.props.type}
                             value={this.props.ivalue}
                             onChange={this.props.func.bind(this,this.props.propname)}
                             />
@@ -52,6 +52,7 @@ Single.propTypes = {
     ivalue: React.PropTypes.string,
     func: React.PropTypes.func,
     propname: React.PropTypes.string,
+    type: React.PropTypes.string
 }
 
 export default Single;

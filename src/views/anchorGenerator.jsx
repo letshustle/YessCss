@@ -12,6 +12,7 @@ import Border from '../components/border';
 import Font from '../components/font';
 import BorderRadius from '../components/borderRadius';
 import Credits from '../components/credits';
+import ActionButton from '../components/actionButton';
 
 class AnchorGenerator extends React.Component {
     constructor(props) {
@@ -75,6 +76,16 @@ class AnchorGenerator extends React.Component {
     }
     getSidePanel = () => {
         let font = [this.state.fontSize, this.state.fontWeight, this.state.fontStyle];
+        let box_style = {
+
+            "borderRadius":this.state.borderRadius,
+            "color":this.state.color,
+            "background":this.state.background,
+            "border":this.state.border,
+            "fontSize":this.state.fontSize,
+            "fontWeight":this.state.fontWeight,
+            "fontStyle":this.state.fontStyle,
+        };
         return (
             <div className="Grid  nopadding">
 
@@ -101,6 +112,7 @@ class AnchorGenerator extends React.Component {
                            ivalue={this.state.borderRadius}
                            func={this.handleChange}
                            ></BorderRadius>
+                <ActionButton name={"anchorGenerator"} cssStyle={box_style} ></ActionButton>
             </div>
         )
     }

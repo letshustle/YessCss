@@ -75,6 +75,15 @@ class ActionButton extends React.Component {
           "background:"+this.props.cssStyle.background+";"+"\n"+
           "border-radius:"+this.props.cssStyle.borderRadius+";"
         }
+        else if(this.props.name == "anchorGenerator"){
+          cssCode = "border-radius:"+this.props.cssStyle.borderRadius+";"+"\n"+
+            "color:"+this.props.cssStyle.color+";"+"\n"+
+            "background:"+this.props.cssStyle.background+";"+"\n"+
+            "border:"+this.props.cssStyle.border+";"+"\n"+
+            "font-size:"+this.props.cssStyle.fontSize+";"+"\n"+
+            "font-weight:"+this.props.cssStyle.fontWeight+";"+"\n"+
+            "font-style:"+this.props.cssStyle.fontStyle+";"
+        }
         return (
       		<div style={{width:'100%'}}>
 		        <button style={{borderRadius:0}} onClick={this.handleClick} type="button" className="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#codeModal">View Code</button>
