@@ -8,6 +8,7 @@ import Single from '../components/single';
 import Color from '../components/color';
 import SimpleDropDown from '../components/simpleDropDown';
 import ActionButton from '../components/actionButton';
+import Credits from '../components/credits';
 
 class TextGenerator extends React.Component {
     constructor(props) {
@@ -102,6 +103,7 @@ class TextGenerator extends React.Component {
                     <div className="subject" >
                         <div className="element subject" style={text_style}>{this.state.text}</div>
                         {this.state.error}
+                        <Credits/>
                     </div>
                     <div className="sidebar">
                         {this.getSidePanel()}

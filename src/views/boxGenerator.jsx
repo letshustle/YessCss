@@ -12,6 +12,7 @@ import Color from '../components/color';
 import BoxShadow from '../components/boxShadow';
 import Border from '../components/border';
 import BorderRadius from '../components/borderRadius';
+import Credits from '../components/credits';
 // import Slider from 'material-ui/Slider';
 
 class BoxGenerator extends React.Component {
@@ -135,6 +136,7 @@ class BoxGenerator extends React.Component {
                 <div className="subject">
                     <div ref={"container"} className="element" style={box_style}></div>
                     {this.state.error}
+                    <Credits/>
                 </div>
                 <div className="sidebar" >
                     {this.getSidePanel()}

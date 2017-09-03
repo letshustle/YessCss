@@ -1,10 +1,13 @@
 import React from 'react'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/agate.css'
-let cssCode = ''
+let cssCode = 'something:wrong'
 class ActionButton extends React.Component {
     constructor(props) {
       super(props)
+      this.state = {
+        copied: false
+      };
     }
     shouldComponentUpdate(nextProps, nextState) {
         // if (nextState.value == this.refs.abc.value)
@@ -36,12 +39,13 @@ class ActionButton extends React.Component {
       // "opacity:"+this.props.cssStyle.opacity+";"+
       // "box-shadow:"+this.props.cssStyle.boxShadow+";")
       var code = JSON.stringify(cssCode)
-      code = code.replace(/\/r/g, '\n');
+      //code = code.replace(/\s+/g, ' ').trim();
 	    textField.innerText = code.replace (/(^")|("$)/g, '')
 	    document.body.appendChild(textField)
 	    textField.select()
 	    document.execCommand('copy')
-	    alert("Code Copied")
+	    //alert("Code Copied")
+      this.setState({copied:true})
 	    textField.remove()
     }
     render() {
@@ -56,14 +60,24 @@ class ActionButton extends React.Component {
         }
         else if(this.props.name == "textGenerator"){
           cssCode = "color:"+this.props.cssStyle.color+";"+"\n"+
-          "fontSize:"+this.props.cssStyle.fontSize+";"+"\n"+
-          "fontWeight:"+this.props.cssStyle.fontWeight+";"+"\n"+
-          "fontStyle:"+this.props.cssStyle.fontStyle+";"+"\n"+
+          "font-size:"+this.props.cssStyle.fontSize+";"+"\n"+
+          "font-weight:"+this.props.cssStyle.fontWeight+";"+"\n"+
+          "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
           "border:"+"none"
         }
+        else if(this.props.name == "buttonGenerator"){
+          cssCode = "color:"+this.props.cssStyle.color+";"+"\n"+
+          "font-size:"+this.props.cssStyle.fontSize+";"+"\n"+
+          "font-weight:"+this.props.cssStyle.fontWeight+";"+"\n"+
+          "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
+          "border:"+this.props.cssStyle.border+";"+"\n"+
+          "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
+          "background:"+this.props.cssStyle.background+";"+"\n"+
+          "border-radius:"+this.props.cssStyle.borderRadius+";"
+        }
         return (
-      		<div>
-		        <button onClick={this.handleClick} type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#codeModal">View Code</button>
+      		<div style={{width:'100%'}}>
+		        <button style={{borderRadius:0}} onClick={this.handleClick} type="button" className="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#codeModal">View Code</button>
 		        <div id="codeModal" className="modal fade" role="dialog">
 		          <div className="modal-dialog">
 		            <div className="modal-content">
@@ -73,7 +87,7 @@ class ActionButton extends React.Component {
 						       </Highlight>
 		              </div>
 		              <div className="modal-footer">
-				        <button onClick={this.copyToClipboard} type="button" className="btn btn-default" data-dismiss="modal" >Copy to Clipboard</button>
+				        <button onClick={this.copyToClipboard} type="button" className="btn btn-default" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
 				      </div>
 		            </div>
 		          </div>

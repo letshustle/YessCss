@@ -11,6 +11,7 @@ import SimpleDropDown from '../components/simpleDropDown';
 import Border from '../components/border';
 import Font from '../components/font';
 import BorderRadius from '../components/borderRadius';
+import Credits from '../components/credits';
 
 class AnchorGenerator extends React.Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class AnchorGenerator extends React.Component {
         };
     }
 
-   
+
 
 
     handleChangeComplete = (color) => {
@@ -80,7 +81,7 @@ class AnchorGenerator extends React.Component {
                 <Single name="Text" propname="text" ivalue={this.state.text} func={this.handleChange}></Single>
                 <Single name="href" propname="href" ivalue={this.state.href} func={this.handleChange}></Single>
                 <Color name="Color" propname="color" ivalue={this.state.color} func={this.handleChange} color={this.state.color}></Color>
-              
+
                 <Font ref="font"
                            name="Font"
                            propname={["fontSize","fontWeight","fontStyle"]}
@@ -116,17 +117,18 @@ class AnchorGenerator extends React.Component {
         };
         return (
             <div className="holder">
-                
+
                     <div className="subject">
                         <a target="_blank" href={this.state.href} className="element" style={box_style}>{this.state.text}</a>
                         {this.state.error}
+                        <Credits/>
                     </div>
                     <div className="sidebar">
                         {this.getSidePanel()}
                     </div>
-                
+
             </div>
-        );  
+        );
     }
 }
 

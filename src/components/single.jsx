@@ -9,7 +9,7 @@ class Single extends React.Component {
         //         name: "",
         //         value: props.ivalue,
         // };
-    
+
     }
 
 
@@ -21,11 +21,11 @@ class Single extends React.Component {
     }
 
     _handleChange = (event) => {
-      
+
         // this.props.func()
         this.setState({value:event.target.value});
     }
-   
+
     render() {
         return (
             <div className="Grid-item single">
@@ -42,7 +42,7 @@ class Single extends React.Component {
                             />
                     </div>
                 </div>
-            
+
         );
     }
 };
