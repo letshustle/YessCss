@@ -25,7 +25,7 @@ class Dimension extends React.Component {
                 <div className="input">
                     <input
                         placeholder="height"
-                        
+
                         className="text-box"
                         type="text"
                         value={this.props.ivalue[0]}
@@ -34,7 +34,7 @@ class Dimension extends React.Component {
                     <FontAwesome name='unlock-alt'></FontAwesome>
                     <input
                         placeholder="width"
-                        
+
                         className="text-box"
                         type="text"
                         value={this.props.ivalue[1]}
