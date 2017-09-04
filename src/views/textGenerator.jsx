@@ -78,7 +78,7 @@ class TextGenerator extends React.Component {
                                 propname="fontWeight"
                                 ivalue={this.state.fontWeight}
                                 func={this.handleChange}
-                                list={["100","200","300","400","500","600"]}>
+                                list={["100","200","300","400","500","600","700"]}>
                 </SimpleDropDown>
                 <SimpleDropDown name="Font Style"
                                 propname="fontStyle"

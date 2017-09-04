@@ -1216,4 +1216,14 @@ border-color: #ccc;
   }
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2998ff;
+    border-color: #2998ff;
+}
+.btn-primary:active {
+    color: #fff;
+    background-color: #2998ff !important;
+    border-color: #2998ff !important;
+}
 /*# sourceMappingURL=common.css.map*/
