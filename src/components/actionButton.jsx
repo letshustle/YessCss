@@ -86,7 +86,7 @@ class ActionButton extends React.Component {
         }
         return (
       		<div style={{width:'100%'}}>
-		        <button style={{borderRadius:0}} onClick={this.handleClick} type="button" className="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#codeModal">View Code</button>
+		        <button style={{borderRadius:0,background:'#2998ff'}} onClick={this.handleClick} type="button" className="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#codeModal">View Code</button>
 		        <div id="codeModal" className="modal fade" role="dialog">
 		          <div className="modal-dialog">
 		            <div className="modal-content">
