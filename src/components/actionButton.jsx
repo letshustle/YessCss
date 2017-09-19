@@ -85,23 +85,25 @@ class ActionButton extends React.Component {
             "font-style:"+this.props.cssStyle.fontStyle+";"
         }
         return (
-      		<div style={{width:'100%'}}>
+          <div>
+      		<div style={{position:'fixed', bottom: 0, width: 360, right: 0}}>
 		        <button style={{borderRadius:0,background:'#2998ff'}} onClick={this.handleClick} type="button" className="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#codeModal">View Code</button>
-		        <div id="codeModal" className="modal fade" role="dialog">
-		          <div className="modal-dialog">
-		            <div className="modal-content">
-		              <div className="modal-body">
-		                <Highlight className='css'>
-                      {cssCode}
-						       </Highlight>
-		              </div>
-		              <div className="modal-footer">
-				        <button onClick={this.copyToClipboard} type="button" className="btn btn-default" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
-				      </div>
-		            </div>
-		          </div>
-		        </div>
 		     </div>
+         <div id="codeModal" className="modal fade" role="dialog">
+           <div className="modal-dialog">
+             <div className="modal-content">
+               <div className="modal-body">
+                 <Highlight className='css'>
+                   {cssCode}
+                </Highlight>
+               </div>
+               <div className="modal-footer">
+             <button onClick={this.copyToClipboard} type="button" className="btn btn-default" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
+           </div>
+             </div>
+           </div>
+         </div>
+         </div>
 
     	)
     }

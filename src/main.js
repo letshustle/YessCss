@@ -44,7 +44,7 @@ import './index.scss';
 
 
 ReactDOM.render(
-  
+
     <Router history={history}>
         <Route path="/" component={errorHandler(App)}>
             <IndexRoute component={errorHandler(BoxGeneratorView)}/>
@@ -53,11 +53,10 @@ ReactDOM.render(
             <Route path="/textgenerator" component={errorHandler(TextGeneratorView)}/>
             <Route path="/buttongenrator" component={errorHandler(ButtonGeneratorView)}/>
             <Route path="/anchortaggenerator" component={errorHandler(AnchorGeneratorView)}/>
-        
+
             <Route path="*" component={errorHandler(RouteNotFound)} />
         </Route>
     </Router>
   ,
   document.getElementById('app')
 );
-   
