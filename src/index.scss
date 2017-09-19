@@ -1,4 +1,8 @@
 /////////////////////////////////////////////////////////////////// Library css
+$brand-color: #2998ff;
+
+
+
 .slider {
   display: inline-block;
   vertical-align: middle;
@@ -25,6 +29,7 @@
 .slider.slider-horizontal .slider-tick,
 .slider.slider-horizontal .slider-handle {
   margin-left: -10px;
+  cursor: pointer;
 }
 .slider.slider-horizontal .slider-tick.triangle,
 .slider.slider-horizontal .slider-handle.triangle {
@@ -420,6 +425,7 @@ body {
                 width: 42px;
                 border-radius:  5px 0 0 5px ;
                 border: 1px solid #CCCCCC;
+                cursor: pointer;
               }
 
     }
@@ -1218,12 +1224,18 @@ border-color: #ccc;
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #2998ff;
-    border-color: #2998ff;
+    background-color: $brand-color;
+    border-color: $brand-color;
 }
 .btn-primary:active {
     color: #fff;
-    background-color: #2998ff !important;
-    border-color: #2998ff !important;
+    background-color: $brand-color !important;
+    border-color: $brand-color !important;
 }
+.btn-primary:hover {
+   color: #000;
+   background-color: #c8e5ff;
+   border-color: #c8e5ff;
+}
+
 /*# sourceMappingURL=common.css.map*/

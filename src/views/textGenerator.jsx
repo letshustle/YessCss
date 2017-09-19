@@ -84,7 +84,7 @@ class TextGenerator extends React.Component {
                                 propname="fontStyle"
                                 ivalue={this.state.fontStyle}
                                 func={this.handleChange}
-                                list={["normal","bold","italic"]}>
+                                list={["normal","oblique","italic"]}>
                 </SimpleDropDown>
                 <ActionButton cssStyle={text_style} name={"textGenerator"}></ActionButton>
             </div>
