@@ -13,12 +13,12 @@ import SingleDropDown from '../singleDropDown';
 class Border extends React.Component {
     constructor(props) {
         super(props);
-        var diffParam = props.ivalue.split(" ");    
+        var diffParam = props.ivalue.split(" ");
         this.state = {
                 borderWidth: diffParam[0],
                 borderType: diffParam[1],
                 borderColor: diffParam[2],
-               
+
         };
     }
 
@@ -28,7 +28,7 @@ class Border extends React.Component {
     }
 
     handleChange = (type, event) => {
-       
+
         console.log("box-change-handler",type);
         var valueBox = "";
         switch (type) {
@@ -47,13 +47,13 @@ class Border extends React.Component {
             default:
                 break;
         }
-        
+
         this.props.func(this.props.propname, {target:{value:valueBox}});
         console.log("component value ",event.target.value);
-        
+
     }
     _handleCollapse(){
-        this.setState({isBoxShadow: (!this.state.isBoxShadow)}); 
+        this.setState({isBoxShadow: (!this.state.isBoxShadow)});
         this.refs.collapseButton.click();
         if (this.state.isBoxShadow){
             event.target.value = "";
@@ -62,7 +62,7 @@ class Border extends React.Component {
             event.target.value = this.state.borderWidth+" "+this.state.borderType+" "+this.state.borderColor;
             this.props.func(this.props.propname, event);
         }
-        
+
     }
 
     render() {
@@ -79,17 +79,17 @@ class Border extends React.Component {
                     </div>
                 </div>
                 <div id={this.props.propname} className="panel-collapse collapse">
-                   
+
 
 
 
                 <Color name="Color" propname="borderColor"  ivalue={this.state.borderColor} func={this.handleChange} color={this.state.borderColor}></Color>
-                <SingleDropDown name="Type" propname="borderType" ivalue={this.state.borderType} func={this.handleChange}></SingleDropDown>            
-                <Single name="Width" propname="borderWidth" ivalue={this.state.borderWidth} func={this.handleChange}></Single>  
+                <SingleDropDown name="Type" propname="borderType" ivalue={this.state.borderType} func={this.handleChange}></SingleDropDown>
+                <Single name="Width" propname="borderWidth" ivalue={this.state.borderWidth} func={this.handleChange}></Single>
 
 
 
-                  
+
 
                 </div>
             </div>
@@ -98,7 +98,7 @@ class Border extends React.Component {
 };
 
 Border.propTypes = {
-    
+
     name: React.PropTypes.string,
     ivalue: React.PropTypes.string,
     func: React.PropTypes.func,

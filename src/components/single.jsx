@@ -9,7 +9,7 @@ class Single extends React.Component {
         //         name: "",
         //         value: props.ivalue,
         // };
-    
+
     }
 
 
@@ -21,11 +21,11 @@ class Single extends React.Component {
     }
 
     _handleChange = (event) => {
-      
+
         // this.props.func()
         this.setState({value:event.target.value});
     }
-   
+
     render() {
         return (
             <div className="Grid-item single">
@@ -36,13 +36,13 @@ class Single extends React.Component {
                         <input
                             ref = "abc"
                             className="text-box"
-                            type="text"
+                            type={this.props.type}
                             value={this.props.ivalue}
                             onChange={this.props.func.bind(this,this.props.propname)}
                             />
                     </div>
                 </div>
-            
+
         );
     }
 };
@@ -52,6 +52,7 @@ Single.propTypes = {
     ivalue: React.PropTypes.string,
     func: React.PropTypes.func,
     propname: React.PropTypes.string,
+    type: React.PropTypes.string
 }
 
 export default Single;

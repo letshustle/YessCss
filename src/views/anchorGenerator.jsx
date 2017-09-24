@@ -11,6 +11,8 @@ import SimpleDropDown from '../components/simpleDropDown';
 import Border from '../components/border';
 import Font from '../components/font';
 import BorderRadius from '../components/borderRadius';
+import Credits from '../components/credits';
+import ActionButton from '../components/actionButton';
 
 class AnchorGenerator extends React.Component {
     constructor(props) {
@@ -30,7 +32,7 @@ class AnchorGenerator extends React.Component {
         };
     }
 
-   
+
 
 
     handleChangeComplete = (color) => {
@@ -74,13 +76,23 @@ class AnchorGenerator extends React.Component {
     }
     getSidePanel = () => {
         let font = [this.state.fontSize, this.state.fontWeight, this.state.fontStyle];
+        let box_style = {
+
+            "borderRadius":this.state.borderRadius,
+            "color":this.state.color,
+            "background":this.state.background,
+            "border":this.state.border,
+            "fontSize":this.state.fontSize,
+            "fontWeight":this.state.fontWeight,
+            "fontStyle":this.state.fontStyle,
+        };
         return (
             <div className="Grid  nopadding">
 
                 <Single name="Text" propname="text" ivalue={this.state.text} func={this.handleChange}></Single>
                 <Single name="href" propname="href" ivalue={this.state.href} func={this.handleChange}></Single>
                 <Color name="Color" propname="color" ivalue={this.state.color} func={this.handleChange} color={this.state.color}></Color>
-              
+
                 <Font ref="font"
                            name="Font"
                            propname={["fontSize","fontWeight","fontStyle"]}
@@ -100,6 +112,7 @@ class AnchorGenerator extends React.Component {
                            ivalue={this.state.borderRadius}
                            func={this.handleChange}
                            ></BorderRadius>
+                <ActionButton name={"anchorGenerator"} cssStyle={box_style} ></ActionButton>
             </div>
         )
     }
@@ -116,17 +129,18 @@ class AnchorGenerator extends React.Component {
         };
         return (
             <div className="holder">
-                
+
                     <div className="subject">
                         <a target="_blank" href={this.state.href} className="element" style={box_style}>{this.state.text}</a>
                         {this.state.error}
+                        <Credits/>
                     </div>
                     <div className="sidebar">
                         {this.getSidePanel()}
                     </div>
-                
+
             </div>
-        );  
+        );
     }
 }
 

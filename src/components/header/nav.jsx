@@ -32,7 +32,7 @@ const Nav = React.createClass({
         return (
             <ul className="nav navbar-nav navbar-right" ref="mainNav">
 
-                <li className={Classnames({"active": this.context.router.isActive('/boxgenerator', true)})}>
+                <li className={Classnames({"active": this.context.router.isActive('/boxgenerator', true) || this.context.router.isActive('/', true)})}>
                     <Link onClick={this.toggleMenu} to="/boxgenerator">Box Generator</Link>
                 </li>
 
@@ -44,9 +44,9 @@ const Nav = React.createClass({
                     <Link onClick={this.toggleMenu} to="/buttongenrator">Button Generator</Link>
                 </li>
 
-                <li className={Classnames({"active": this.context.router.isActive('/anchortaggenerator', true)})}>
+                {/*<li className={Classnames({"active": this.context.router.isActive('/anchortaggenerator', true)})}>
                     <Link onClick={this.toggleMenu} to="/anchortaggenerator">Anchor Generator</Link>
-                </li>
+                </li>*/}
 
                 <li className="">
                     <a target="_blank" href="https://github.com/letshustle/YessCss"><FontAwesome size='2x' name='github' /></a>

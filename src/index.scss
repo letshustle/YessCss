@@ -1,4 +1,8 @@
-/////////////////////////////////////////////////////////////////// Library css 
+/////////////////////////////////////////////////////////////////// Library css
+$brand-color: #2998ff;
+
+
+
 .slider {
   display: inline-block;
   vertical-align: middle;
@@ -25,6 +29,7 @@
 .slider.slider-horizontal .slider-tick,
 .slider.slider-horizontal .slider-handle {
   margin-left: -10px;
+  cursor: pointer;
 }
 .slider.slider-horizontal .slider-tick.triangle,
 .slider.slider-horizontal .slider-handle.triangle {
@@ -252,7 +257,7 @@
   opacity: 1;
 }
 
-///////////////////////////////////////////////////////// Custom css 
+///////////////////////////////////////////////////////// Custom css
 
 
 body {
@@ -369,7 +374,7 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  &-item {          
+  &-item {
           padding: 15px 0;
           border-bottom: 1px solid #ccc;
           font-size: 20px;
@@ -389,13 +394,13 @@ body {
       }
   }
   .single{
-    
+
     .text{
       display: flex;
       align-items: center;
       font-size: 14px;
       font-weight: 100;
-      flex: 1 0 33px;
+      flex: 1 0 65px;
       margin-left: 20px;
       p{
         margin:0px;
@@ -403,7 +408,7 @@ body {
       }
     }
     .input{
-            
+
               display: flex;
               align-items: flex-end;
               flex-direction: row;
@@ -415,13 +420,14 @@ body {
                 padding-bottom: 4px;
               }
               .color{
-    
+
                 height: 30px;
                 width: 42px;
                 border-radius:  5px 0 0 5px ;
                 border: 1px solid #CCCCCC;
+                cursor: pointer;
               }
-              
+
     }
     .dual{
       .text-box{
@@ -462,8 +468,8 @@ body {
     border-radius: 5px 5px 5px 5px;
     padding: 8px;
     font-weight: 100;
-    
-    
+
+
 }
 textarea:focus, input:focus{
     outline: none;
@@ -548,7 +554,7 @@ border-color: #ccc;
       display:flex;
       flex-direction:row;
       height:calc(100% - 65px);
-      
+
       .subject{
         display:flex;
         flex: 2 1 400px;
@@ -563,7 +569,7 @@ border-color: #ccc;
           transform: translate(-50%,-50%);
           position: absolute;
         }
-      }      
+      }
       .sidebar{
         display:flex;
         width:360px;
@@ -636,7 +642,7 @@ border-color: #ccc;
       .title{
 
         display: flex;
-        flex: 1 0 auto; 
+        flex: 1 0 auto;
         font-size: 14px;
         color:#000;
         .big{
@@ -670,7 +676,7 @@ border-color: #ccc;
 }
 
 
-///////////// dropdown styling 
+///////////// dropdown styling
 .dropdown-menu{
 
   li{
@@ -683,7 +689,7 @@ border-color: #ccc;
       display:flex;
       flex:1 0 auto;
       border: 4px;
-      
+
     }
     div{
 
@@ -693,14 +699,14 @@ border-color: #ccc;
     }
   }
 
- 
+
 }
 .dropdown{
   display:flex;
   flex:1;
 
    button{
-    
+
     display:flex;
     flex-direction: row;
     flex:1;
@@ -1214,6 +1220,22 @@ border-color: #ccc;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $brand-color;
+    border-color: $brand-color;
+}
+.btn-primary:active {
+    color: #fff;
+    background-color: $brand-color !important;
+    border-color: $brand-color !important;
+}
+.btn-primary:hover {
+   color: #000;
+   background-color: #c8e5ff;
+   border-color: #c8e5ff;
 }
 
 /*# sourceMappingURL=common.css.map*/

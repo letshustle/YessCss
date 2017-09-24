@@ -30,7 +30,6 @@ class BoxShadow extends React.Component {
     }
 
     handleChange = (type, event) => {
-       
         console.log("box-shadow-handler",type);
         var valueBox = "";
         switch (type) {

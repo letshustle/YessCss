@@ -1,16 +1,18 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Component, PropTypes } from 'react';
 import FontAwesome from 'react-fontawesome';
 
 import Single from '../components/single';
 import Dimension from '../components/dimension';
-
+import ActionButton from '../components/actionButton';
 import SingleDropDown from '../components/singleDropDown';
 import Three from '../components/three';
 import Color from '../components/color';
 import BoxShadow from '../components/boxShadow';
 import Border from '../components/border';
 import BorderRadius from '../components/borderRadius';
+import Credits from '../components/credits';
 // import Slider from 'material-ui/Slider';
 
 class BoxGenerator extends React.Component {
@@ -31,12 +33,16 @@ class BoxGenerator extends React.Component {
         };
     }
 
+    getStyleProps = () => {
+        console.log("clicked")
+        console.log( ReactDOM.findDOMNode(this.refs.container).style);
+    }
+
     handleChangeComplete = (color) => {
 
         console.log(color)
         this.setState({ background: color.hex });
     }
-
     shouldComponentUpdate(nextProps, nextState){
         return true;
     }
@@ -53,7 +59,6 @@ class BoxGenerator extends React.Component {
                 this.setState({ background: event.target.value });
                 break;
             case "border":
-
                 this.setState({ border: event.target.value });
                 break;
             case "borderRadius":
@@ -73,18 +78,26 @@ class BoxGenerator extends React.Component {
 
     }
     getSidePanel = () => {
+        let box_style = {
+            "width": this.state.width,
+            "height": this.state.height,
+            "borderRadius": this.state.borderRadius,
+            "background": this.state.background,
+            "border": this.state.border,
+            "opacity": this.state.opacity,
+            "boxShadow":this.state.boxShadow,
+        };
         return (
             <div className="Grid  nopadding">
-                
                 <Dimension name="Size" propname={["height","width"]} ivalue={[this.state.height,this.state.width]} func={this.handleChange}></Dimension>
                 <Color name="Color" propname="background" ivalue={this.state.background} func={this.handleChange} color={this.state.background}></Color>
-                <Three name="Opacity"    
-                        propname="opacity" 
-                        func={this.handleChange} 
+                <Three name="Opacity"
+                        propname="opacity"
+                        func={this.handleChange}
                         currentValue={this.state.opacity}
                         min={0}
-                        max={1}></Three>
-              
+                        max={1}>
+                </Three>
                 <Border ref="border"
                            name="Border"
                            propname="border"
@@ -96,19 +109,19 @@ class BoxGenerator extends React.Component {
                            propname="borderRadius"
                            ivalue={this.state.borderRadius}
                            func={this.handleChange}
+                           //type="number"
                            ></BorderRadius>
                 <BoxShadow ref="boxShadow"
                            name="Box Shadow"
                            propname="boxShadow"
                            ivalue={this.state.boxShadow}
-                           func={this.handleChange}
-                           ></BoxShadow>
-
-                
+                           func={this.handleChange}>
+                </BoxShadow>
+                <ActionButton name={"boxGenerator"} cssStyle={box_style} ></ActionButton>
             </div>
         )
     }
-    
+
     render() {
         let box_style = {
             "width": this.state.width,
@@ -120,13 +133,12 @@ class BoxGenerator extends React.Component {
             "boxShadow":this.state.boxShadow,
         };
         return (
-            <div className="holder" >
-
+            <div className="holder">
                 <div className="subject">
-                    <div className="element" style={box_style}></div>
+                    <div ref={"container"} className="element" style={box_style}></div>
                     {this.state.error}
+                    <Credits/>
                 </div>
-                         
                 <div className="sidebar" >
                     {this.getSidePanel()}
                 </div>

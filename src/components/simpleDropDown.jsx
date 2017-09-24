@@ -5,13 +5,13 @@ import ClassNames from 'classnames';
 class SingleDropDown extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
                 name: "",
                 value: props.ivalue,
                 menuList:props.list
         };
-    
+
     }
 
 
@@ -20,15 +20,45 @@ class SingleDropDown extends React.Component {
     }
 
     _handleChange = (event) => {
-      
+
         // this.props.func()
         this.setState({value:event.target.value});
     }
-    _menuHandler = (svalue) => { 
+    _menuHandler = (svalue) => {
         console.log("New value is "+svalue);
         this.setState({value:svalue});
     }
     render() {
+      let element  = ''
+      if(this.props.propname == "fontWeight"){
+      element =
+            this.state.menuList.map((v, i) => {
+                console.log(v)
+            return(<li key={i} onClick={()=>{ this.props.func(this.props.propname,{target:{value:v}}) }}>
+                            <a style={{fontWeight:v}} href="#">{v}</a>
+                        </li>)
+            })
+
+      }
+      else if(this.props.propname == "fontStyle"){
+      element =
+            this.state.menuList.map((v, i) => {
+                console.log(v)
+            return(<li key={i} onClick={()=>{ this.props.func(this.props.propname,{target:{value:v}}) }}>
+                            <a style={{fontStyle:v}} href="#">{v}</a>
+                        </li>)
+            })
+
+      }else {
+        element =
+              this.state.menuList.map((v, i) => {
+                  console.log(v)
+              return(<li key={i} onClick={()=>{ this.props.func(this.props.propname,{target:{value:v}}) }}>
+                              <a href="#">{v}</a>
+                          </li>)
+              })
+
+      }
         return (
             <div className="Grid-item single">
                     <div className="text">
@@ -39,17 +69,12 @@ class SingleDropDown extends React.Component {
                             <div style={{display:"flex", flex:1}}>
                                 <div className="dropdown">
                                     <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                      <div className="bt-text">  {this.props.ivalue} </div> 
-                                      
+                                      <div className="bt-text">  {this.props.ivalue} </div>
+
                                     </button>
                                     <ul className="dropdown-menu">
                                         {
-                                            this.state.menuList.map((v, i) => {
-                                                console.log(v)
-                                            return(<li key={i} onClick={()=>{ this.props.func(this.props.propname,{target:{value:v}}) }}>
-                                                            <a href="#">{v}</a>
-                                                        </li>)
-                                            })
+                                          element
                                         }
                                     </ul>
                                 </div>
@@ -57,7 +82,7 @@ class SingleDropDown extends React.Component {
 
                     </div>
                 </div>
-            
+
         );
     }
 };
