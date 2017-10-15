@@ -14,7 +14,7 @@ import SingleDropDown from '../singleDropDown';
 class BoxShadow extends React.Component {
     constructor(props) {
         super(props);
-        var diffParam = props.ivalue.split(" ");    
+        var diffParam = props.ivalue.split(" ");
         this.state = {
                 xOffset: diffParam[0],
                 yOffset: diffParam[1],
@@ -56,13 +56,13 @@ class BoxShadow extends React.Component {
             default:
                 break;
         }
-        
+
         this.props.func(this.props.propname, {target:{value:valueBox}});
         console.log("component value ",event.target.value);
-        
+
     }
     _handleCollapse(){
-        this.setState({isBoxShadow: (!this.state.isBoxShadow)}); 
+        this.setState({isBoxShadow: (!this.state.isBoxShadow)});
         this.refs.collapseButton.click();
         if (this.state.isBoxShadow){
             event.target.value = "";
@@ -71,12 +71,12 @@ class BoxShadow extends React.Component {
             event.target.value = this.state.xOffset+" "+this.state.yOffset+" "+this.state.blur+" "+this.state.spread+" "+this.state.color;
             this.props.func(this.props.propname, event);
         }
-        
+
     }
 
     render() {
         return (
-            <div className="ccollapse " key={this.props.name}>
+            <div className="ccollapse " key={this.props.name} style={{marginBottom:75}}>
                 <div className="heading">
                     <div className="title block">
                         <div className = "big">
@@ -88,19 +88,19 @@ class BoxShadow extends React.Component {
                     </div>
                 </div>
                 <div id={this.props.propname} className="panel-collapse collapse">
-                   
 
 
-                <Single name="X offset" propname="xOffset" ivalue={this.state.xOffset} func={this.handleChange}></Single> 
-                <Single name="Y offset" propname="yOffset" ivalue={this.state.yOffset} func={this.handleChange}></Single> 
-                <Single name="Blur" propname="blur" ivalue={this.state.blur} func={this.handleChange}></Single> 
-                <Single name="Spread" propname="spread" ivalue={this.state.spread} func={this.handleChange}></Single>  
+
+                <Single name="X offset" propname="xOffset" ivalue={this.state.xOffset} func={this.handleChange}></Single>
+                <Single name="Y offset" propname="yOffset" ivalue={this.state.yOffset} func={this.handleChange}></Single>
+                <Single name="Blur" propname="blur" ivalue={this.state.blur} func={this.handleChange}></Single>
+                <Single name="Spread" propname="spread" ivalue={this.state.spread} func={this.handleChange}></Single>
                 <Color name="Color" propname="color"  ivalue={this.state.color} func={this.handleChange} color={this.state.color}></Color>
-                
 
 
 
-                  
+
+
 
                 </div>
             </div>
@@ -109,7 +109,7 @@ class BoxShadow extends React.Component {
 };
 
 BoxShadow.propTypes = {
-    
+
     name: React.PropTypes.string,
     ivalue: React.PropTypes.string,
     func: React.PropTypes.func,
