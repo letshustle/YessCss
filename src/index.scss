@@ -1237,5 +1237,17 @@ border-color: #ccc;
    background-color: #c8e5ff;
    border-color: #c8e5ff;
 }
+.btn-group-lg>.btn, .btn-lg {
+   padding: 14px 16px;
+   font-size: 16px;
+   line-height: 1.3333333;
+}
+.dropdown-menu {
+  width: 100%;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+  background-color: $brand-color !important;
+  border-color: $brand-color !important;
+}
 
 /*# sourceMappingURL=common.css.map*/
