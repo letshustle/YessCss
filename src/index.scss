@@ -1249,5 +1249,12 @@ border-color: #ccc;
   background-color: $brand-color !important;
   border-color: $brand-color !important;
 }
+.dropdown-menu li a {
+  width: 60px;
+}
+.modal-body { position: relative; padding: 15px; padding-bottom: 0px; }
+.modal-footer { padding: 15px; padding-top: 0px; }
+pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 1.42857143; color: #333; word-break: break-all; word-wrap: break-word; background-color: #333; border: 1px solid #ccc; border-radius: 4px; }
+.modal-dialog { width: 600px; margin: 70px auto; }
 
 /*# sourceMappingURL=common.css.map*/

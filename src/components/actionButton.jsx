@@ -98,7 +98,7 @@ class ActionButton extends React.Component {
                 </Highlight>
                </div>
                <div className="modal-footer">
-             <button onClick={this.copyToClipboard} type="button" className="btn btn-default" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
+             <button style={{borderRadius:0,background:'#2998ff'}} onClick={this.copyToClipboard} type="button" className="btn btn-info btn-lg btn-block" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
            </div>
              </div>
            </div>
