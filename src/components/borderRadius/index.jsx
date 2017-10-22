@@ -70,7 +70,7 @@ class BorderRadius extends React.Component {
 
     render() {
         return (
-            <div className="ccollapse ">
+            <div className="ccollapse" style={{marginBottom:75}}>
                 <div className="heading">
                     <div className="title block">
                         <div className = "big">

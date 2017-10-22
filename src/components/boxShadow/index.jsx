@@ -76,7 +76,7 @@ class BoxShadow extends React.Component {
 
     render() {
         return (
-            <div className="ccollapse " key={this.props.name} style={{marginBottom:75}}>
+            <div className="ccollapse " key={this.props.name}>
                 <div className="heading">
                     <div className="title block">
                         <div className = "big">

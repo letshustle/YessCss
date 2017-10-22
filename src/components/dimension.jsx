@@ -20,11 +20,11 @@ class Dimension extends React.Component {
     }
 
     toogleLock = () =>{
-      this.setState({locked: !this.state.locked})
+      //this.setState({locked: !this.state.locked})
     }
 
     render() {
-      let lock = this.state.locked ? <FontAwesome style={{pointer:'cursor'}} onClick={this.toogleLock} name='unlock-alt'></FontAwesome> : <FontAwesome style={{pointer:'cursor'}} onClick={this.toogleLock} name='lock'></FontAwesome>
+      let lock = this.state.locked ? <FontAwesome style={{pointer:'cursor'}} onClick={this.toogleLock} name='lock'></FontAwesome> : <FontAwesome style={{pointer:'not-allowed', color:'#ccc'}} onClick={this.toogleLock} name='unlock-alt'></FontAwesome>
         return (
             <div className="Grid-item single">
                 <div className="text">
@@ -42,7 +42,6 @@ class Dimension extends React.Component {
                     <div style={{cursor:'pointer'}}>{lock}</div>
                     <input
                         placeholder="width"
-
                         className="text-box"
                         type="text"
                         value={this.props.ivalue[1]}

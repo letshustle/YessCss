@@ -17,7 +17,7 @@ class TextGenerator extends React.Component {
                    loading: false,
                     error: false,
                     text: "YessCSS",
-                    color: "#1FB6FF",
+                    color: "#FF6500",
                     fontWeight: "400",
                     fontSize: "32",
                     fontStyle: "normal",
