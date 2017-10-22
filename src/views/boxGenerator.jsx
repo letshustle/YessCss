@@ -21,11 +21,11 @@ class BoxGenerator extends React.Component {
         this.state = {
             loading: false,
             error: false,
-            background: '#1FB6FF',
+            background: '#FED766',
             value: 0,
             width: "200px",
             height: "200px",
-            border: "1px solid #333",
+            border: "0px solid #333",
             borderRadius: "0px 0px 0px 0px",
             boxShadow:"0px 0px 0px 0px #333",
             opacity: 1,
@@ -104,6 +104,12 @@ class BoxGenerator extends React.Component {
                            ivalue={this.state.border}
                            func={this.handleChange}
                            ></Border>
+                <BoxShadow ref="boxShadow"
+                           name="Box Shadow"
+                           propname="boxShadow"
+                           ivalue={this.state.boxShadow}
+                           func={this.handleChange}>
+                </BoxShadow>
                 <BorderRadius ref="borderRadius"
                            name="Border Radius"
                            propname="borderRadius"
@@ -111,12 +117,6 @@ class BoxGenerator extends React.Component {
                            func={this.handleChange}
                            //type="number"
                            ></BorderRadius>
-                <BoxShadow ref="boxShadow"
-                           name="Box Shadow"
-                           propname="boxShadow"
-                           ivalue={this.state.boxShadow}
-                           func={this.handleChange}>
-                </BoxShadow>
                 <ActionButton name={"boxGenerator"} cssStyle={box_style} ></ActionButton>
             </div>
         )

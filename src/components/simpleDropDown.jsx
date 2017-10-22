@@ -45,7 +45,7 @@ class SingleDropDown extends React.Component {
             this.state.menuList.map((v, i) => {
                 console.log(v)
             return(<li key={i} onClick={()=>{ this.props.func(this.props.propname,{target:{value:v}}) }}>
-                            <a style={{fontStyle:v}} href="#">{v}</a>
+                            <a style={{fontStyle:v, fontWeight:100}} href="#">{v}</a>
                         </li>)
             })
 

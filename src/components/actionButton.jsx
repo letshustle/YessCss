@@ -38,9 +38,11 @@ class ActionButton extends React.Component {
       // "border:"+this.props.cssStyle.border+";"+
       // "opacity:"+this.props.cssStyle.opacity+";"+
       // "box-shadow:"+this.props.cssStyle.boxShadow+";")
-      var code = JSON.stringify(cssCode)
-      //code = code.replace(/\s+/g, ' ').trim();
-	    textField.innerText = code.replace (/(^")|("$)/g, '')
+      //var code = JSON.stringify(cssCode)
+      var code = cssCode;
+      code = code.replace(/\s+/g, ' ').trim();
+      console.log(code)
+	    textField.innerText = code//.replace (/(^")|("$)/g, '')
 	    document.body.appendChild(textField)
 	    textField.select()
 	    document.execCommand('copy')
@@ -60,7 +62,7 @@ class ActionButton extends React.Component {
         }
         else if(this.props.name == "textGenerator"){
           cssCode = "color:"+this.props.cssStyle.color+";"+"\n"+
-          "font-size:"+this.props.cssStyle.fontSize+";"+"\n"+
+          "font-size:"+this.props.cssStyle.fontSize+"px;"+"\n"+
           "font-weight:"+this.props.cssStyle.fontWeight+";"+"\n"+
           "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
           "border:"+"none"
@@ -97,8 +99,8 @@ class ActionButton extends React.Component {
                    {cssCode}
                 </Highlight>
                </div>
-               <div className="modal-footer">
-             <button onClick={this.copyToClipboard} type="button" className="btn btn-default" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
+               <div className="modal-footer" style={{border:'none'}}>
+             <button style={{borderRadius:5,background:'#2998ff'}} onClick={this.copyToClipboard} type="button" className="btn btn-info btn-lg btn-block" >{this.state.copied  ? 'Copied':'Copy to Clipboard'}</button>
            </div>
              </div>
            </div>

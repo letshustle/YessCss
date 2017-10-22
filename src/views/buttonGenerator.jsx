@@ -23,7 +23,7 @@ class ButtonGenerator extends React.Component {
                     loading: false,
                     error: false,
                     text: "Click Me",
-                    color: "#1FB6FF",
+                    color: "#FF6500",
                     fontWeight: "400",
                     fontSize: "32px",
                     fontStyle: "normal",
