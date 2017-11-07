@@ -56,7 +56,10 @@ class Three extends React.Component {
                 <div className="input">
                     <input
                         className="text-box"
-                        type="text"
+                        type="number"
+                        step="0.1"
+                        min="0"
+                        max="1"
                         value={this.props.currentValue}
                         onChange={this.props.func.bind(this, this.props.propname)}
                     />

@@ -28,14 +28,14 @@ class Dimension extends React.Component {
         return (
             <div className="Grid-item single">
                 <div className="text">
-                    <p className="action-label">{this.props.name}</p>
+                    <p className="action-label">{this.props.name} <span style={{color:'#ccc'}}>(px)</span></p>
                 </div>
                 <div className="input">
                     <input
                         placeholder="height"
 
                         className="text-box"
-                        type="text"
+                        type="number"
                         value={this.props.ivalue[0]}
                         onChange={this.props.func.bind(this, this.props.propname[0])}
                     />
@@ -43,7 +43,7 @@ class Dimension extends React.Component {
                     <input
                         placeholder="width"
                         className="text-box"
-                        type="text"
+                        type="number"
                         value={this.props.ivalue[1]}
                         onChange={this.props.func.bind(this, this.props.propname[1])}
                     />

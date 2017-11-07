@@ -13,13 +13,13 @@ import SimpleDropDown from '../simpleDropDown';
 class Font extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
 
-                isBoxShadow: false,    
+                isBoxShadow: false,
                 fontSize: props.ivalue[0],
                 fontWeight: props.ivalue[1],
-                fontStyle: props.ivalue[2],     
+                fontStyle: props.ivalue[2],
         };
     }
 
@@ -29,18 +29,18 @@ class Font extends React.Component {
     }
 
     handleChange = (type, event) => {
-       
+
         console.log("font-change-handler",type);
-        
+
         this.props.func(type, {target:{value:event.target.value}});
         console.log("component value ",event.target.value);
-        
+
     }
     _handleCollapse(){
-        this.setState({isBoxShadow: (!this.state.isBoxShadow)}); 
+        this.setState({isBoxShadow: (!this.state.isBoxShadow)});
         this.refs.collapseButton.click();
         if (this.state.isBoxShadow){
-           console.log("-----"); 
+           console.log("-----");
             // this.props.func("fontSize", {target:{value:"10px"}});
             // this.props.func("fontWeight", {target:{value:"100"}});
             // this.props.func("fontStyle", {target:{value:"normal"}});
@@ -50,7 +50,7 @@ class Font extends React.Component {
             // this.props.func("fontSize", {target:{value:this.state.fontSize}});
             console.log("fdassfa");
         }
-        
+
     }
 
     render() {
@@ -67,22 +67,22 @@ class Font extends React.Component {
                     </div>
                 </div>
                 <div id={this.props.name} className="panel-collapse collapse">
-         
 
-                <Single name="Font Size" propname={this.props.propname[0]} ivalue={this.props.ivalue[0]} func={this.handleChange}></Single>
+
+                <Single type="number" name="Font Size" propname={this.props.propname[0]} ivalue={this.props.ivalue[0]} func={this.handleChange}></Single>
                 <SimpleDropDown name="Font Weight"
                                 propname={this.props.propname[1]}
                                 ivalue={this.props.ivalue[1]}
                                 func={this.handleChange}
-                                list={["100","200","300","400","500","600"]}></SimpleDropDown> 
-            
+                                list={["100","200","300","400","500","600"]}></SimpleDropDown>
+
                 <SimpleDropDown name="Font Style"
                                 propname={this.props.propname[2]}
                                 ivalue={this.props.ivalue[2]}
                                 func={this.handleChange}
-                                list={["normal","bold","italic"]}></SimpleDropDown> 
+                                list={["normal","bold","italic"]}></SimpleDropDown>
 
-                  
+
 
                 </div>
             </div>
@@ -91,7 +91,7 @@ class Font extends React.Component {
 };
 
 Font.propTypes = {
-    
+
     name: React.PropTypes.string,
     ivalue: React.PropTypes.array,
     func: React.PropTypes.func,

@@ -27,10 +27,19 @@ class Single extends React.Component {
     }
 
     render() {
+      let actionLabel = ''
+      console.log(this.props.type)
+        if(this.props.type == "number"){
+          actionLabel = <p className="action-label">{this.props.name} <span style={{color:'#ccc'}}>(px)</span></p>
+        }else {
+          actionLabel = <p className="action-label">{this.props.name}</p>
+
+        }
+
         return (
             <div className="Grid-item single">
                     <div className="text">
-                        <p className="action-label">{this.props.name}</p>
+                        {actionLabel}
                     </div>
                     <div className="input">
                         <input
