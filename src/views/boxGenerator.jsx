@@ -48,6 +48,7 @@ class BoxGenerator extends React.Component {
     }
     handleChange = (type, event) => {
         console.log(type, event.target.value);
+        console.log(event.target.value)
         switch (type) {
             case "width":
                 this.setState({ width: event.target.value });
@@ -59,7 +60,11 @@ class BoxGenerator extends React.Component {
                 this.setState({ background: event.target.value });
                 break;
             case "border":
+                if(event.target.value.length==0){
+                  this.setState({ border: '0px solid black' });
+                }else{
                 this.setState({ border: event.target.value });
+                }
                 break;
             case "borderRadius":
                 this.setState({ borderRadius: event.target.value });
@@ -78,6 +83,7 @@ class BoxGenerator extends React.Component {
 
     }
     getSidePanel = () => {
+      console.log(this.state.border)
         let box_style = {
             "width": this.state.width,
             "height": this.state.height,
@@ -134,6 +140,7 @@ class BoxGenerator extends React.Component {
         };
         return (
             <div className="holder">
+              {console.log(box_style)}
                 <div className="subject">
                     <div ref={"container"} className="element" style={box_style}></div>
                     {this.state.error}
