@@ -35,23 +35,23 @@ class BoxShadow extends React.Component {
         switch (type) {
             case "xOffset":
                 this.setState({xOffset: event.target.value});
-                valueBox = event.target.value+" "+this.state.yOffset+" "+this.state.blur+" "+this.state.spread+" "+this.state.color;
+                valueBox = event.target.value+"px "+this.state.yOffset+"px "+this.state.blur+"px "+this.state.spread+"px "+this.state.color;
                 break;
             case "yOffset":
                 this.setState({yOffset: event.target.value});
-                valueBox = this.state.xOffset+" "+event.target.value+" "+this.state.blur+" "+this.state.spread+" "+this.state.color;
+                valueBox = this.state.xOffset+"px "+event.target.value+"px "+this.state.blur+"px "+this.state.spread+"px "+this.state.color;
                 break;
             case "blur":
                 this.setState({blur: event.target.value});
-                valueBox = this.state.xOffset+" "+this.state.yOffset+" "+event.target.value+" "+this.state.spread+" "+this.state.color;
+                valueBox = this.state.xOffset+"px "+this.state.yOffset+"px "+event.target.value+"px "+this.state.spread+"px "+this.state.color;
                 break;
             case "spread":
                 this.setState({spread: event.target.value});
-                valueBox = this.state.xOffset+" "+this.state.yOffset+" "+this.state.blur+" "+event.target.value+" "+this.state.color;
+                valueBox = this.state.xOffset+"px "+this.state.yOffset+"px "+this.state.blur+"px "+event.target.value+"px "+this.state.color;
                 break;
             case "color":
                 this.setState({color: event.target.value});
-                valueBox = this.state.xOffset+" "+this.state.yOffset+" "+this.state.blur+" "+this.state.spread+" "+event.target.value;
+                valueBox = this.state.xOffset+"px "+this.state.yOffset+"px "+this.state.blur+"px "+this.state.spread+"px "+event.target.value;
                 break;
             default:
                 break;
@@ -91,10 +91,10 @@ class BoxShadow extends React.Component {
 
 
 
-                <Single name="X offset" propname="xOffset" ivalue={this.state.xOffset} func={this.handleChange}></Single>
-                <Single name="Y offset" propname="yOffset" ivalue={this.state.yOffset} func={this.handleChange}></Single>
-                <Single name="Blur" propname="blur" ivalue={this.state.blur} func={this.handleChange}></Single>
-                <Single name="Spread" propname="spread" ivalue={this.state.spread} func={this.handleChange}></Single>
+                <Single type="number" name="X offset" propname="xOffset" ivalue={this.state.xOffset} func={this.handleChange}></Single>
+                <Single type="number" name="Y offset" propname="yOffset" ivalue={this.state.yOffset} func={this.handleChange}></Single>
+                <Single type="number" name="Blur" propname="blur" ivalue={this.state.blur} func={this.handleChange}></Single>
+                <Single type="number" name="Spread" propname="spread" ivalue={this.state.spread} func={this.handleChange}></Single>
                 <Color name="Color" propname="color"  ivalue={this.state.color} func={this.handleChange} color={this.state.color}></Color>
 
 

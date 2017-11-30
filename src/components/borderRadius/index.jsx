@@ -33,19 +33,19 @@ class BorderRadius extends React.Component {
         switch (type) {
             case "borderTopLeftRadius":
                 this.setState({borderTopLeftRadius: event.target.value});
-                valueBox =  event.target.value +" "+this.state.borderTopRightRadius+" "+this.state.borderBottomLeftRadius+" "+this.state.borderBottomRightRadius;
+                valueBox =  event.target.value +"px "+this.state.borderTopRightRadius+"px "+this.state.borderBottomLeftRadius+"px "+this.state.borderBottomRightRadius+"px";
                 break;
             case "borderTopRightRadius":
                 this.setState({borderTopRightRadius: event.target.value});
-                valueBox = this.state.borderTopLeftRadius+" "+ event.target.value+" "+this.state.borderBottomLeftRadius+" "+this.state.borderBottomRightRadius;
+                valueBox = this.state.borderTopLeftRadius+"px "+ event.target.value+"px "+this.state.borderBottomLeftRadius+"px "+this.state.borderBottomRightRadius+"px";
                 break;
             case "borderBottomLeftRadius":
                 this.setState({borderBottomLeftRadius: event.target.value});
-                valueBox = this.state.borderTopLeftRadius+" "+this.state.borderTopRightRadius+" "+ event.target.value+" "+this.state.borderBottomRightRadius;
+                valueBox = this.state.borderTopLeftRadius+"px "+this.state.borderTopRightRadius+"px "+ event.target.value+"px "+this.state.borderBottomRightRadius+"px";
                 break;
             case "borderBottomRightRadius":
                 this.setState({borderBottomRightRadius: event.target.value});
-                valueBox = this.state.borderTopLeftRadius+" "+this.state.borderTopRightRadius+" "+this.state.borderBottomLeftRadius+" "+ event.target.value;
+                valueBox = this.state.borderTopLeftRadius+"px "+this.state.borderTopRightRadius+"px "+this.state.borderBottomLeftRadius+"px "+ event.target.value+"px";
                 break;
             default:
                 break;

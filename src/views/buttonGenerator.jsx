@@ -28,8 +28,8 @@ class ButtonGenerator extends React.Component {
                     fontSize: "32",
                     fontStyle: "normal",
                     background:"#FFF",
-                    borderRadius:"0px 0px 0px 0px",
-                    border:"0px solid #333",
+                    borderRadius:"0 0 0 0",
+                    border:"0 solid #333",
                     isBoxShadow: false,
                     isBorder: false,
                     value: 0
@@ -131,6 +131,7 @@ class ButtonGenerator extends React.Component {
                            propname="borderRadius"
                            ivalue={this.state.borderRadius}
                            func={this.handleChange}
+                           type="number"
                            ></BorderRadius>
               <ActionButton name={"buttonGenerator"} cssStyle={text_style} ></ActionButton>
 
