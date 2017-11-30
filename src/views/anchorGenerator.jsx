@@ -24,7 +24,7 @@ class AnchorGenerator extends React.Component {
                 href:"https://google.com/",
                 background: '#FFF',
                 color:"#200",
-                border:"1px solid #333",
+                border:"0px solid #333",
                 borderRadius:"0px 0px 0px 0px",
                 fontSize:"20px",
                 fontWeight:"100",

@@ -52,8 +52,8 @@ class ActionButton extends React.Component {
     }
     render() {
         if(this.props.name == "boxGenerator"){
-          cssCode =  "width:"+this.props.cssStyle.width+";"+"\n"+
-           "height:"+this.props.cssStyle.height+";"+"\n"+
+          cssCode =  "width:"+this.props.cssStyle.width+"px;"+"\n"+
+           "height:"+this.props.cssStyle.height+"px;"+"\n"+
            "background:"+this.props.cssStyle.background+";"+"\n"+
            "border-radius:"+this.props.cssStyle.borderRadius+";"+"\n"+
            "border:"+this.props.cssStyle.border+";"+"\n"+

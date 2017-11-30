@@ -34,15 +34,15 @@ class Border extends React.Component {
         switch (type) {
             case "borderColor":
                 this.setState({borderColor: event.target.value});
-                valueBox = this.state.borderWidth+" "+this.state.borderType+" "+event.target.value;
+                valueBox = this.state.borderWidth+"px "+this.state.borderType+" "+event.target.value;
                 break;
             case "borderType":
                 this.setState({borderType: event.target.value});
-                valueBox = this.state.borderWidth+" "+event.target.value+" "+this.state.borderColor;
+                valueBox = this.state.borderWidth+"px "+event.target.value+" "+this.state.borderColor;
                 break;
             case "borderWidth":
                 this.setState({borderWidth: event.target.value});
-                valueBox = event.target.value+" "+this.state.borderType+" "+this.state.borderColor;
+                valueBox = event.target.value+"px "+this.state.borderType+" "+this.state.borderColor;
                 break;
             default:
                 break;
@@ -59,7 +59,7 @@ class Border extends React.Component {
             event.target.value = "";
             this.props.func(this.props.propname, event);
         }else{
-            event.target.value = this.state.borderWidth+" "+this.state.borderType+" "+this.state.borderColor;
+            event.target.value = this.state.borderWidth+"px "+this.state.borderType+" "+this.state.borderColor;
             this.props.func(this.props.propname, event);
         }
 
@@ -68,24 +68,21 @@ class Border extends React.Component {
     render() {
         return (
             <div className="ccollapse ">
+              {console.log(this.state)}
                 <div className="heading">
                     <div className="title block">
-                        <div className = "big">
+                        <div className="big">
                             <a ref="collapseButton" data-toggle="collapse" data-parent="#accordion" href={"#"+this.props.propname}>{this.props.name}</a>
                         </div>
-                        <div className = "small" >
+                        <div className="small">
                             <Switch  onClick={() => { this._handleCollapse() }} on={this.state.isBoxShadow}/>
                         </div>
                     </div>
                 </div>
                 <div id={this.props.propname} className="panel-collapse collapse">
-
-
-
-
                 <Color name="Color" propname="borderColor"  ivalue={this.state.borderColor} func={this.handleChange} color={this.state.borderColor}></Color>
                 <SingleDropDown name="Type" propname="borderType" ivalue={this.state.borderType} func={this.handleChange}></SingleDropDown>
-                <Single name="Width" propname="borderWidth" ivalue={this.state.borderWidth} func={this.handleChange}></Single>
+                <Single type="number" name="Width" propname="borderWidth" ivalue={this.state.borderWidth} func={this.handleChange}></Single>
 
 
 
@@ -108,7 +105,7 @@ Border.propTypes = {
 
 Border.defaultProps = {
 
-    ivalue: "1px solid #000",
+    ivalue: "0 solid #000",
 }
 
 

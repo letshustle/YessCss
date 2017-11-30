@@ -29,7 +29,7 @@ class ButtonGenerator extends React.Component {
                     fontStyle: "normal",
                     background:"#FFF",
                     borderRadius:"0px 0px 0px 0px",
-                    border:"1px solid #333",
+                    border:"0px solid #333",
                     isBoxShadow: false,
                     isBorder: false,
                     value: 0
