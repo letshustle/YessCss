@@ -79,7 +79,8 @@ class BoxShadow extends React.Component {
                 <div className="heading">
                     <div className="title block">
                         <div className = "big">
-                            <a ref="collapseButton" data-toggle="collapse" data-parent="#accordion" href={"#"+this.props.propname}>{this.props.name}</a>
+                            <a style={{display:'none'}} ref="collapseButton" data-toggle="collapse" data-parent="#accordion" href={"#"+this.props.propname}>{this.props.name}</a>
+                            <span>{this.props.name}</span>
                         </div>
                         <div className = "small" >
                             <Switch  onClick={() => { this._handleCollapse() }} on={this.state.isBoxShadow}/>

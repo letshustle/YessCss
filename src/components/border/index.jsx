@@ -72,7 +72,8 @@ class Border extends React.Component {
                 <div className="heading">
                     <div className="title block">
                         <div className="big">
-                            <a ref="collapseButton" data-toggle="collapse" data-parent="#accordion" href={"#"+this.props.propname}>{this.props.name}</a>
+                            <a  style={{display:'none'}} ref="collapseButton" data-toggle="collapse" data-parent="#accordion" href={"#"+this.props.propname}>{this.props.name}</a>
+                            <span>{this.props.name}</span>
                         </div>
                         <div className="small">
                             <Switch  onClick={() => { this._handleCollapse() }} on={this.state.isBoxShadow}/>
@@ -83,11 +84,6 @@ class Border extends React.Component {
                 <Color name="Color" propname="borderColor"  ivalue={this.state.borderColor} func={this.handleChange} color={this.state.borderColor}></Color>
                 <SingleDropDown name="Type" propname="borderType" ivalue={this.state.borderType} func={this.handleChange}></SingleDropDown>
                 <Single type="number" name="Width" propname="borderWidth" ivalue={this.state.borderWidth} func={this.handleChange}></Single>
-
-
-
-
-
                 </div>
             </div>
         );
