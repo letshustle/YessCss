@@ -12,6 +12,7 @@ import Color from '../components/color';
 import SimpleDropDown from '../components/simpleDropDown';
 import Border from '../components/border';
 import Font from '../components/font';
+import Padding from '../components/padding';
 import BorderRadius from '../components/borderRadius';
 import ActionButton from '../components/actionButton';
 import Credits from '../components/credits';
@@ -29,6 +30,7 @@ class ButtonGenerator extends React.Component {
                     fontStyle: "normal",
                     background:"#FFF",
                     borderRadius:"0 0 0 0",
+                    padding:"0 0 0 0",
                     border:"0 solid #333",
                     isBoxShadow: false,
                     isBorder: false,
@@ -46,7 +48,7 @@ class ButtonGenerator extends React.Component {
     }
 
     handleChange = (type, event) => {
-        console.log(type);
+        console.log("type is",type);
         switch (type) {
             case "text":
                 this.setState({text: event.target.value});
@@ -72,7 +74,9 @@ class ButtonGenerator extends React.Component {
             case "borderRadius":
                 this.setState({borderRadius: event.target.value});
                 break;
-
+            case "padding":
+                this.setState({padding: event.target.value});
+                break;
 
             default:
                 break;
@@ -91,7 +95,8 @@ class ButtonGenerator extends React.Component {
           "border":this.state.border,
           "fontStyle": this.state.fontStyle,
           "background":this.state.background,
-          "borderRadius":this.state.borderRadius
+          "borderRadius":this.state.borderRadius,
+          "padding":this.state.padding
       };
       let box_style = {
           "color": this.state.color,
@@ -119,7 +124,13 @@ class ButtonGenerator extends React.Component {
                            ivalue={[this.state.fontSize, this.state.fontWeight, this.state.fontStyle]}
                            func={this.handleChange}
                            ></Font>
-
+                <Padding ref="padding"
+                         name="Padding"
+                         propname="padding"
+                         ivalue={this.state.padding}
+                         func={this.handleChange}
+                         type="number"
+                        ></Padding>
                 <Border ref="border"
                            name="Border"
                            propname="border"
@@ -150,7 +161,8 @@ class ButtonGenerator extends React.Component {
             "border":this.state.border,
             "fontStyle": this.state.fontStyle,
             "background":this.state.background,
-            "borderRadius":this.state.borderRadius
+            "borderRadius":this.state.borderRadius,
+            "padding":this.state.padding
         };
         let box_style = {
             "color": this.state.color,
@@ -166,10 +178,11 @@ class ButtonGenerator extends React.Component {
           "text_style": text_style,
           "box_style": box_style
         }
+        {console.log(this.state)}
         return (
-            <div className="holder" >
 
-                    <div className="subject" >
+            <div className="holder" >
+                    <div className="subject">
                         <div className="element" style={text_style}>{this.state.text}</div>
                         {this.state.error}
                         <Credits/>

@@ -69,13 +69,14 @@ class ActionButton extends React.Component {
         }
         else if(this.props.name == "buttonGenerator"){
           cssCode = "color:"+this.props.cssStyle.color+";"+"\n"+
-          "font-size:"+this.props.cssStyle.fontSize+";"+"\n"+
+          "font-size:"+this.props.cssStyle.fontSize+"px;"+"\n"+
           "font-weight:"+this.props.cssStyle.fontWeight+";"+"\n"+
           "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
           "border:"+this.props.cssStyle.border+";"+"\n"+
           "font-style:"+this.props.cssStyle.fontStyle+";"+"\n"+
           "background:"+this.props.cssStyle.background+";"+"\n"+
-          "border-radius:"+this.props.cssStyle.borderRadius+";"
+          "border-radius:"+this.props.cssStyle.borderRadius+";"+"\n"+
+          "padding:"+this.props.cssStyle.padding+";"
         }
         else if(this.props.name == "anchorGenerator"){
           cssCode = "border-radius:"+this.props.cssStyle.borderRadius+";"+"\n"+
