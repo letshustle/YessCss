@@ -73,7 +73,6 @@ class BoxShadow extends React.Component {
         }
 
     }
-
     render() {
         return (
             <div className="ccollapse " key={this.props.name}>

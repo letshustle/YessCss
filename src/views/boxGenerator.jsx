@@ -67,7 +67,11 @@ class BoxGenerator extends React.Component {
                 }
                 break;
             case "borderRadius":
+                if(event.target.value.length==0){
+                  this.setState({ borderRadius: '0px 0px 0px 0px' });
+                }else{
                 this.setState({ borderRadius: event.target.value });
+                }
                 break;
             case "background":
                 this.setState({ background: event.target.value });
@@ -76,7 +80,11 @@ class BoxGenerator extends React.Component {
                 this.setState({ opacity: event.target.value });
                 break;
             case "boxShadow":
-                this.setState({ boxShadow: event.target.value });
+                if(event.target.value.length==0){
+                  this.setState({ boxShadow: '0px 0px 0px 0px #333'});
+                }else{
+                  this.setState({ boxShadow: event.target.value });
+                }
                 break;
             // default:
         }
