@@ -62,7 +62,7 @@ class BorderRadius extends React.Component {
             event.target.value = "";
             this.props.func(this.props.propname, event);
         }else{
-            event.target.value = this.state.borderTopLeftRadius+" "+this.state.borderTopRightRadius+" "+this.state.borderBottomLeftRadius+" "+this.state.borderBottomRightRadius;
+            event.target.value = this.state.borderTopLeftRadius+"px "+this.state.borderTopRightRadius+"px "+this.state.borderBottomLeftRadius+"px "+this.state.borderBottomRightRadius+"px";
             this.props.func(this.props.propname, event);
         }
 

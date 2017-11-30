@@ -68,7 +68,7 @@ class BoxShadow extends React.Component {
             event.target.value = "";
             this.props.func(this.props.propname, event);
         }else{
-            event.target.value = this.state.xOffset+" "+this.state.yOffset+" "+this.state.blur+" "+this.state.spread+" "+this.state.color;
+            event.target.value = this.state.xOffset+"px "+this.state.yOffset+"px "+this.state.blur+"px "+this.state.spread+"px "+this.state.color;
             this.props.func(this.props.propname, event);
         }
 
