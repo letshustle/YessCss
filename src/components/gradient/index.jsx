@@ -2,12 +2,11 @@ import React, { propTypes } from 'react'
 import { Link } from 'react-router'
 import ClassNames from 'classnames'
 import ServerLink from '../serverLink'
-import FontAwesome from 'react-fontawesome'
 import Switch from 'react-toggle-switch'
-import $ from 'jquery'
-
-import Single from '../single'
 import Color from '../color'
+import $ from 'jquery'
+import Arrow from '../arrow'
+import Single from '../single'
 import SingleDropDown from '../singleDropDown'
 
 class Gradient extends React.Component {
@@ -26,12 +25,23 @@ class Gradient extends React.Component {
   }
 
   handleChange = (type, event) => {
-    console.log('box-change-handler', type)
     var valueBox = ''
     switch (type) {
-      case 'angle':
-        this.setState({ angle: event.target.value })
-        valueBox = event.target.value + ' ' + this.state.color1 + ' ' + this.state.color2
+      case 'right':
+        this.setState({ angle: '90deg' })
+        valueBox = '90deg' + ' ' + this.state.color1 + ' ' + this.state.color2
+        break
+      case 'down':
+        this.setState({ angle: '180deg' })
+        valueBox = '180deg' + ' ' + this.state.color1 + ' ' + this.state.color2
+        break
+      case 'left':
+        this.setState({ angle: '270deg' })
+        valueBox = '270deg' + ' ' + this.state.color1 + ' ' + this.state.color2
+        break
+      case 'up':
+        this.setState({ angle: '0deg' })
+        valueBox = '0deg' + ' ' + this.state.color1 + ' ' + this.state.color2
         break
       case 'color1':
         this.setState({ color1: event.target.value })
@@ -44,10 +54,9 @@ class Gradient extends React.Component {
       default:
         break
     }
-
     this.props.func(this.props.propname, { target: { value: valueBox } })
-    console.log('component value ', event.target.value)
   }
+
   _handleCollapse () {
     this.setState({ isGradient: !this.state.isGradient })
     this.refs.collapseButton.click()
@@ -88,26 +97,26 @@ class Gradient extends React.Component {
           </div>
         </div>
         <div id={this.props.propname} className='panel-collapse collapse'>
-          <Single
-            type={this.props.type}
-            name='Angle'
-            propname='angle'
-            ivalue={this.state.angle}
-            func={this.handleChange}
-          />
-          <Single
-            type={this.props.type}
-            name='First Color'
+          <div className='Grid-item single'>
+            <div className='text'>Orientation</div>
+            <Arrow direction='up' customClickEvent={this.handleChange.bind(this)} />
+            <Arrow direction='right' customClickEvent={this.handleChange.bind(this)} />
+            <Arrow direction='down' customClickEvent={this.handleChange.bind(this)} />
+            <Arrow direction='left' customClickEvent={this.handleChange.bind(this)} />
+          </div>
+          <Color
+            name='Color'
             propname='color1'
             ivalue={this.state.color1}
             func={this.handleChange}
+            color={this.state.color1}
           />
-          <Single
-            type={this.props.type}
-            name='Second Color'
+          <Color
+            name='Color'
             propname='color2'
             ivalue={this.state.color2}
             func={this.handleChange}
+            color={this.state.color2}
           />
         </div>
       </div>

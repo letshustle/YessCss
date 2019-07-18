@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Component, PropTypes } from 'react'
-import FontAwesome from 'react-fontawesome'
 import Gradient from '../components/gradient'
 import Single from '../components/single'
 import Dimension from '../components/dimension'
@@ -47,10 +46,11 @@ class BoxGenerator extends React.Component {
     return true
   }
   handleChange = (type, event) => {
-    console.log(type, event.target.value)
-    console.log(event.target.value)
+    // console.log(type, event.target.value)
+    // console.log(event.target.value)
     switch (type) {
       case 'gradient':
+        console.log('gradient', type, event)
         if (event.target.value.length == 0) {
           this.setState({ backgroundImage: '0deg ' + this.state.background + ' ' + this.state.background })
         } else {
