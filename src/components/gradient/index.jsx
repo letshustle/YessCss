@@ -69,6 +69,20 @@ class Gradient extends React.Component {
     }
   }
 
+  checkActive (direction) {
+    let directions = {
+      up: '0deg',
+      right: '90deg',
+      left: '270deg',
+      down: '180deg'
+    }
+    if (this.state.angle == directions[direction]) {
+      return ' active'
+    } else {
+      return ''
+    }
+  }
+
   render () {
     return (
       <div className='ccollapse'>
@@ -99,10 +113,26 @@ class Gradient extends React.Component {
         <div id={this.props.propname} className='panel-collapse collapse'>
           <div className='Grid-item single'>
             <div className='text'>Orientation</div>
-            <Arrow direction='up' customClickEvent={this.handleChange.bind(this)} />
-            <Arrow direction='right' customClickEvent={this.handleChange.bind(this)} />
-            <Arrow direction='down' customClickEvent={this.handleChange.bind(this)} />
-            <Arrow direction='left' customClickEvent={this.handleChange.bind(this)} />
+            <Arrow
+              className={'arrows' + this.checkActive('up')}
+              direction='up'
+              customClickEvent={this.handleChange.bind(this)}
+            />
+            <Arrow
+              className={'arrows' + this.checkActive('right')}
+              direction='right'
+              customClickEvent={this.handleChange.bind(this)}
+            />
+            <Arrow
+              className={'arrows' + this.checkActive('down')}
+              direction='down'
+              customClickEvent={this.handleChange.bind(this)}
+            />
+            <Arrow
+              className={'arrows' + this.checkActive('left')}
+              direction='left'
+              customClickEvent={this.handleChange.bind(this)}
+            />
           </div>
           <Color
             name='Color'
