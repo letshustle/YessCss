@@ -101,6 +101,11 @@ class ActionButton extends React.Component {
         this.props.cssStyle.fontStyle +
         ';' +
         '\n' +
+        'letter-spacing:' +
+        this.props.cssStyle.letterSpacing +
+        'px;' +
+        ';' +
+        '\n' +
         'border:' +
         'none'
     } else if (this.props.name == 'buttonGenerator') {
