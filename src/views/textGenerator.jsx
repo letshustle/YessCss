@@ -22,17 +22,24 @@ class TextGenerator extends React.Component {
       fontSize: '32',
       fontStyle: 'normal',
       letterSpacing: '1',
+      wordSpacing: '0',
       value: 0
     }
   }
 
+  handleWordSpacing = (type, event) => {
+    if (this.state.text == 'YessCSS') {
+      this.setState({ text: 'Yess CSS', wordSpacing: event.target.value })
+    } else {
+      this.setState({ text: this.state.text, wordSpacing: event.target.value })
+    }
+  }
+
   handleChangeComplete = color => {
-    console.log(color)
     this.setState({ background: color.hex })
   }
 
   handleChange = (type, event) => {
-    console.log(type)
     switch (type) {
       case 'text':
         this.setState({ text: event.target.value })
@@ -69,6 +76,7 @@ class TextGenerator extends React.Component {
       fontWeight: this.state.fontWeight,
       fontStyle: this.state.fontStyle,
       letterSpacing: this.state.letterSpacing,
+      wordSpacing: this.state.wordSpacing,
       border: 'none'
     }
     return (
@@ -109,6 +117,13 @@ class TextGenerator extends React.Component {
           ivalue={this.state.letterSpacing}
           func={this.handleChange}
         />
+        <Single
+          type='number'
+          name='Word Spacing'
+          propname='wordSpacing'
+          ivalue={this.state.wordSpacing}
+          func={this.handleWordSpacing}
+        />
         <ActionButton cssStyle={text_style} name={'textGenerator'} />
       </div>
     )
@@ -120,6 +135,7 @@ class TextGenerator extends React.Component {
       fontWeight: this.state.fontWeight,
       fontStyle: this.state.fontStyle,
       letterSpacing: this.state.letterSpacing,
+      wordSpacing: this.state.wordSpacing,
       border: 'none'
     }
     return (
