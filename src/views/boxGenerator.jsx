@@ -35,7 +35,7 @@ class BoxGenerator extends React.Component {
   }
 
   getStyleProps = () => {
-    console.log(ReactDOM.findDOMNode(this.refs.container).style)
+    // console.log(ReactDOM.findDOMNode(this.refs.container).style)
   }
 
   handleChangeComplete = color => {
@@ -62,11 +62,27 @@ class BoxGenerator extends React.Component {
         this.setState({ backgroundImage: event.target.value })
         break
       case 'width':
-        this.setState({ width: event.target.value })
-        break
+        if (this.state.locked) {
+          let aspectRatio = this.state.width / this.state.height
+          let newWidth = event.target.value
+          let newHeight = newWidth / aspectRatio
+          this.setState({ width: newWidth, height: newHeight })
+          break
+        } else {
+          this.setState({ width: event.target.value })
+          break
+        }
       case 'height':
-        this.setState({ height: event.target.value })
-        break
+        if (this.state.locked) {
+          let aspectRatio = this.state.width / this.state.height
+          let newHeight = event.target.value
+          let newWidth = aspectRatio * newHeight
+          this.setState({ width: newWidth, height: newHeight })
+          break
+        } else {
+          this.setState({ height: event.target.value })
+          break
+        }
       case 'color':
         this.setState({ background: event.target.value })
         break
