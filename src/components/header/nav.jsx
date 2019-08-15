@@ -44,6 +44,10 @@ const Nav = React.createClass({
                     <Link onClick={this.toggleMenu} to="/buttongenrator">Button Generator</Link>
                 </li>
 
+                <li className={Classnames({"active": this.context.router.isActive('/cssspinner', true)})}>
+                    <Link onClick={this.toggleMenu} to="/cssspinner">CSS Spinner</Link>
+                </li>
+
                 {/*<li className={Classnames({"active": this.context.router.isActive('/anchortaggenerator', true)})}>
                     <Link onClick={this.toggleMenu} to="/anchortaggenerator">Anchor Generator</Link>
                 </li>*/}

@@ -34,7 +34,7 @@ import BoxGeneratorView from './views/boxGenerator';
 import TextGeneratorView from './views/textGenerator';
 import ButtonGeneratorView from './views/buttonGenerator';
 import AnchorGeneratorView from './views/anchorGenerator';
-
+import CssSpinner from './views/cssSpinner';
 import Test from './views/test';
 
 import RouteNotFound from './views/routeNotFound';
@@ -53,7 +53,7 @@ ReactDOM.render(
             <Route path="/textgenerator" component={errorHandler(TextGeneratorView)}/>
             <Route path="/buttongenrator" component={errorHandler(ButtonGeneratorView)}/>
             <Route path="/anchortaggenerator" component={errorHandler(AnchorGeneratorView)}/>
-
+            <Route path="/cssspinner" component={errorHandler(CssSpinner)}/>
             <Route path="*" component={errorHandler(RouteNotFound)} />
         </Route>
     </Router>
