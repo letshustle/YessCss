@@ -18,6 +18,7 @@ class BoxGenerator extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
+      locked: false,
       loading: false,
       error: false,
       background: 'yellow',
@@ -34,12 +35,10 @@ class BoxGenerator extends React.Component {
   }
 
   getStyleProps = () => {
-    console.log('clicked')
-    console.log(ReactDOM.findDOMNode(this.refs.container).style)
+    // console.log(ReactDOM.findDOMNode(this.refs.container).style)
   }
 
   handleChangeComplete = color => {
-    console.log(color)
     this.setState({ background: color.hex })
   }
   shouldComponentUpdate (nextProps, nextState) {
@@ -49,8 +48,11 @@ class BoxGenerator extends React.Component {
     // console.log(type, event.target.value)
     // console.log(event.target.value)
     switch (type) {
+      case 'lock':
+        let newLockState = !this.state.locked
+        this.setState({ locked: newLockState })
+        break
       case 'gradient':
-        console.log('gradient', type, event)
         if (event.target.value.length == 0) {
           this.setState({ backgroundImage: '0deg ' + this.state.background + ' ' + this.state.background })
         } else {
@@ -60,11 +62,27 @@ class BoxGenerator extends React.Component {
         this.setState({ backgroundImage: event.target.value })
         break
       case 'width':
-        this.setState({ width: event.target.value })
-        break
+        if (this.state.locked) {
+          let aspectRatio = this.state.width / this.state.height
+          let newWidth = event.target.value
+          let newHeight = newWidth / aspectRatio
+          this.setState({ width: newWidth, height: newHeight })
+          break
+        } else {
+          this.setState({ width: event.target.value })
+          break
+        }
       case 'height':
-        this.setState({ height: event.target.value })
-        break
+        if (this.state.locked) {
+          let aspectRatio = this.state.width / this.state.height
+          let newHeight = event.target.value
+          let newWidth = aspectRatio * newHeight
+          this.setState({ width: newWidth, height: newHeight })
+          break
+        } else {
+          this.setState({ height: event.target.value })
+          break
+        }
       case 'color':
         this.setState({ background: event.target.value })
         break
@@ -99,7 +117,6 @@ class BoxGenerator extends React.Component {
     }
   }
   getSidePanel = () => {
-    console.log(this.state.border)
     let box_style = {
       width: this.state.width,
       height: this.state.height,
@@ -114,9 +131,10 @@ class BoxGenerator extends React.Component {
       <div className='Grid  nopadding'>
         <Dimension
           name='Size'
-          propname={['height', 'width']}
+          propname={['height', 'width', 'lock']}
           ivalue={[this.state.height, this.state.width]}
           func={this.handleChange}
+          locked={this.state.locked}
         />
         <Color
           name='Color'
@@ -176,7 +194,6 @@ class BoxGenerator extends React.Component {
     }
     return (
       <div className='holder'>
-        {console.log(box_style)}
         <div className='subject'>
           <div ref={'container'} className='element' style={box_style} />
           {this.state.error}
