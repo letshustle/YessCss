@@ -1,6 +1,11 @@
 import React from 'react';
-import ReactDOM  from 'react-dom';
-import { Router, Route, Link, IndexLink } from 'react-router'
+import ReactDOM from 'react-dom';
+import {
+  Router,
+  Route,
+  Link,
+  IndexLink
+} from 'react-router'
 import jQuery from 'jquery';
 import Classnames from 'classnames';
 import ConfigStore from '../../stores/configStore';
@@ -8,29 +13,29 @@ import ServerLink from '../serverLink'
 import FontAwesome from 'react-fontawesome';
 
 const Nav = React.createClass({
-    contextTypes: {
-        router: React.PropTypes.object
-    },
+  contextTypes: {
+    router: React.PropTypes.object
+  },
 
-    propTypes:{
-        togglemenu: React.PropTypes.func
-    },
+  propTypes: {
+    togglemenu: React.PropTypes.func
+  },
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return true;
-    },
+  shouldComponentUpdate(nextProps, nextState) {
+    return true;
+  },
 
-    componentDidMount(){
-        // jQuery(ReactDOM.findDOMNode(this.refs.mainNav)).find('.dropdown-toggle').dropdown();
-    },
+  componentDidMount() {
+    // jQuery(ReactDOM.findDOMNode(this.refs.mainNav)).find('.dropdown-toggle').dropdown();
+  },
 
-    toggleMenu: function(){
-        this.props.togglemenu()
-    },
+  toggleMenu: function() {
+    this.props.togglemenu()
+  },
 
-    render() {
-        return (
-            <ul className="nav navbar-nav navbar-right" ref="mainNav">
+  render() {
+    return (
+      <ul className="nav navbar-nav navbar-right" ref="mainNav">
 
                 <li className={Classnames({"active": this.context.router.isActive('/boxgenerator', true) || this.context.router.isActive('/', true)})}>
                     <Link onClick={this.toggleMenu} to="/boxgenerator">Box Generator</Link>
@@ -44,6 +49,10 @@ const Nav = React.createClass({
                     <Link onClick={this.toggleMenu} to="/buttongenrator">Button Generator</Link>
                 </li>
 
+                {/*<li className={Classnames({"active": this.context.router.isActive('/cssspinner', true)})}>
+                   <Link onClick={this.toggleMenu} to="/cssspinner">CSS Spinner</Link>
+                </li>*/}
+
                 {/*<li className={Classnames({"active": this.context.router.isActive('/anchortaggenerator', true)})}>
                     <Link onClick={this.toggleMenu} to="/anchortaggenerator">Anchor Generator</Link>
                 </li>*/}
@@ -55,8 +64,8 @@ const Nav = React.createClass({
                     <a class="github-button" href="https://github.com/letshustle/YessCss" data-icon="octicon-star" data-style="mega" data-count-href="/letshustle/YessCss/stargazers" data-count-api="/repos/letshustle/YessCss#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star letshustle/YessCss on GitHub">Star</a>
                 </li>*/}
             </ul>
-        );
-    }
+    );
+  }
 });
 
 
