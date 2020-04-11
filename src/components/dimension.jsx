@@ -50,7 +50,7 @@ class Dimension extends React.Component {
           <div style={{ cursor: 'pointer' }}>{lock}</div>
           <input
             placeholder='width'
-            className='text-box'
+            className='text-box less-pad'
             type='number'
             value={this.props.ivalue[1]}
             onChange={this.props.func.bind(this, this.props.propname[1])}

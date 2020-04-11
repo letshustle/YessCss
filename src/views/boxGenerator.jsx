@@ -30,7 +30,8 @@ class BoxGenerator extends React.Component {
       borderRadius: '0 0 0 0',
       boxShadow: '0 0 0 0 #333',
       opacity: 1,
-      testList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+      testList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      aspectRatio: 1
     }
   }
 
@@ -63,9 +64,12 @@ class BoxGenerator extends React.Component {
         break
       case 'width':
         if (this.state.locked) {
-          let aspectRatio = this.state.width / this.state.height
+          let aspectRatio = this.state.width / this.state.height ? this.state.width / this.state.height : this.state.aspectRatio
+          this.setState({
+            aspectRatio: aspectRatio
+          })
           let newWidth = event.target.value
-          let newHeight = newWidth / aspectRatio
+          let newHeight = (newWidth / aspectRatio).toFixed(0)
           this.setState({ width: newWidth, height: newHeight })
           break
         } else {
@@ -74,9 +78,12 @@ class BoxGenerator extends React.Component {
         }
       case 'height':
         if (this.state.locked) {
-          let aspectRatio = this.state.width / this.state.height
+          let aspectRatio = this.state.width / this.state.height ? this.state.width / this.state.height : this.state.aspectRatio
+          this.setState({
+            aspectRatio: aspectRatio
+          })
           let newHeight = event.target.value
-          let newWidth = aspectRatio * newHeight
+          let newWidth = (aspectRatio * newHeight).toFixed(0)
           this.setState({ width: newWidth, height: newHeight })
           break
         } else {
