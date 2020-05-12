@@ -38,7 +38,7 @@ class Single extends React.Component {
 
         return (
             <div className="Grid-item single">
-                    <div className="text">
+                    <div className="text" style={this.props.style}>
                         {actionLabel}
                     </div>
                     <div className="input">

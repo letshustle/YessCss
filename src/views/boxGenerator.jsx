@@ -27,7 +27,7 @@ class BoxGenerator extends React.Component {
       width: '200',
       height: '200',
       border: '0 solid #333',
-      borderRadius: '0 0 0 0',
+      borderRadius: '10 10 10 10',
       boxShadow: '0 4 4 0 #000000',
       opacity: 1,
       testList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
@@ -47,7 +47,6 @@ class BoxGenerator extends React.Component {
   }
   handleChange = (type, event) => {
     // console.log(type, event.target.value)
-    // console.log(event.target.value)
     switch (type) {
       case 'lock':
         let newLockState = !this.state.locked
@@ -55,9 +54,11 @@ class BoxGenerator extends React.Component {
         break
       case 'gradient':
         if (event.target.value.length == 0) {
-          this.setState({ backgroundImage: '0deg ' + this.state.background + ' ' + this.state.background })
+          this.setState({
+            backgroundImage: '0deg ' + this.state.background + ' ' + this.state.background })
         } else {
-          this.setState({ backgroundImage: event.target.value })
+          this.setState({
+            backgroundImage: event.target.value })
         }
         break
         this.setState({ backgroundImage: event.target.value })
