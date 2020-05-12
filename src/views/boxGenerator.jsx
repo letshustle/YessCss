@@ -28,7 +28,7 @@ class BoxGenerator extends React.Component {
       height: '200',
       border: '0 solid #333',
       borderRadius: '0 0 0 0',
-      boxShadow: '0 0 0 0 #333',
+      boxShadow: '0 4 4 0 #000000',
       opacity: 1,
       testList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
       aspectRatio: 1
