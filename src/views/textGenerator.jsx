@@ -108,7 +108,7 @@ class TextGenerator extends React.Component {
           propname='fontStyle'
           ivalue={this.state.fontStyle}
           func={this.handleChange}
-          list={['normal', 'oblique', 'italic']}
+          list={['normal', 'italic']}
         />
         <Single
           type='number'
@@ -116,6 +116,7 @@ class TextGenerator extends React.Component {
           propname='letterSpacing'
           ivalue={this.state.letterSpacing}
           func={this.handleChange}
+          style={{textAlign: "left"}}
         />
         <Single
           type='number'
@@ -123,6 +124,7 @@ class TextGenerator extends React.Component {
           propname='wordSpacing'
           ivalue={this.state.wordSpacing}
           func={this.handleWordSpacing}
+          style={{textAlign: "left"}}
         />
         <ActionButton cssStyle={text_style} name={'textGenerator'} />
       </div>

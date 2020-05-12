@@ -20,15 +20,17 @@ class Dimension extends React.Component {
 
   render () {
     let lock = this.props.locked ? (
-      <FontAwesome
-        style={{ pointer: 'cursor' }}
-        onClick={this.props.func.bind(this, this.props.propname[2])}
-        name='lock'
-      />
+        <FontAwesome
+          style={{ cursor: 'pointer' }}
+          onClick={this.props.func.bind(this, this.props.propname[2])}
+          title="Unlock aspect ratio"
+          name='lock'
+        />
     ) : (
       <FontAwesome
-        style={{ pointer: 'not-allowed', color: '#ccc' }}
+        style={{ cursor: 'pointer', color: '#ccc' }}
         onClick={this.props.func.bind(this, this.props.propname[2])}
+        title="Lock aspect ratio"
         name='unlock-alt'
       />
     )
@@ -47,7 +49,7 @@ class Dimension extends React.Component {
             value={this.props.ivalue[0]}
             onChange={this.props.func.bind(this, this.props.propname[0])}
           />
-          <div style={{ cursor: 'pointer' }}>{lock}</div>
+          <div>{lock}</div>
           <input
             placeholder='width'
             className='text-box less-pad'

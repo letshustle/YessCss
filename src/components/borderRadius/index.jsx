@@ -84,10 +84,10 @@ class BorderRadius extends React.Component {
                 </div>
                 <div id={this.props.propname} className="panel-collapse collapse">
 
-                <Single type={this.props.type}  name="Top-Left"    propname="borderTopLeftRadius" ivalue={this.state.borderTopLeftRadius} func={this.handleChange}></Single>
-                <Single type={this.props.type}  name="Top-Right"   propname="borderTopRightRadius" ivalue={this.state.borderTopRightRadius} func={this.handleChange}></Single>
-                <Single type={this.props.type} name="Bottom-Right" propname="borderBottomRightRadius" ivalue={this.state.borderBottomRightRadius} func={this.handleChange}></Single>
-                <Single type={this.props.type} name="Bottom-Left"  propname="borderBottomLeftRadius" ivalue={this.state.borderBottomLeftRadius} func={this.handleChange}></Single>
+                <Single type={this.props.type} name="Top-Left"    propname="borderTopLeftRadius" ivalue={this.state.borderTopLeftRadius} func={this.handleChange} style={{textAlign: "left"}}></Single>
+                <Single type={this.props.type} name="Top-Right"   propname="borderTopRightRadius" ivalue={this.state.borderTopRightRadius} func={this.handleChange} style={{textAlign: "left"}}></Single>
+                <Single type={this.props.type} name="Bottom-Right" propname="borderBottomRightRadius" ivalue={this.state.borderBottomRightRadius} func={this.handleChange} style={{textAlign: "left"}}></Single>
+                <Single type={this.props.type} name="Bottom-Left"  propname="borderBottomLeftRadius" ivalue={this.state.borderBottomLeftRadius} func={this.handleChange} style={{textAlign: "left"}}></Single>
 
                 </div>
             </div>
