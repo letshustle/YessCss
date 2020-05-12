@@ -23,12 +23,14 @@ class Dimension extends React.Component {
         <FontAwesome
           style={{ cursor: 'pointer' }}
           onClick={this.props.func.bind(this, this.props.propname[2])}
+          title="Unlock aspect ratio"
           name='lock'
         />
     ) : (
       <FontAwesome
         style={{ cursor: 'pointer', color: '#ccc' }}
         onClick={this.props.func.bind(this, this.props.propname[2])}
+        title="Lock aspect ratio"
         name='unlock-alt'
       />
     )
