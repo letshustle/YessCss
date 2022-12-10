@@ -174,7 +174,7 @@
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-react": "^6.0.0",
     "eslint-plugin-standard": "^2.0.0",
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "karma": "^1.0.0",
     "karma-coverage": "^1.0.0",
     "karma-mocha": "^1.0.1",
